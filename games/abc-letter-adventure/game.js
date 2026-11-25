@@ -97,7 +97,7 @@ function start() {
     const [selectedMin, selectedMax] = ageFilter.split('-').map(Number);
     availableQuestions = bank.filter(question => {
       if (!question.age_band) return false;
-      const band = question.age_band.match(/\\d+/g);
+      const band = question.age_band.match(/\d+/g);
       if (!band || !band.length) return false;
       const questionMin = Number(band[0]);
       const questionMax = Number(band[1] || band[0]);
