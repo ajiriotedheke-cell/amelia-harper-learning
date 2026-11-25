@@ -19,6 +19,8 @@
  const cards=document.getElementById('cards'),search=document.getElementById('search'),age=document.getElementById('age'),category=document.getElementById('category'),count=document.getElementById('result-count');
  document.getElementById('year').textContent=new Date().getFullYear();
  let games=[];
+ const requestedAge=new URLSearchParams(location.search).get('age');
+ if(['2-4','5-7','8-10','11-12'].includes(requestedAge)) age.value=requestedAge;
  function render(){
   const q=search.value.trim().toLowerCase(),a=age.value,c=category.value;
   const shown=games.filter(g=>(!a||g.ageBands.includes(a))&&(!c||g.category===c)&&(!q||(g.title+' '+g.description+' '+g.category).toLowerCase().includes(q)));
@@ -32,7 +34,7 @@
    const title=document.createElement('h2');title.textContent=g.title;
    const desc=document.createElement('p');desc.textContent=g.description;
    card.append(icon,meta,title,desc);
-   if(g.status==='published'&&g.path){const link=document.createElement('a');link.className='btn primary';link.href='..'+g.path;link.textContent='Play now →';card.append(link);}
+   if(g.status==='published'&&g.path){const link=document.createElement('a');link.className='btn primary';link.href='..'+g.path+(a?'?age='+encodeURIComponent(a):'');link.textContent='Play now →';card.append(link);}
    else{const status=document.createElement('span');status.className='status-pill';status.textContent='Coming soon';card.append(status);}
    cards.append(card);
   });
