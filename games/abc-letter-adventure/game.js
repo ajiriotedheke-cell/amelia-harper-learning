@@ -236,6 +236,15 @@ function displayAnswers(question) {
       // No written answer label is shown for picture questions.
       button.setAttribute('aria-label', label);
 
+    } else if (isPicture && option.emoji) {
+      const picture = document.createElement('span');
+      picture.textContent = option.emoji;
+      picture.setAttribute('aria-hidden', 'true');
+      picture.style.fontSize = '76px';
+      picture.style.lineHeight = '1.2';
+      button.appendChild(picture);
+      button.setAttribute('aria-label', label || 'Picture answer');
+
     } else {
       // Text-only options for letter and word questions.
       button.textContent = label;
