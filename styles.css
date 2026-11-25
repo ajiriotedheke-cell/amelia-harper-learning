@@ -47,3 +47,9 @@ footer a:hover{color:#fff;text-decoration:underline}
 .answers button.picture-answer img{max-height:145px;object-fit:contain}
 .feedback{margin:15px 0;padding:10px 12px;border-radius:12px;line-height:1.5}
 @media(max-width:600px){.answers{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.answers button{min-height:82px;padding:12px;font-size:18px}.answers button.picture-answer{min-height:135px}.answers button.picture-answer img{height:112px!important}}
+
+.game-progress-row{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:14px 0 8px}
+.game-progress-label{font-size:9px;letter-spacing:.12em;font-weight:800;color:#927bbd}
+.game-progress-track{height:9px;background:#eeeaf7;border-radius:20px;overflow:hidden;margin-bottom:20px}
+#progress-fill{display:block;height:100%;width:0;background:linear-gradient(90deg,#7d65cb,#f17c9d);border-radius:20px;transition:width .25s ease}
+@media(prefers-reduced-motion:reduce){#progress-fill{transition:none}}
