@@ -18,6 +18,7 @@
 
 - Question bank parsed as JSON and contains 500 records, 500 unique IDs, four options per question and an answer matching an option in every record.
 - Age-band overlap audit found: 316 records match ages 2–4; 440 match ages 5–7; 110 match ages 8–10; zero match ages 11–12. These are overlapping counts, not additive totals.
+- Catalogue and homepage copy now disclose that the ABC bank is strongest for early learners, has limited overlap for age 8, and has no 11–12 questions. Game availability is distinguished from the wider age-group roadmap.
 - No live browser/device test has been completed in this workflow. No production deployment or merge has been performed.
 
 ## Required before production launch
