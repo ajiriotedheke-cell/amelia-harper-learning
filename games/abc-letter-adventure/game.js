@@ -1,7 +1,7 @@
 
 /* =========================================================
    AMELIA HARPER ABC LETTER CHALLENGE
-   Main game JavaScript
+   Supports text answers and illustrated picture answers
    ========================================================= */
 
 const $ = (id) => document.getElementById(id);
@@ -11,10 +11,9 @@ let round = [];
 let index = 0;
 let score = 0;
 let answered = false;
-let gameStarted = false;
 
 /* ---------------------------------------------------------
-   SHUFFLE QUESTIONS AND ANSWERS
+   SHUFFLE
 --------------------------------------------------------- */
 
 function shuffle(items) {
@@ -22,7 +21,6 @@ function shuffle(items) {
 
   for (let i = array.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
-
     [array[i], array[j]] = [array[j], array[i]];
   }
 
@@ -46,7 +44,7 @@ function track(eventName, details = {}) {
       timestamp: new Date().toISOString()
     })
   }).catch(() => {
-    // Analytics must never interrupt gameplay.
+    // Analytics errors must not interrupt the game.
   });
 }
 
@@ -61,7 +59,7 @@ async function init() {
     );
 
     if (!response.ok) {
-      throw new Error('Question bank could not be found.');
+      throw new Error('Question bank could not be loaded.');
     }
 
     const data = await response.json();
@@ -69,17 +67,17 @@ async function init() {
     bank = Array.isArray(data) ? data : data.questions;
 
     if (!Array.isArray(bank) || bank.length === 0) {
-      throw new Error('No questions were found.');
+      throw new Error('No questions found.');
     }
 
     start();
 
   } catch (error) {
-    console.error('Game loading error:', error);
+    console.error(error);
 
     if ($('progress')) {
       $('progress').textContent =
-        'The question bank could not be loaded. Please refresh the game.';
+        'Unable to load questions. Please refresh the game.';
     }
   }
 }
@@ -91,26 +89,31 @@ async function init() {
 function start() {
   if (!bank.length) return;
 
-  const requestedAge = $('age-filter')?.value || 'all';
+  const ageFilter = $('age-filter')?.value || 'all';
 
-  if (requestedAge === 'all') {
-    round = shuffle(bank).slice(0, 20);
-  } else {
-    const ageQuestions = bank.filter(q =>
-      q.age_band && q.age_band.includes(requestedAge)
+  let availableQuestions = bank;
+
+  if (ageFilter !== 'all') {
+    availableQuestions = bank.filter(question =>
+      question.age_band &&
+      question.age_band.includes(ageFilter)
     );
-
-    round = shuffle(ageQuestions).slice(0, 20);
   }
 
-  if (!round.length) {
-    round = shuffle(bank).slice(0, 20);
+  if (!availableQuestions.length) {
+    availableQuestions = bank;
   }
+
+  round = shuffle(availableQuestions).slice(0, 20);
 
   index = 0;
   score = 0;
   answered = false;
-  gameStarted = true;
+
+  if ($('next')) {
+    $('next').onclick = nextQuestion;
+    $('next').hidden = true;
+  }
 
   track('game_start', {
     question_count: round.length
@@ -120,29 +123,10 @@ function start() {
 }
 
 /* ---------------------------------------------------------
-   DISPLAY QUESTION
+   QUESTION VISUAL
 --------------------------------------------------------- */
 
-function show() {
-  answered = false;
-
-  const q = round[index];
-
-  if (!q) {
-    finishGame();
-    return;
-  }
-
-  // Progress indicator
-  if ($('progress')) {
-    $('progress').textContent =
-      `Question ${index + 1} of ${round.length} · Score ${score}`;
-  }
-
-  // Display question
-  $('question').textContent = q.prompt;
-
-  // Create or locate visual area
+function displayQuestionVisual(question) {
   let visual = document.getElementById('question-visual');
 
   if (!visual) {
@@ -152,35 +136,30 @@ function show() {
     $('question').insertAdjacentElement('afterend', visual);
   }
 
-  // Remove previous visual
   visual.innerHTML = '';
 
-  // Display actual image if available
-  if (q.image) {
-    const img = document.createElement('img');
+  if (question.image) {
+    const image = document.createElement('img');
 
-    img.src = q.image;
-    img.alt = 'Picture clue';
-    img.style.width = '100%';
-    img.style.maxWidth = '320px';
-    img.style.height = '240px';
-    img.style.objectFit = 'contain';
-    img.style.display = 'block';
-    img.style.margin = '20px auto';
+    image.src = question.image;
+    image.alt = 'Question picture';
+    image.style.width = '100%';
+    image.style.maxWidth = '320px';
+    image.style.height = '240px';
+    image.style.objectFit = 'contain';
+    image.style.display = 'block';
+    image.style.margin = '20px auto';
 
-    img.onerror = () => {
-      visual.textContent = 'Picture could not be loaded.';
-    };
-
-    visual.appendChild(img);
+    visual.appendChild(image);
     visual.style.display = 'block';
-  }
 
-  // Display visual clues only when supplied
-  else if (q.visual && q.visual.trim() !== '') {
+  } else if (
+    question.visual &&
+    question.visual.trim() !== ''
+  ) {
     const display = document.createElement('div');
 
-    display.textContent = q.visual;
+    display.textContent = question.visual;
     display.style.fontSize = '100px';
     display.style.fontWeight = 'bold';
     display.style.textAlign = 'center';
@@ -188,53 +167,117 @@ function show() {
 
     visual.appendChild(display);
     visual.style.display = 'block';
-  }
 
-  // Hide empty visual area
-  else {
+  } else {
     visual.style.display = 'none';
   }
+}
 
-  // Clear previous feedback and answers
-  $('answers').innerHTML = '';
+/* ---------------------------------------------------------
+   DISPLAY ANSWER OPTIONS
+   Supports:
+   1. Text options: "A", "B", "C"
+   2. Picture options: { label: "Goat", image: "..." }
+--------------------------------------------------------- */
+
+function displayAnswers(question) {
+  const answerArea = $('answers');
+
+  answerArea.innerHTML = '';
+
+  shuffle(question.options).forEach(option => {
+    const isPicture = typeof option === 'object';
+
+    const label = isPicture ? option.label : option;
+
+    const button = document.createElement('button');
+
+    button.type = 'button';
+    button.className = isPicture
+      ? 'answer-option picture-answer'
+      : 'answer-option text-answer';
+
+    button.dataset.answer = label;
+
+    if (isPicture && option.image) {
+      const image = document.createElement('img');
+
+      image.src = option.image;
+      image.alt = label;
+      image.loading = 'eager';
+      image.style.width = '100%';
+      image.style.height = '150px';
+      image.style.objectFit = 'contain';
+      image.style.display = 'block';
+
+      button.appendChild(image);
+
+      // No written answer label is shown for picture questions.
+      button.setAttribute('aria-label', label);
+
+    } else {
+      // Text-only options for letter and word questions.
+      button.textContent = label;
+    }
+
+    button.addEventListener('click', () => {
+      choose(label, question, button);
+    });
+
+    answerArea.appendChild(button);
+  });
+}
+
+/* ---------------------------------------------------------
+   DISPLAY QUESTION
+--------------------------------------------------------- */
+
+function show() {
+  answered = false;
+
+  const question = round[index];
+
+  if (!question) {
+    finishGame();
+    return;
+  }
+
+  if ($('progress')) {
+    $('progress').textContent =
+      `Question ${index + 1} of ${round.length} · Score ${score}`;
+  }
+
+  $('question').textContent = question.prompt;
+
+  displayQuestionVisual(question);
+
   $('feedback').textContent = '';
 
   if ($('next')) {
     $('next').hidden = true;
   }
 
-  // Display text-only answer options
-  shuffle(q.options).forEach(option => {
-    const button = document.createElement('button');
-
-    button.type = 'button';
-    button.textContent = option;
-
-    button.addEventListener('click', () => {
-      choose(option, q, button);
-    });
-
-    $('answers').appendChild(button);
-  });
+  displayAnswers(question);
 }
 
 /* ---------------------------------------------------------
    CHECK ANSWER
 --------------------------------------------------------- */
 
-function choose(option, question, selectedButton) {
+function choose(selectedAnswer, question, selectedButton) {
   if (answered) return;
 
   answered = true;
 
-  const correct = option === question.answer;
+  const correct =
+    selectedAnswer === question.answer;
 
   const buttons = $('answers').querySelectorAll('button');
 
   buttons.forEach(button => {
     button.disabled = true;
 
-    if (button.textContent === question.answer) {
+    if (button.dataset.answer === question.answer) {
       button.classList.add('correct');
     }
   });
@@ -251,25 +294,26 @@ function choose(option, question, selectedButton) {
     selectedButton.classList.add('incorrect');
 
     $('feedback').textContent =
-      'Not quite! The correct answer is ' + question.answer + '.';
+      `Not quite! The correct answer is ${question.answer}.`;
   }
 
-  // Update progress score
   $('progress').textContent =
     `Question ${index + 1} of ${round.length} · Score ${score}`;
 
   track('question_answered', {
     question_id: question.id,
-    selected_answer: option,
+    selected_answer: selectedAnswer,
     correct_answer: question.answer,
     is_correct: correct
   });
 
-  // Show next button
   if ($('next')) {
     $('next').hidden = false;
+
     $('next').textContent =
-      index === round.length - 1 ? 'See My Results' : 'Next Question';
+      index === round.length - 1
+        ? 'See My Results'
+        : 'Next Question';
   }
 }
 
@@ -324,7 +368,7 @@ function finishGame() {
 }
 
 /* ---------------------------------------------------------
-   REPLAY GAME
+   REPLAY
 --------------------------------------------------------- */
 
 function replay() {
@@ -339,20 +383,20 @@ function replay() {
    BUTTON EVENTS
 --------------------------------------------------------- */
 
-if ($('next')) {
-  $('next').addEventListener('click', nextQuestion);
+if ($('start')) {
+  $('start').addEventListener('click', start);
 }
 
 if ($('restart')) {
   $('restart').addEventListener('click', replay);
 }
 
-if ($('start')) {
-  $('start').addEventListener('click', start);
+if ($('next')) {
+  $('next').onclick = nextQuestion;
 }
 
 /* ---------------------------------------------------------
-   INITIALISE GAME
+   INITIALISE
 --------------------------------------------------------- */
 
 init();
