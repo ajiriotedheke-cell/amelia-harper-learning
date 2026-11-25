@@ -252,6 +252,21 @@ function displayAnswers(question) {
    DISPLAY QUESTION
 --------------------------------------------------------- */
 
+function updateProgress() {
+  const fill = $('progress-fill');
+  const track = fill?.parentElement;
+  if (!fill || !track) return;
+  const completed = Math.min(index + (answered ? 1 : 0), round.length);
+  const percent = round.length ? (completed / round.length) * 100 : 0;
+  fill.style.width = percent + '%';
+  track.setAttribute('aria-valuemax', String(round.length || 20));
+  track.setAttribute('aria-valuenow', String(completed));
+}
+
+/* ---------------------------------------------------------
+   DISPLAY QUESTION
+--------------------------------------------------------- */
+
 function show() {
   answered = false;
 
@@ -266,12 +281,14 @@ function show() {
     $('progress').textContent =
       `Question ${index + 1} of ${round.length} · Score ${score}`;
   }
+  updateProgress();
 
   $('question').textContent = question.prompt;
 
   displayQuestionVisual(question);
 
   $('feedback').textContent = '';
+  updateProgress();
 
   if ($('next')) {
     $('next').hidden = true;
@@ -322,6 +339,8 @@ function choose(selectedAnswer, question, selectedButton) {
 
   // Per-question answers are kept in the browser and are not sent to analytics.
 
+  updateProgress();
+
   if ($('next')) {
     $('next').hidden = false;
 
@@ -356,6 +375,7 @@ function finishGame() {
   track('game_complete');
 
   $('question').textContent = 'Amazing Work!';
+  updateProgress();
 
   const visual = document.getElementById('question-visual');
 
@@ -366,7 +386,7 @@ function finishGame() {
   $('answers').innerHTML = '';
 
   $('feedback').textContent =
-    `You scored ${score} out of ${round.length}!`;
+    `⭐ You scored ${score} out of ${round.length}! ${score === round.length ? 'A perfect adventure!' : 'Keep practising — you are growing every time!'}`;
 
   if ($('progress')) {
     $('progress').textContent = 'Challenge completed!';
