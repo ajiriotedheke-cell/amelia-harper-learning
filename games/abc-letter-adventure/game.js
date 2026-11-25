@@ -31,20 +31,26 @@ function shuffle(items) {
    ANALYTICS
 --------------------------------------------------------- */
 
-function track(eventName, details = {}) {
+function track(eventName) {
+  // Store only aggregate game events; never send answers or child-entered information.
+  const selectedAge = $('age')?.value || 'unknown';
+  const deviceType = /iPad|Tablet/i.test(navigator.userAgent)
+    ? 'tablet'
+    : /Mobi|Android/i.test(navigator.userAgent)
+      ? 'mobile'
+      : 'desktop';
   fetch('/api/events', {
     method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
+    headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
-      event: eventName,
-      game: 'abc-letter-adventure',
-      details,
-      timestamp: new Date().toISOString()
-    })
+      eventName,
+      gameSlug: 'abc-letter-adventure',
+      ageBand: selectedAge,
+      deviceType
+    }),
+    keepalive: true
   }).catch(() => {
-    // Analytics errors must not interrupt the game.
+    // Analytics errors must never interrupt play.
   });
 }
 
@@ -120,9 +126,7 @@ function start() {
     $('next').hidden = true;
   }
 
-  track('game_start', {
-    question_count: round.length
-  });
+  track('game_start');
 
   show();
 }
@@ -305,12 +309,7 @@ function choose(selectedAnswer, question, selectedButton) {
   $('progress').textContent =
     `Question ${index + 1} of ${round.length} · Score ${score}`;
 
-  track('question_answered', {
-    question_id: question.id,
-    selected_answer: selectedAnswer,
-    correct_answer: question.answer,
-    is_correct: correct
-  });
+  // Per-question answers are kept in the browser and are not sent to analytics.
 
   if ($('next')) {
     $('next').hidden = false;
@@ -343,10 +342,7 @@ function nextQuestion() {
 --------------------------------------------------------- */
 
 function finishGame() {
-  track('game_complete', {
-    score,
-    total_questions: round.length
-  });
+  track('game_complete');
 
   $('question').textContent = 'Amazing Work!';
 
