@@ -11,7 +11,8 @@
 - Admin-managed Sweet Bedtime Moments title, description, button label and published link are connected to the public homepage.
 - Mobile navigation has expanded-state labels, closes on navigation and supports Escape on the homepage.
 - ABC game age selection uses the actual select element and matches overlapping age ranges. It does not silently fall back to unrelated questions when a selected age has no suitable content.
-- ABC game shows progress and answer feedback, supports text and image answer options, and sends only game start/completion analytics using the API's expected field names.
+- ABC game shows progress and answer feedback, supports text, image and emoji-only picture answer options, and sends only game start/completion analytics using the API's expected field names.
+- The AH-020 goat picture question now presents four emoji-only choices (hat, kite, goat and sun), with accessible answer names.
 - Seven incorrect article usages in picture-matching prompts were corrected.
 
 ## Static checks performed
@@ -19,6 +20,7 @@
 - Question bank parsed as JSON and contains 500 records, 500 unique IDs, four options per question and an answer matching an option in every record.
 - Age-band overlap audit found: 316 records match ages 2–4; 440 match ages 5–7; 110 match ages 8–10; zero match ages 11–12. These are overlapping counts, not additive totals.
 - Catalogue and homepage copy now disclose that the ABC bank is strongest for early learners, has limited overlap for age 8, and has no 11–12 questions. Game availability is distinguished from the wider age-group roadmap.
+- The question-bank record for AH-020 was checked after editing: four distinct picture options are present and the correct answer label matches one option.
 - No live browser/device test has been completed in this workflow. No production deployment or merge has been performed.
 
 ## Required before production launch
