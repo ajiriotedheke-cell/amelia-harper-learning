@@ -1,0 +1,8050 @@
+{
+  "title": "Amelia Harper ABC Challenge Question Bank",
+  "version": "1.0",
+  "total_questions": 500,
+  "notes": "500 individually defined question records across ten learning categories. Human educational review and child playtesting are still required before commercial release.",
+  "categories": [
+    {
+      "name": "Letter recognition",
+      "count": 60
+    },
+    {
+      "name": "Uppercase and lowercase matching",
+      "count": 50
+    },
+    {
+      "name": "Beginning letter sounds",
+      "count": 70
+    },
+    {
+      "name": "Missing letters",
+      "count": 50
+    },
+    {
+      "name": "Alphabet sequencing",
+      "count": 50
+    },
+    {
+      "name": "Picture and word matching",
+      "count": 60
+    },
+    {
+      "name": "Early word spelling",
+      "count": 50
+    },
+    {
+      "name": "Vowels and consonants",
+      "count": 35
+    },
+    {
+      "name": "Word puzzles and simple riddles",
+      "count": 35
+    },
+    {
+      "name": "Mixed alphabet challenges",
+      "count": 40
+    }
+  ],
+  "questions": [
+    {
+      "id": "AH-001",
+      "category": "Letter recognition",
+      "skill": "Identify uppercase letter",
+      "age_band": "3–4",
+      "prompt": "Which letter is this: A?",
+      "visual": "A",
+      "options": [
+        "L",
+        "P",
+        "A",
+        "B"
+      ],
+      "answer": "A",
+      "feedback": "This is the letter A."
+    },
+    {
+      "id": "AH-002",
+      "category": "Letter recognition",
+      "skill": "Identify first letter",
+      "age_band": "3–4",
+      "prompt": "Which letter does the word apple begin with?",
+      "visual": "🍎",
+      "options": [
+        "Q",
+        "W",
+        "G",
+        "A"
+      ],
+      "answer": "A",
+      "feedback": "Apple begins with A."
+    },
+    {
+      "id": "AH-003",
+      "category": "Letter recognition",
+      "skill": "Identify lowercase letter",
+      "age_band": "3–4",
+      "prompt": "Find the lowercase letter for A.",
+      "visual": "",
+      "options": [
+        "z",
+        "a",
+        "u",
+        "c"
+      ],
+      "answer": "a",
+      "feedback": "The lowercase form of A is a."
+    },
+    {
+      "id": "AH-004",
+      "category": "Letter recognition",
+      "skill": "Identify uppercase letter",
+      "age_band": "3–4",
+      "prompt": "Which letter is this: B?",
+      "visual": "B",
+      "options": [
+        "K",
+        "B",
+        "U",
+        "A"
+      ],
+      "answer": "B",
+      "feedback": "This is the letter B."
+    },
+    {
+      "id": "AH-005",
+      "category": "Letter recognition",
+      "skill": "Identify first letter",
+      "age_band": "3–4",
+      "prompt": "Which letter does the word ball begin with?",
+      "visual": "⚽",
+      "options": [
+        "O",
+        "I",
+        "B",
+        "J"
+      ],
+      "answer": "B",
+      "feedback": "Ball begins with B."
+    },
+    {
+      "id": "AH-006",
+      "category": "Letter recognition",
+      "skill": "Identify lowercase letter",
+      "age_band": "3–4",
+      "prompt": "Find the lowercase letter for B.",
+      "visual": "",
+      "options": [
+        "j",
+        "m",
+        "b",
+        "x"
+      ],
+      "answer": "b",
+      "feedback": "The lowercase form of B is b."
+    },
+    {
+      "id": "AH-007",
+      "category": "Letter recognition",
+      "skill": "Identify uppercase letter",
+      "age_band": "3–4",
+      "prompt": "Which letter is this: C?",
+      "visual": "C",
+      "options": [
+        "C",
+        "U",
+        "V",
+        "Y"
+      ],
+      "answer": "C",
+      "feedback": "This is the letter C."
+    },
+    {
+      "id": "AH-008",
+      "category": "Letter recognition",
+      "skill": "Identify first letter",
+      "age_band": "3–4",
+      "prompt": "Which letter does the word cat begin with?",
+      "visual": "🐱",
+      "options": [
+        "X",
+        "P",
+        "C",
+        "E"
+      ],
+      "answer": "C",
+      "feedback": "Cat begins with C."
+    },
+    {
+      "id": "AH-009",
+      "category": "Letter recognition",
+      "skill": "Identify lowercase letter",
+      "age_band": "3–4",
+      "prompt": "Find the lowercase letter for C.",
+      "visual": "",
+      "options": [
+        "p",
+        "h",
+        "c",
+        "u"
+      ],
+      "answer": "c",
+      "feedback": "The lowercase form of C is c."
+    },
+    {
+      "id": "AH-010",
+      "category": "Letter recognition",
+      "skill": "Identify uppercase letter",
+      "age_band": "3–4",
+      "prompt": "Which letter is this: D?",
+      "visual": "D",
+      "options": [
+        "Q",
+        "K",
+        "C",
+        "D"
+      ],
+      "answer": "D",
+      "feedback": "This is the letter D."
+    },
+    {
+      "id": "AH-011",
+      "category": "Letter recognition",
+      "skill": "Identify first letter",
+      "age_band": "3–4",
+      "prompt": "Which letter does the word dog begin with?",
+      "visual": "🐶",
+      "options": [
+        "D",
+        "X",
+        "G",
+        "S"
+      ],
+      "answer": "D",
+      "feedback": "Dog begins with D."
+    },
+    {
+      "id": "AH-012",
+      "category": "Letter recognition",
+      "skill": "Identify lowercase letter",
+      "age_band": "3–4",
+      "prompt": "Find the lowercase letter for D.",
+      "visual": "",
+      "options": [
+        "h",
+        "t",
+        "d",
+        "p"
+      ],
+      "answer": "d",
+      "feedback": "The lowercase form of D is d."
+    },
+    {
+      "id": "AH-013",
+      "category": "Letter recognition",
+      "skill": "Identify uppercase letter",
+      "age_band": "3–4",
+      "prompt": "Which letter is this: E?",
+      "visual": "E",
+      "options": [
+        "L",
+        "C",
+        "G",
+        "E"
+      ],
+      "answer": "E",
+      "feedback": "This is the letter E."
+    },
+    {
+      "id": "AH-014",
+      "category": "Letter recognition",
+      "skill": "Identify first letter",
+      "age_band": "3–4",
+      "prompt": "Which letter does the word elephant begin with?",
+      "visual": "🐘",
+      "options": [
+        "J",
+        "O",
+        "Z",
+        "E"
+      ],
+      "answer": "E",
+      "feedback": "Elephant begins with E."
+    },
+    {
+      "id": "AH-015",
+      "category": "Letter recognition",
+      "skill": "Identify lowercase letter",
+      "age_band": "3–4",
+      "prompt": "Find the lowercase letter for E.",
+      "visual": "",
+      "options": [
+        "m",
+        "e",
+        "o",
+        "p"
+      ],
+      "answer": "e",
+      "feedback": "The lowercase form of E is e."
+    },
+    {
+      "id": "AH-016",
+      "category": "Letter recognition",
+      "skill": "Identify uppercase letter",
+      "age_band": "3–4",
+      "prompt": "Which letter is this: F?",
+      "visual": "F",
+      "options": [
+        "B",
+        "S",
+        "Z",
+        "F"
+      ],
+      "answer": "F",
+      "feedback": "This is the letter F."
+    },
+    {
+      "id": "AH-017",
+      "category": "Letter recognition",
+      "skill": "Identify first letter",
+      "age_band": "3–4",
+      "prompt": "Which letter does the word fish begin with?",
+      "visual": "🐟",
+      "options": [
+        "F",
+        "X",
+        "Z",
+        "I"
+      ],
+      "answer": "F",
+      "feedback": "Fish begins with F."
+    },
+    {
+      "id": "AH-018",
+      "category": "Letter recognition",
+      "skill": "Identify lowercase letter",
+      "age_band": "3–4",
+      "prompt": "Find the lowercase letter for F.",
+      "visual": "",
+      "options": [
+        "o",
+        "a",
+        "f",
+        "d"
+      ],
+      "answer": "f",
+      "feedback": "The lowercase form of F is f."
+    },
+    {
+      "id": "AH-019",
+      "category": "Letter recognition",
+      "skill": "Identify uppercase letter",
+      "age_band": "3–4",
+      "prompt": "Which letter is this: G?",
+      "visual": "G",
+      "options": [
+        "B",
+        "T",
+        "L",
+        "G"
+      ],
+      "answer": "G",
+      "feedback": "This is the letter G."
+    },
+    {
+      "id": "AH-020",
+      "category": "Letter recognition",
+      "skill": "Identify first letter",
+      "age_band": "3–4",
+      "prompt": "Which letter does the word goat begin with?",
+      "visual": "🐐",
+      "options": [
+        "A",
+        "G",
+        "T",
+        "Q"
+      ],
+      "answer": "G",
+      "feedback": "Goat begins with G."
+    },
+    {
+      "id": "AH-021",
+      "category": "Letter recognition",
+      "skill": "Identify lowercase letter",
+      "age_band": "3–4",
+      "prompt": "Find the lowercase letter for G.",
+      "visual": "",
+      "options": [
+        "z",
+        "b",
+        "v",
+        "g"
+      ],
+      "answer": "g",
+      "feedback": "The lowercase form of G is g."
+    },
+    {
+      "id": "AH-022",
+      "category": "Letter recognition",
+      "skill": "Identify uppercase letter",
+      "age_band": "3–4",
+      "prompt": "Which letter is this: H?",
+      "visual": "H",
+      "options": [
+        "H",
+        "G",
+        "U",
+        "J"
+      ],
+      "answer": "H",
+      "feedback": "This is the letter H."
+    },
+    {
+      "id": "AH-023",
+      "category": "Letter recognition",
+      "skill": "Identify first letter",
+      "age_band": "3–4",
+      "prompt": "Which letter does the word hat begin with?",
+      "visual": "🎩",
+      "options": [
+        "H",
+        "D",
+        "B",
+        "L"
+      ],
+      "answer": "H",
+      "feedback": "Hat begins with H."
+    },
+    {
+      "id": "AH-024",
+      "category": "Letter recognition",
+      "skill": "Identify lowercase letter",
+      "age_band": "3–4",
+      "prompt": "Find the lowercase letter for H.",
+      "visual": "",
+      "options": [
+        "h",
+        "w",
+        "g",
+        "f"
+      ],
+      "answer": "h",
+      "feedback": "The lowercase form of H is h."
+    },
+    {
+      "id": "AH-025",
+      "category": "Letter recognition",
+      "skill": "Identify uppercase letter",
+      "age_band": "3–4",
+      "prompt": "Which letter is this: I?",
+      "visual": "I",
+      "options": [
+        "I",
+        "W",
+        "S",
+        "N"
+      ],
+      "answer": "I",
+      "feedback": "This is the letter I."
+    },
+    {
+      "id": "AH-026",
+      "category": "Letter recognition",
+      "skill": "Identify first letter",
+      "age_band": "3–4",
+      "prompt": "Which letter does the word igloo begin with?",
+      "visual": "🧊",
+      "options": [
+        "O",
+        "I",
+        "P",
+        "Y"
+      ],
+      "answer": "I",
+      "feedback": "Igloo begins with I."
+    },
+    {
+      "id": "AH-027",
+      "category": "Letter recognition",
+      "skill": "Identify uppercase letter",
+      "age_band": "3–4",
+      "prompt": "Which letter is this: J?",
+      "visual": "J",
+      "options": [
+        "W",
+        "J",
+        "D",
+        "U"
+      ],
+      "answer": "J",
+      "feedback": "This is the letter J."
+    },
+    {
+      "id": "AH-028",
+      "category": "Letter recognition",
+      "skill": "Identify first letter",
+      "age_band": "3–4",
+      "prompt": "Which letter does the word jam begin with?",
+      "visual": "🍓",
+      "options": [
+        "M",
+        "W",
+        "A",
+        "J"
+      ],
+      "answer": "J",
+      "feedback": "Jam begins with J."
+    },
+    {
+      "id": "AH-029",
+      "category": "Letter recognition",
+      "skill": "Identify uppercase letter",
+      "age_band": "3–4",
+      "prompt": "Which letter is this: K?",
+      "visual": "K",
+      "options": [
+        "K",
+        "O",
+        "F",
+        "S"
+      ],
+      "answer": "K",
+      "feedback": "This is the letter K."
+    },
+    {
+      "id": "AH-030",
+      "category": "Letter recognition",
+      "skill": "Identify first letter",
+      "age_band": "3–4",
+      "prompt": "Which letter does the word kite begin with?",
+      "visual": "🪁",
+      "options": [
+        "R",
+        "K",
+        "I",
+        "Z"
+      ],
+      "answer": "K",
+      "feedback": "Kite begins with K."
+    },
+    {
+      "id": "AH-031",
+      "category": "Letter recognition",
+      "skill": "Identify uppercase letter",
+      "age_band": "3–4",
+      "prompt": "Which letter is this: L?",
+      "visual": "L",
+      "options": [
+        "L",
+        "R",
+        "H",
+        "E"
+      ],
+      "answer": "L",
+      "feedback": "This is the letter L."
+    },
+    {
+      "id": "AH-032",
+      "category": "Letter recognition",
+      "skill": "Identify first letter",
+      "age_band": "3–4",
+      "prompt": "Which letter does the word lion begin with?",
+      "visual": "🦁",
+      "options": [
+        "B",
+        "L",
+        "Y",
+        "W"
+      ],
+      "answer": "L",
+      "feedback": "Lion begins with L."
+    },
+    {
+      "id": "AH-033",
+      "category": "Letter recognition",
+      "skill": "Identify uppercase letter",
+      "age_band": "3–4",
+      "prompt": "Which letter is this: M?",
+      "visual": "M",
+      "options": [
+        "M",
+        "P",
+        "Q",
+        "Y"
+      ],
+      "answer": "M",
+      "feedback": "This is the letter M."
+    },
+    {
+      "id": "AH-034",
+      "category": "Letter recognition",
+      "skill": "Identify first letter",
+      "age_band": "3–4",
+      "prompt": "Which letter does the word moon begin with?",
+      "visual": "🌙",
+      "options": [
+        "T",
+        "M",
+        "Y",
+        "V"
+      ],
+      "answer": "M",
+      "feedback": "Moon begins with M."
+    },
+    {
+      "id": "AH-035",
+      "category": "Letter recognition",
+      "skill": "Identify uppercase letter",
+      "age_band": "3–4",
+      "prompt": "Which letter is this: N?",
+      "visual": "N",
+      "options": [
+        "K",
+        "A",
+        "P",
+        "N"
+      ],
+      "answer": "N",
+      "feedback": "This is the letter N."
+    },
+    {
+      "id": "AH-036",
+      "category": "Letter recognition",
+      "skill": "Identify first letter",
+      "age_band": "3–4",
+      "prompt": "Which letter does the word nest begin with?",
+      "visual": "🪺",
+      "options": [
+        "Q",
+        "U",
+        "N",
+        "I"
+      ],
+      "answer": "N",
+      "feedback": "Nest begins with N."
+    },
+    {
+      "id": "AH-037",
+      "category": "Letter recognition",
+      "skill": "Identify uppercase letter",
+      "age_band": "3–4",
+      "prompt": "Which letter is this: O?",
+      "visual": "O",
+      "options": [
+        "E",
+        "R",
+        "B",
+        "O"
+      ],
+      "answer": "O",
+      "feedback": "This is the letter O."
+    },
+    {
+      "id": "AH-038",
+      "category": "Letter recognition",
+      "skill": "Identify first letter",
+      "age_band": "3–4",
+      "prompt": "Which letter does the word octopus begin with?",
+      "visual": "🐙",
+      "options": [
+        "Q",
+        "O",
+        "L",
+        "Y"
+      ],
+      "answer": "O",
+      "feedback": "Octopus begins with O."
+    },
+    {
+      "id": "AH-039",
+      "category": "Letter recognition",
+      "skill": "Identify uppercase letter",
+      "age_band": "3–4",
+      "prompt": "Which letter is this: P?",
+      "visual": "P",
+      "options": [
+        "P",
+        "T",
+        "C",
+        "U"
+      ],
+      "answer": "P",
+      "feedback": "This is the letter P."
+    },
+    {
+      "id": "AH-040",
+      "category": "Letter recognition",
+      "skill": "Identify first letter",
+      "age_band": "3–4",
+      "prompt": "Which letter does the word penguin begin with?",
+      "visual": "🐧",
+      "options": [
+        "G",
+        "P",
+        "X",
+        "V"
+      ],
+      "answer": "P",
+      "feedback": "Penguin begins with P."
+    },
+    {
+      "id": "AH-041",
+      "category": "Letter recognition",
+      "skill": "Identify uppercase letter",
+      "age_band": "3–4",
+      "prompt": "Which letter is this: Q?",
+      "visual": "Q",
+      "options": [
+        "N",
+        "W",
+        "G",
+        "Q"
+      ],
+      "answer": "Q",
+      "feedback": "This is the letter Q."
+    },
+    {
+      "id": "AH-042",
+      "category": "Letter recognition",
+      "skill": "Identify first letter",
+      "age_band": "3–4",
+      "prompt": "Which letter does the word queen begin with?",
+      "visual": "👑",
+      "options": [
+        "Q",
+        "W",
+        "E",
+        "D"
+      ],
+      "answer": "Q",
+      "feedback": "Queen begins with Q."
+    },
+    {
+      "id": "AH-043",
+      "category": "Letter recognition",
+      "skill": "Identify uppercase letter",
+      "age_band": "3–4",
+      "prompt": "Which letter is this: R?",
+      "visual": "R",
+      "options": [
+        "C",
+        "M",
+        "R",
+        "G"
+      ],
+      "answer": "R",
+      "feedback": "This is the letter R."
+    },
+    {
+      "id": "AH-044",
+      "category": "Letter recognition",
+      "skill": "Identify first letter",
+      "age_band": "3–4",
+      "prompt": "Which letter does the word rabbit begin with?",
+      "visual": "🐰",
+      "options": [
+        "G",
+        "K",
+        "D",
+        "R"
+      ],
+      "answer": "R",
+      "feedback": "Rabbit begins with R."
+    },
+    {
+      "id": "AH-045",
+      "category": "Letter recognition",
+      "skill": "Identify uppercase letter",
+      "age_band": "3–4",
+      "prompt": "Which letter is this: S?",
+      "visual": "S",
+      "options": [
+        "Q",
+        "I",
+        "P",
+        "S"
+      ],
+      "answer": "S",
+      "feedback": "This is the letter S."
+    },
+    {
+      "id": "AH-046",
+      "category": "Letter recognition",
+      "skill": "Identify first letter",
+      "age_band": "3–4",
+      "prompt": "Which letter does the word sun begin with?",
+      "visual": "☀️",
+      "options": [
+        "Y",
+        "L",
+        "S",
+        "O"
+      ],
+      "answer": "S",
+      "feedback": "Sun begins with S."
+    },
+    {
+      "id": "AH-047",
+      "category": "Letter recognition",
+      "skill": "Identify uppercase letter",
+      "age_band": "3–4",
+      "prompt": "Which letter is this: T?",
+      "visual": "T",
+      "options": [
+        "Q",
+        "T",
+        "S",
+        "K"
+      ],
+      "answer": "T",
+      "feedback": "This is the letter T."
+    },
+    {
+      "id": "AH-048",
+      "category": "Letter recognition",
+      "skill": "Identify first letter",
+      "age_band": "3–4",
+      "prompt": "Which letter does the word tiger begin with?",
+      "visual": "🐯",
+      "options": [
+        "R",
+        "V",
+        "D",
+        "T"
+      ],
+      "answer": "T",
+      "feedback": "Tiger begins with T."
+    },
+    {
+      "id": "AH-049",
+      "category": "Letter recognition",
+      "skill": "Identify uppercase letter",
+      "age_band": "3–4",
+      "prompt": "Which letter is this: U?",
+      "visual": "U",
+      "options": [
+        "G",
+        "U",
+        "A",
+        "Q"
+      ],
+      "answer": "U",
+      "feedback": "This is the letter U."
+    },
+    {
+      "id": "AH-050",
+      "category": "Letter recognition",
+      "skill": "Identify first letter",
+      "age_band": "3–4",
+      "prompt": "Which letter does the word umbrella begin with?",
+      "visual": "☂️",
+      "options": [
+        "A",
+        "V",
+        "U",
+        "I"
+      ],
+      "answer": "U",
+      "feedback": "Umbrella begins with U."
+    },
+    {
+      "id": "AH-051",
+      "category": "Letter recognition",
+      "skill": "Identify uppercase letter",
+      "age_band": "3–4",
+      "prompt": "Which letter is this: V?",
+      "visual": "V",
+      "options": [
+        "L",
+        "A",
+        "V",
+        "P"
+      ],
+      "answer": "V",
+      "feedback": "This is the letter V."
+    },
+    {
+      "id": "AH-052",
+      "category": "Letter recognition",
+      "skill": "Identify first letter",
+      "age_band": "3–4",
+      "prompt": "Which letter does the word van begin with?",
+      "visual": "🚐",
+      "options": [
+        "D",
+        "V",
+        "U",
+        "S"
+      ],
+      "answer": "V",
+      "feedback": "Van begins with V."
+    },
+    {
+      "id": "AH-053",
+      "category": "Letter recognition",
+      "skill": "Identify uppercase letter",
+      "age_band": "3–4",
+      "prompt": "Which letter is this: W?",
+      "visual": "W",
+      "options": [
+        "L",
+        "Q",
+        "B",
+        "W"
+      ],
+      "answer": "W",
+      "feedback": "This is the letter W."
+    },
+    {
+      "id": "AH-054",
+      "category": "Letter recognition",
+      "skill": "Identify first letter",
+      "age_band": "3–4",
+      "prompt": "Which letter does the word whale begin with?",
+      "visual": "🐳",
+      "options": [
+        "G",
+        "U",
+        "W",
+        "K"
+      ],
+      "answer": "W",
+      "feedback": "Whale begins with W."
+    },
+    {
+      "id": "AH-055",
+      "category": "Letter recognition",
+      "skill": "Identify uppercase letter",
+      "age_band": "3–4",
+      "prompt": "Which letter is this: X?",
+      "visual": "X",
+      "options": [
+        "E",
+        "P",
+        "X",
+        "M"
+      ],
+      "answer": "X",
+      "feedback": "This is the letter X."
+    },
+    {
+      "id": "AH-056",
+      "category": "Letter recognition",
+      "skill": "Identify first letter",
+      "age_band": "3–4",
+      "prompt": "Which letter does the word xylophone begin with?",
+      "visual": "🎼",
+      "options": [
+        "U",
+        "X",
+        "V",
+        "Y"
+      ],
+      "answer": "X",
+      "feedback": "Xylophone begins with X."
+    },
+    {
+      "id": "AH-057",
+      "category": "Letter recognition",
+      "skill": "Identify uppercase letter",
+      "age_band": "3–4",
+      "prompt": "Which letter is this: Y?",
+      "visual": "Y",
+      "options": [
+        "Y",
+        "N",
+        "V",
+        "B"
+      ],
+      "answer": "Y",
+      "feedback": "This is the letter Y."
+    },
+    {
+      "id": "AH-058",
+      "category": "Letter recognition",
+      "skill": "Identify first letter",
+      "age_band": "3–4",
+      "prompt": "Which letter does the word yo-yo begin with?",
+      "visual": "🪀",
+      "options": [
+        "I",
+        "Z",
+        "Y",
+        "B"
+      ],
+      "answer": "Y",
+      "feedback": "Yo-yo begins with Y."
+    },
+    {
+      "id": "AH-059",
+      "category": "Letter recognition",
+      "skill": "Identify uppercase letter",
+      "age_band": "3–4",
+      "prompt": "Which letter is this: Z?",
+      "visual": "Z",
+      "options": [
+        "Z",
+        "U",
+        "H",
+        "F"
+      ],
+      "answer": "Z",
+      "feedback": "This is the letter Z."
+    },
+    {
+      "id": "AH-060",
+      "category": "Letter recognition",
+      "skill": "Identify first letter",
+      "age_band": "3–4",
+      "prompt": "Which letter does the word zebra begin with?",
+      "visual": "🦓",
+      "options": [
+        "Z",
+        "J",
+        "N",
+        "H"
+      ],
+      "answer": "Z",
+      "feedback": "Zebra begins with Z."
+    },
+    {
+      "id": "AH-061",
+      "category": "Uppercase and lowercase matching",
+      "skill": "Uppercase to lowercase",
+      "age_band": "3–5",
+      "prompt": "Which lowercase letter matches A?",
+      "visual": "",
+      "options": [
+        "j",
+        "e",
+        "a",
+        "b"
+      ],
+      "answer": "a",
+      "feedback": "A and a are the same letter."
+    },
+    {
+      "id": "AH-062",
+      "category": "Uppercase and lowercase matching",
+      "skill": "Lowercase to uppercase",
+      "age_band": "3–5",
+      "prompt": "Which uppercase letter matches a?",
+      "visual": "",
+      "options": [
+        "A",
+        "V",
+        "S",
+        "K"
+      ],
+      "answer": "A",
+      "feedback": "a and A are the same letter."
+    },
+    {
+      "id": "AH-063",
+      "category": "Uppercase and lowercase matching",
+      "skill": "Uppercase to lowercase",
+      "age_band": "3–5",
+      "prompt": "Which lowercase letter matches B?",
+      "visual": "",
+      "options": [
+        "b",
+        "a",
+        "z",
+        "m"
+      ],
+      "answer": "b",
+      "feedback": "B and b are the same letter."
+    },
+    {
+      "id": "AH-064",
+      "category": "Uppercase and lowercase matching",
+      "skill": "Lowercase to uppercase",
+      "age_band": "3–5",
+      "prompt": "Which uppercase letter matches b?",
+      "visual": "",
+      "options": [
+        "G",
+        "W",
+        "B",
+        "V"
+      ],
+      "answer": "B",
+      "feedback": "b and B are the same letter."
+    },
+    {
+      "id": "AH-065",
+      "category": "Uppercase and lowercase matching",
+      "skill": "Uppercase to lowercase",
+      "age_band": "3–5",
+      "prompt": "Which lowercase letter matches C?",
+      "visual": "",
+      "options": [
+        "a",
+        "c",
+        "y",
+        "w"
+      ],
+      "answer": "c",
+      "feedback": "C and c are the same letter."
+    },
+    {
+      "id": "AH-066",
+      "category": "Uppercase and lowercase matching",
+      "skill": "Lowercase to uppercase",
+      "age_band": "3–5",
+      "prompt": "Which uppercase letter matches c?",
+      "visual": "",
+      "options": [
+        "L",
+        "X",
+        "C",
+        "M"
+      ],
+      "answer": "C",
+      "feedback": "c and C are the same letter."
+    },
+    {
+      "id": "AH-067",
+      "category": "Uppercase and lowercase matching",
+      "skill": "Uppercase to lowercase",
+      "age_band": "3–5",
+      "prompt": "Which lowercase letter matches D?",
+      "visual": "",
+      "options": [
+        "d",
+        "o",
+        "y",
+        "w"
+      ],
+      "answer": "d",
+      "feedback": "D and d are the same letter."
+    },
+    {
+      "id": "AH-068",
+      "category": "Uppercase and lowercase matching",
+      "skill": "Lowercase to uppercase",
+      "age_band": "3–5",
+      "prompt": "Which uppercase letter matches d?",
+      "visual": "",
+      "options": [
+        "M",
+        "D",
+        "P",
+        "U"
+      ],
+      "answer": "D",
+      "feedback": "d and D are the same letter."
+    },
+    {
+      "id": "AH-069",
+      "category": "Uppercase and lowercase matching",
+      "skill": "Uppercase to lowercase",
+      "age_band": "3–5",
+      "prompt": "Which lowercase letter matches E?",
+      "visual": "",
+      "options": [
+        "r",
+        "o",
+        "k",
+        "e"
+      ],
+      "answer": "e",
+      "feedback": "E and e are the same letter."
+    },
+    {
+      "id": "AH-070",
+      "category": "Uppercase and lowercase matching",
+      "skill": "Lowercase to uppercase",
+      "age_band": "3–5",
+      "prompt": "Which uppercase letter matches e?",
+      "visual": "",
+      "options": [
+        "V",
+        "E",
+        "B",
+        "J"
+      ],
+      "answer": "E",
+      "feedback": "e and E are the same letter."
+    },
+    {
+      "id": "AH-071",
+      "category": "Uppercase and lowercase matching",
+      "skill": "Uppercase to lowercase",
+      "age_band": "3–5",
+      "prompt": "Which lowercase letter matches F?",
+      "visual": "",
+      "options": [
+        "k",
+        "p",
+        "h",
+        "f"
+      ],
+      "answer": "f",
+      "feedback": "F and f are the same letter."
+    },
+    {
+      "id": "AH-072",
+      "category": "Uppercase and lowercase matching",
+      "skill": "Lowercase to uppercase",
+      "age_band": "3–5",
+      "prompt": "Which uppercase letter matches f?",
+      "visual": "",
+      "options": [
+        "D",
+        "S",
+        "F",
+        "W"
+      ],
+      "answer": "F",
+      "feedback": "f and F are the same letter."
+    },
+    {
+      "id": "AH-073",
+      "category": "Uppercase and lowercase matching",
+      "skill": "Uppercase to lowercase",
+      "age_band": "3–5",
+      "prompt": "Which lowercase letter matches G?",
+      "visual": "",
+      "options": [
+        "u",
+        "g",
+        "y",
+        "o"
+      ],
+      "answer": "g",
+      "feedback": "G and g are the same letter."
+    },
+    {
+      "id": "AH-074",
+      "category": "Uppercase and lowercase matching",
+      "skill": "Lowercase to uppercase",
+      "age_band": "3–5",
+      "prompt": "Which uppercase letter matches g?",
+      "visual": "",
+      "options": [
+        "W",
+        "Y",
+        "B",
+        "G"
+      ],
+      "answer": "G",
+      "feedback": "g and G are the same letter."
+    },
+    {
+      "id": "AH-075",
+      "category": "Uppercase and lowercase matching",
+      "skill": "Uppercase to lowercase",
+      "age_band": "3–5",
+      "prompt": "Which lowercase letter matches H?",
+      "visual": "",
+      "options": [
+        "s",
+        "h",
+        "n",
+        "e"
+      ],
+      "answer": "h",
+      "feedback": "H and h are the same letter."
+    },
+    {
+      "id": "AH-076",
+      "category": "Uppercase and lowercase matching",
+      "skill": "Lowercase to uppercase",
+      "age_band": "3–5",
+      "prompt": "Which uppercase letter matches h?",
+      "visual": "",
+      "options": [
+        "H",
+        "S",
+        "G",
+        "K"
+      ],
+      "answer": "H",
+      "feedback": "h and H are the same letter."
+    },
+    {
+      "id": "AH-077",
+      "category": "Uppercase and lowercase matching",
+      "skill": "Uppercase to lowercase",
+      "age_band": "3–5",
+      "prompt": "Which lowercase letter matches I?",
+      "visual": "",
+      "options": [
+        "i",
+        "r",
+        "z",
+        "m"
+      ],
+      "answer": "i",
+      "feedback": "I and i are the same letter."
+    },
+    {
+      "id": "AH-078",
+      "category": "Uppercase and lowercase matching",
+      "skill": "Lowercase to uppercase",
+      "age_band": "3–5",
+      "prompt": "Which uppercase letter matches i?",
+      "visual": "",
+      "options": [
+        "Z",
+        "N",
+        "T",
+        "I"
+      ],
+      "answer": "I",
+      "feedback": "i and I are the same letter."
+    },
+    {
+      "id": "AH-079",
+      "category": "Uppercase and lowercase matching",
+      "skill": "Uppercase to lowercase",
+      "age_band": "3–5",
+      "prompt": "Which lowercase letter matches J?",
+      "visual": "",
+      "options": [
+        "x",
+        "w",
+        "l",
+        "j"
+      ],
+      "answer": "j",
+      "feedback": "J and j are the same letter."
+    },
+    {
+      "id": "AH-080",
+      "category": "Uppercase and lowercase matching",
+      "skill": "Lowercase to uppercase",
+      "age_band": "3–5",
+      "prompt": "Which uppercase letter matches j?",
+      "visual": "",
+      "options": [
+        "E",
+        "A",
+        "J",
+        "N"
+      ],
+      "answer": "J",
+      "feedback": "j and J are the same letter."
+    },
+    {
+      "id": "AH-081",
+      "category": "Uppercase and lowercase matching",
+      "skill": "Uppercase to lowercase",
+      "age_band": "3–5",
+      "prompt": "Which lowercase letter matches K?",
+      "visual": "",
+      "options": [
+        "k",
+        "a",
+        "g",
+        "b"
+      ],
+      "answer": "k",
+      "feedback": "K and k are the same letter."
+    },
+    {
+      "id": "AH-082",
+      "category": "Uppercase and lowercase matching",
+      "skill": "Lowercase to uppercase",
+      "age_band": "3–5",
+      "prompt": "Which uppercase letter matches k?",
+      "visual": "",
+      "options": [
+        "J",
+        "K",
+        "Q",
+        "P"
+      ],
+      "answer": "K",
+      "feedback": "k and K are the same letter."
+    },
+    {
+      "id": "AH-083",
+      "category": "Uppercase and lowercase matching",
+      "skill": "Uppercase to lowercase",
+      "age_band": "3–5",
+      "prompt": "Which lowercase letter matches L?",
+      "visual": "",
+      "options": [
+        "l",
+        "d",
+        "x",
+        "f"
+      ],
+      "answer": "l",
+      "feedback": "L and l are the same letter."
+    },
+    {
+      "id": "AH-084",
+      "category": "Uppercase and lowercase matching",
+      "skill": "Lowercase to uppercase",
+      "age_band": "3–5",
+      "prompt": "Which uppercase letter matches l?",
+      "visual": "",
+      "options": [
+        "F",
+        "Y",
+        "L",
+        "A"
+      ],
+      "answer": "L",
+      "feedback": "l and L are the same letter."
+    },
+    {
+      "id": "AH-085",
+      "category": "Uppercase and lowercase matching",
+      "skill": "Uppercase to lowercase",
+      "age_band": "3–5",
+      "prompt": "Which lowercase letter matches M?",
+      "visual": "",
+      "options": [
+        "y",
+        "o",
+        "a",
+        "m"
+      ],
+      "answer": "m",
+      "feedback": "M and m are the same letter."
+    },
+    {
+      "id": "AH-086",
+      "category": "Uppercase and lowercase matching",
+      "skill": "Lowercase to uppercase",
+      "age_band": "3–5",
+      "prompt": "Which uppercase letter matches m?",
+      "visual": "",
+      "options": [
+        "M",
+        "O",
+        "B",
+        "I"
+      ],
+      "answer": "M",
+      "feedback": "m and M are the same letter."
+    },
+    {
+      "id": "AH-087",
+      "category": "Uppercase and lowercase matching",
+      "skill": "Uppercase to lowercase",
+      "age_band": "3–5",
+      "prompt": "Which lowercase letter matches N?",
+      "visual": "",
+      "options": [
+        "l",
+        "g",
+        "n",
+        "i"
+      ],
+      "answer": "n",
+      "feedback": "N and n are the same letter."
+    },
+    {
+      "id": "AH-088",
+      "category": "Uppercase and lowercase matching",
+      "skill": "Lowercase to uppercase",
+      "age_band": "3–5",
+      "prompt": "Which uppercase letter matches n?",
+      "visual": "",
+      "options": [
+        "E",
+        "N",
+        "A",
+        "Y"
+      ],
+      "answer": "N",
+      "feedback": "n and N are the same letter."
+    },
+    {
+      "id": "AH-089",
+      "category": "Uppercase and lowercase matching",
+      "skill": "Uppercase to lowercase",
+      "age_band": "3–5",
+      "prompt": "Which lowercase letter matches O?",
+      "visual": "",
+      "options": [
+        "o",
+        "b",
+        "m",
+        "v"
+      ],
+      "answer": "o",
+      "feedback": "O and o are the same letter."
+    },
+    {
+      "id": "AH-090",
+      "category": "Uppercase and lowercase matching",
+      "skill": "Lowercase to uppercase",
+      "age_band": "3–5",
+      "prompt": "Which uppercase letter matches o?",
+      "visual": "",
+      "options": [
+        "T",
+        "K",
+        "O",
+        "J"
+      ],
+      "answer": "O",
+      "feedback": "o and O are the same letter."
+    },
+    {
+      "id": "AH-091",
+      "category": "Uppercase and lowercase matching",
+      "skill": "Uppercase to lowercase",
+      "age_band": "3–5",
+      "prompt": "Which lowercase letter matches P?",
+      "visual": "",
+      "options": [
+        "l",
+        "w",
+        "q",
+        "p"
+      ],
+      "answer": "p",
+      "feedback": "P and p are the same letter."
+    },
+    {
+      "id": "AH-092",
+      "category": "Uppercase and lowercase matching",
+      "skill": "Lowercase to uppercase",
+      "age_band": "3–5",
+      "prompt": "Which uppercase letter matches p?",
+      "visual": "",
+      "options": [
+        "I",
+        "P",
+        "Z",
+        "X"
+      ],
+      "answer": "P",
+      "feedback": "p and P are the same letter."
+    },
+    {
+      "id": "AH-093",
+      "category": "Uppercase and lowercase matching",
+      "skill": "Uppercase to lowercase",
+      "age_band": "3–5",
+      "prompt": "Which lowercase letter matches Q?",
+      "visual": "",
+      "options": [
+        "w",
+        "y",
+        "q",
+        "c"
+      ],
+      "answer": "q",
+      "feedback": "Q and q are the same letter."
+    },
+    {
+      "id": "AH-094",
+      "category": "Uppercase and lowercase matching",
+      "skill": "Lowercase to uppercase",
+      "age_band": "3–5",
+      "prompt": "Which uppercase letter matches q?",
+      "visual": "",
+      "options": [
+        "Y",
+        "R",
+        "I",
+        "Q"
+      ],
+      "answer": "Q",
+      "feedback": "q and Q are the same letter."
+    },
+    {
+      "id": "AH-095",
+      "category": "Uppercase and lowercase matching",
+      "skill": "Uppercase to lowercase",
+      "age_band": "3–5",
+      "prompt": "Which lowercase letter matches R?",
+      "visual": "",
+      "options": [
+        "h",
+        "b",
+        "r",
+        "i"
+      ],
+      "answer": "r",
+      "feedback": "R and r are the same letter."
+    },
+    {
+      "id": "AH-096",
+      "category": "Uppercase and lowercase matching",
+      "skill": "Lowercase to uppercase",
+      "age_band": "3–5",
+      "prompt": "Which uppercase letter matches r?",
+      "visual": "",
+      "options": [
+        "B",
+        "N",
+        "R",
+        "O"
+      ],
+      "answer": "R",
+      "feedback": "r and R are the same letter."
+    },
+    {
+      "id": "AH-097",
+      "category": "Uppercase and lowercase matching",
+      "skill": "Uppercase to lowercase",
+      "age_band": "3–5",
+      "prompt": "Which lowercase letter matches S?",
+      "visual": "",
+      "options": [
+        "z",
+        "p",
+        "v",
+        "s"
+      ],
+      "answer": "s",
+      "feedback": "S and s are the same letter."
+    },
+    {
+      "id": "AH-098",
+      "category": "Uppercase and lowercase matching",
+      "skill": "Lowercase to uppercase",
+      "age_band": "3–5",
+      "prompt": "Which uppercase letter matches s?",
+      "visual": "",
+      "options": [
+        "T",
+        "S",
+        "P",
+        "K"
+      ],
+      "answer": "S",
+      "feedback": "s and S are the same letter."
+    },
+    {
+      "id": "AH-099",
+      "category": "Uppercase and lowercase matching",
+      "skill": "Uppercase to lowercase",
+      "age_band": "3–5",
+      "prompt": "Which lowercase letter matches T?",
+      "visual": "",
+      "options": [
+        "b",
+        "t",
+        "m",
+        "c"
+      ],
+      "answer": "t",
+      "feedback": "T and t are the same letter."
+    },
+    {
+      "id": "AH-100",
+      "category": "Uppercase and lowercase matching",
+      "skill": "Lowercase to uppercase",
+      "age_band": "3–5",
+      "prompt": "Which uppercase letter matches t?",
+      "visual": "",
+      "options": [
+        "U",
+        "V",
+        "Y",
+        "T"
+      ],
+      "answer": "T",
+      "feedback": "t and T are the same letter."
+    },
+    {
+      "id": "AH-101",
+      "category": "Uppercase and lowercase matching",
+      "skill": "Uppercase to lowercase",
+      "age_band": "3–5",
+      "prompt": "Which lowercase letter matches U?",
+      "visual": "",
+      "options": [
+        "x",
+        "u",
+        "i",
+        "o"
+      ],
+      "answer": "u",
+      "feedback": "U and u are the same letter."
+    },
+    {
+      "id": "AH-102",
+      "category": "Uppercase and lowercase matching",
+      "skill": "Lowercase to uppercase",
+      "age_band": "3–5",
+      "prompt": "Which uppercase letter matches u?",
+      "visual": "",
+      "options": [
+        "L",
+        "U",
+        "W",
+        "Z"
+      ],
+      "answer": "U",
+      "feedback": "u and U are the same letter."
+    },
+    {
+      "id": "AH-103",
+      "category": "Uppercase and lowercase matching",
+      "skill": "Uppercase to lowercase",
+      "age_band": "3–5",
+      "prompt": "Which lowercase letter matches V?",
+      "visual": "",
+      "options": [
+        "n",
+        "a",
+        "r",
+        "v"
+      ],
+      "answer": "v",
+      "feedback": "V and v are the same letter."
+    },
+    {
+      "id": "AH-104",
+      "category": "Uppercase and lowercase matching",
+      "skill": "Lowercase to uppercase",
+      "age_band": "3–5",
+      "prompt": "Which uppercase letter matches v?",
+      "visual": "",
+      "options": [
+        "V",
+        "O",
+        "D",
+        "G"
+      ],
+      "answer": "V",
+      "feedback": "v and V are the same letter."
+    },
+    {
+      "id": "AH-105",
+      "category": "Uppercase and lowercase matching",
+      "skill": "Uppercase to lowercase",
+      "age_band": "3–5",
+      "prompt": "Which lowercase letter matches W?",
+      "visual": "",
+      "options": [
+        "q",
+        "i",
+        "w",
+        "y"
+      ],
+      "answer": "w",
+      "feedback": "W and w are the same letter."
+    },
+    {
+      "id": "AH-106",
+      "category": "Uppercase and lowercase matching",
+      "skill": "Lowercase to uppercase",
+      "age_band": "3–5",
+      "prompt": "Which uppercase letter matches w?",
+      "visual": "",
+      "options": [
+        "Y",
+        "W",
+        "S",
+        "F"
+      ],
+      "answer": "W",
+      "feedback": "w and W are the same letter."
+    },
+    {
+      "id": "AH-107",
+      "category": "Uppercase and lowercase matching",
+      "skill": "Uppercase to lowercase",
+      "age_band": "3–5",
+      "prompt": "Which lowercase letter matches X?",
+      "visual": "",
+      "options": [
+        "z",
+        "x",
+        "e",
+        "w"
+      ],
+      "answer": "x",
+      "feedback": "X and x are the same letter."
+    },
+    {
+      "id": "AH-108",
+      "category": "Uppercase and lowercase matching",
+      "skill": "Lowercase to uppercase",
+      "age_band": "3–5",
+      "prompt": "Which uppercase letter matches x?",
+      "visual": "",
+      "options": [
+        "L",
+        "Z",
+        "X",
+        "J"
+      ],
+      "answer": "X",
+      "feedback": "x and X are the same letter."
+    },
+    {
+      "id": "AH-109",
+      "category": "Uppercase and lowercase matching",
+      "skill": "Uppercase to lowercase",
+      "age_band": "3–5",
+      "prompt": "Which lowercase letter matches Y?",
+      "visual": "",
+      "options": [
+        "v",
+        "n",
+        "y",
+        "m"
+      ],
+      "answer": "y",
+      "feedback": "Y and y are the same letter."
+    },
+    {
+      "id": "AH-110",
+      "category": "Uppercase and lowercase matching",
+      "skill": "Uppercase to lowercase",
+      "age_band": "3–5",
+      "prompt": "Which lowercase letter matches Z?",
+      "visual": "",
+      "options": [
+        "n",
+        "i",
+        "z",
+        "g"
+      ],
+      "answer": "z",
+      "feedback": "Z and z are the same letter."
+    },
+    {
+      "id": "AH-111",
+      "category": "Beginning letter sounds",
+      "skill": "Initial sound",
+      "age_band": "4–6",
+      "prompt": "What is the first letter sound you hear in apple?",
+      "visual": "🍎",
+      "options": [
+        "A",
+        "W",
+        "H",
+        "J"
+      ],
+      "answer": "A",
+      "feedback": "Apple begins with the /a/ sound."
+    },
+    {
+      "id": "AH-112",
+      "category": "Beginning letter sounds",
+      "skill": "Choose starting sound",
+      "age_band": "4–6",
+      "prompt": "You hear the word fish. Which letter makes its beginning sound?",
+      "visual": "🐟",
+      "options": [
+        "D",
+        "W",
+        "F",
+        "Q"
+      ],
+      "answer": "F",
+      "feedback": "Fish starts with the letter F."
+    },
+    {
+      "id": "AH-113",
+      "category": "Beginning letter sounds",
+      "skill": "Sound and picture",
+      "age_band": "4–6",
+      "prompt": "Which letter matches the beginning sound in jam?",
+      "visual": "🍓",
+      "options": [
+        "J",
+        "D",
+        "Z",
+        "P"
+      ],
+      "answer": "J",
+      "feedback": "The picture is jam; it begins with J."
+    },
+    {
+      "id": "AH-114",
+      "category": "Beginning letter sounds",
+      "skill": "Initial sound",
+      "age_band": "4–6",
+      "prompt": "What is the first letter sound you hear in ball?",
+      "visual": "⚽",
+      "options": [
+        "C",
+        "X",
+        "B",
+        "F"
+      ],
+      "answer": "B",
+      "feedback": "Ball begins with the /b/ sound."
+    },
+    {
+      "id": "AH-115",
+      "category": "Beginning letter sounds",
+      "skill": "Choose starting sound",
+      "age_band": "4–6",
+      "prompt": "You hear the word goat. Which letter makes its beginning sound?",
+      "visual": "🐐",
+      "options": [
+        "Z",
+        "Y",
+        "G",
+        "B"
+      ],
+      "answer": "G",
+      "feedback": "Goat starts with the letter G."
+    },
+    {
+      "id": "AH-116",
+      "category": "Beginning letter sounds",
+      "skill": "Sound and picture",
+      "age_band": "4–6",
+      "prompt": "Which letter matches the beginning sound in kite?",
+      "visual": "🪁",
+      "options": [
+        "K",
+        "C",
+        "F",
+        "P"
+      ],
+      "answer": "K",
+      "feedback": "The picture is kite; it begins with K."
+    },
+    {
+      "id": "AH-117",
+      "category": "Beginning letter sounds",
+      "skill": "Initial sound",
+      "age_band": "4–6",
+      "prompt": "What is the first letter sound you hear in cat?",
+      "visual": "🐱",
+      "options": [
+        "C",
+        "F",
+        "I",
+        "T"
+      ],
+      "answer": "C",
+      "feedback": "Cat begins with the /c/ sound."
+    },
+    {
+      "id": "AH-118",
+      "category": "Beginning letter sounds",
+      "skill": "Choose starting sound",
+      "age_band": "4–6",
+      "prompt": "You hear the word hat. Which letter makes its beginning sound?",
+      "visual": "🎩",
+      "options": [
+        "V",
+        "H",
+        "A",
+        "U"
+      ],
+      "answer": "H",
+      "feedback": "Hat starts with the letter H."
+    },
+    {
+      "id": "AH-119",
+      "category": "Beginning letter sounds",
+      "skill": "Sound and picture",
+      "age_band": "4–6",
+      "prompt": "Which letter matches the beginning sound in lion?",
+      "visual": "🦁",
+      "options": [
+        "L",
+        "X",
+        "H",
+        "U"
+      ],
+      "answer": "L",
+      "feedback": "The picture is lion; it begins with L."
+    },
+    {
+      "id": "AH-120",
+      "category": "Beginning letter sounds",
+      "skill": "Initial sound",
+      "age_band": "4–6",
+      "prompt": "What is the first letter sound you hear in dog?",
+      "visual": "🐶",
+      "options": [
+        "L",
+        "M",
+        "I",
+        "D"
+      ],
+      "answer": "D",
+      "feedback": "Dog begins with the /d/ sound."
+    },
+    {
+      "id": "AH-121",
+      "category": "Beginning letter sounds",
+      "skill": "Choose starting sound",
+      "age_band": "4–6",
+      "prompt": "You hear the word igloo. Which letter makes its beginning sound?",
+      "visual": "🧊",
+      "options": [
+        "L",
+        "I",
+        "C",
+        "F"
+      ],
+      "answer": "I",
+      "feedback": "Igloo starts with the letter I."
+    },
+    {
+      "id": "AH-122",
+      "category": "Beginning letter sounds",
+      "skill": "Sound and picture",
+      "age_band": "4–6",
+      "prompt": "Which letter matches the beginning sound in moon?",
+      "visual": "🌙",
+      "options": [
+        "P",
+        "V",
+        "M",
+        "J"
+      ],
+      "answer": "M",
+      "feedback": "The picture is moon; it begins with M."
+    },
+    {
+      "id": "AH-123",
+      "category": "Beginning letter sounds",
+      "skill": "Initial sound",
+      "age_band": "4–6",
+      "prompt": "What is the first letter sound you hear in elephant?",
+      "visual": "🐘",
+      "options": [
+        "C",
+        "J",
+        "R",
+        "E"
+      ],
+      "answer": "E",
+      "feedback": "Elephant begins with the /e/ sound."
+    },
+    {
+      "id": "AH-124",
+      "category": "Beginning letter sounds",
+      "skill": "Choose starting sound",
+      "age_band": "4–6",
+      "prompt": "You hear the word jam. Which letter makes its beginning sound?",
+      "visual": "🍓",
+      "options": [
+        "E",
+        "G",
+        "J",
+        "C"
+      ],
+      "answer": "J",
+      "feedback": "Jam starts with the letter J."
+    },
+    {
+      "id": "AH-125",
+      "category": "Beginning letter sounds",
+      "skill": "Sound and picture",
+      "age_band": "4–6",
+      "prompt": "Which letter matches the beginning sound in nest?",
+      "visual": "🪺",
+      "options": [
+        "N",
+        "L",
+        "M",
+        "B"
+      ],
+      "answer": "N",
+      "feedback": "The picture is nest; it begins with N."
+    },
+    {
+      "id": "AH-126",
+      "category": "Beginning letter sounds",
+      "skill": "Initial sound",
+      "age_band": "4–6",
+      "prompt": "What is the first letter sound you hear in fish?",
+      "visual": "🐟",
+      "options": [
+        "Q",
+        "P",
+        "V",
+        "F"
+      ],
+      "answer": "F",
+      "feedback": "Fish begins with the /f/ sound."
+    },
+    {
+      "id": "AH-127",
+      "category": "Beginning letter sounds",
+      "skill": "Choose starting sound",
+      "age_band": "4–6",
+      "prompt": "You hear the word kite. Which letter makes its beginning sound?",
+      "visual": "🪁",
+      "options": [
+        "K",
+        "F",
+        "U",
+        "O"
+      ],
+      "answer": "K",
+      "feedback": "Kite starts with the letter K."
+    },
+    {
+      "id": "AH-128",
+      "category": "Beginning letter sounds",
+      "skill": "Sound and picture",
+      "age_band": "4–6",
+      "prompt": "Which letter matches the beginning sound in octopus?",
+      "visual": "🐙",
+      "options": [
+        "Z",
+        "O",
+        "G",
+        "W"
+      ],
+      "answer": "O",
+      "feedback": "The picture is octopus; it begins with O."
+    },
+    {
+      "id": "AH-129",
+      "category": "Beginning letter sounds",
+      "skill": "Initial sound",
+      "age_band": "4–6",
+      "prompt": "What is the first letter sound you hear in goat?",
+      "visual": "🐐",
+      "options": [
+        "R",
+        "G",
+        "W",
+        "U"
+      ],
+      "answer": "G",
+      "feedback": "Goat begins with the /g/ sound."
+    },
+    {
+      "id": "AH-130",
+      "category": "Beginning letter sounds",
+      "skill": "Choose starting sound",
+      "age_band": "4–6",
+      "prompt": "You hear the word lion. Which letter makes its beginning sound?",
+      "visual": "🦁",
+      "options": [
+        "L",
+        "J",
+        "S",
+        "K"
+      ],
+      "answer": "L",
+      "feedback": "Lion starts with the letter L."
+    },
+    {
+      "id": "AH-131",
+      "category": "Beginning letter sounds",
+      "skill": "Sound and picture",
+      "age_band": "4–6",
+      "prompt": "Which letter matches the beginning sound in penguin?",
+      "visual": "🐧",
+      "options": [
+        "A",
+        "P",
+        "W",
+        "X"
+      ],
+      "answer": "P",
+      "feedback": "The picture is penguin; it begins with P."
+    },
+    {
+      "id": "AH-132",
+      "category": "Beginning letter sounds",
+      "skill": "Initial sound",
+      "age_band": "4–6",
+      "prompt": "What is the first letter sound you hear in hat?",
+      "visual": "🎩",
+      "options": [
+        "Y",
+        "F",
+        "H",
+        "U"
+      ],
+      "answer": "H",
+      "feedback": "Hat begins with the /h/ sound."
+    },
+    {
+      "id": "AH-133",
+      "category": "Beginning letter sounds",
+      "skill": "Choose starting sound",
+      "age_band": "4–6",
+      "prompt": "You hear the word moon. Which letter makes its beginning sound?",
+      "visual": "🌙",
+      "options": [
+        "R",
+        "M",
+        "Y",
+        "G"
+      ],
+      "answer": "M",
+      "feedback": "Moon starts with the letter M."
+    },
+    {
+      "id": "AH-134",
+      "category": "Beginning letter sounds",
+      "skill": "Sound and picture",
+      "age_band": "4–6",
+      "prompt": "Which letter matches the beginning sound in queen?",
+      "visual": "👑",
+      "options": [
+        "M",
+        "R",
+        "K",
+        "Q"
+      ],
+      "answer": "Q",
+      "feedback": "The picture is queen; it begins with Q."
+    },
+    {
+      "id": "AH-135",
+      "category": "Beginning letter sounds",
+      "skill": "Initial sound",
+      "age_band": "4–6",
+      "prompt": "What is the first letter sound you hear in igloo?",
+      "visual": "🧊",
+      "options": [
+        "I",
+        "Y",
+        "P",
+        "J"
+      ],
+      "answer": "I",
+      "feedback": "Igloo begins with the /i/ sound."
+    },
+    {
+      "id": "AH-136",
+      "category": "Beginning letter sounds",
+      "skill": "Choose starting sound",
+      "age_band": "4–6",
+      "prompt": "You hear the word nest. Which letter makes its beginning sound?",
+      "visual": "🪺",
+      "options": [
+        "N",
+        "R",
+        "H",
+        "G"
+      ],
+      "answer": "N",
+      "feedback": "Nest starts with the letter N."
+    },
+    {
+      "id": "AH-137",
+      "category": "Beginning letter sounds",
+      "skill": "Sound and picture",
+      "age_band": "4–6",
+      "prompt": "Which letter matches the beginning sound in rabbit?",
+      "visual": "🐰",
+      "options": [
+        "R",
+        "A",
+        "Z",
+        "E"
+      ],
+      "answer": "R",
+      "feedback": "The picture is rabbit; it begins with R."
+    },
+    {
+      "id": "AH-138",
+      "category": "Beginning letter sounds",
+      "skill": "Initial sound",
+      "age_band": "4–6",
+      "prompt": "What is the first letter sound you hear in jam?",
+      "visual": "🍓",
+      "options": [
+        "W",
+        "Y",
+        "J",
+        "A"
+      ],
+      "answer": "J",
+      "feedback": "Jam begins with the /j/ sound."
+    },
+    {
+      "id": "AH-139",
+      "category": "Beginning letter sounds",
+      "skill": "Choose starting sound",
+      "age_band": "4–6",
+      "prompt": "You hear the word octopus. Which letter makes its beginning sound?",
+      "visual": "🐙",
+      "options": [
+        "M",
+        "J",
+        "K",
+        "O"
+      ],
+      "answer": "O",
+      "feedback": "Octopus starts with the letter O."
+    },
+    {
+      "id": "AH-140",
+      "category": "Beginning letter sounds",
+      "skill": "Sound and picture",
+      "age_band": "4–6",
+      "prompt": "Which letter matches the beginning sound in sun?",
+      "visual": "☀️",
+      "options": [
+        "Q",
+        "E",
+        "S",
+        "O"
+      ],
+      "answer": "S",
+      "feedback": "The picture is sun; it begins with S."
+    },
+    {
+      "id": "AH-141",
+      "category": "Beginning letter sounds",
+      "skill": "Initial sound",
+      "age_band": "4–6",
+      "prompt": "What is the first letter sound you hear in kite?",
+      "visual": "🪁",
+      "options": [
+        "Q",
+        "E",
+        "F",
+        "K"
+      ],
+      "answer": "K",
+      "feedback": "Kite begins with the /k/ sound."
+    },
+    {
+      "id": "AH-142",
+      "category": "Beginning letter sounds",
+      "skill": "Choose starting sound",
+      "age_band": "4–6",
+      "prompt": "You hear the word penguin. Which letter makes its beginning sound?",
+      "visual": "🐧",
+      "options": [
+        "W",
+        "P",
+        "I",
+        "T"
+      ],
+      "answer": "P",
+      "feedback": "Penguin starts with the letter P."
+    },
+    {
+      "id": "AH-143",
+      "category": "Beginning letter sounds",
+      "skill": "Sound and picture",
+      "age_band": "4–6",
+      "prompt": "Which letter matches the beginning sound in tiger?",
+      "visual": "🐯",
+      "options": [
+        "R",
+        "T",
+        "V",
+        "U"
+      ],
+      "answer": "T",
+      "feedback": "The picture is tiger; it begins with T."
+    },
+    {
+      "id": "AH-144",
+      "category": "Beginning letter sounds",
+      "skill": "Initial sound",
+      "age_band": "4–6",
+      "prompt": "What is the first letter sound you hear in lion?",
+      "visual": "🦁",
+      "options": [
+        "R",
+        "E",
+        "B",
+        "L"
+      ],
+      "answer": "L",
+      "feedback": "Lion begins with the /l/ sound."
+    },
+    {
+      "id": "AH-145",
+      "category": "Beginning letter sounds",
+      "skill": "Choose starting sound",
+      "age_band": "4–6",
+      "prompt": "You hear the word queen. Which letter makes its beginning sound?",
+      "visual": "👑",
+      "options": [
+        "Q",
+        "G",
+        "R",
+        "K"
+      ],
+      "answer": "Q",
+      "feedback": "Queen starts with the letter Q."
+    },
+    {
+      "id": "AH-146",
+      "category": "Beginning letter sounds",
+      "skill": "Sound and picture",
+      "age_band": "4–6",
+      "prompt": "Which letter matches the beginning sound in umbrella?",
+      "visual": "☂️",
+      "options": [
+        "U",
+        "M",
+        "F",
+        "H"
+      ],
+      "answer": "U",
+      "feedback": "The picture is umbrella; it begins with U."
+    },
+    {
+      "id": "AH-147",
+      "category": "Beginning letter sounds",
+      "skill": "Initial sound",
+      "age_band": "4–6",
+      "prompt": "What is the first letter sound you hear in moon?",
+      "visual": "🌙",
+      "options": [
+        "M",
+        "Q",
+        "V",
+        "N"
+      ],
+      "answer": "M",
+      "feedback": "Moon begins with the /m/ sound."
+    },
+    {
+      "id": "AH-148",
+      "category": "Beginning letter sounds",
+      "skill": "Choose starting sound",
+      "age_band": "4–6",
+      "prompt": "You hear the word rabbit. Which letter makes its beginning sound?",
+      "visual": "🐰",
+      "options": [
+        "G",
+        "R",
+        "X",
+        "U"
+      ],
+      "answer": "R",
+      "feedback": "Rabbit starts with the letter R."
+    },
+    {
+      "id": "AH-149",
+      "category": "Beginning letter sounds",
+      "skill": "Sound and picture",
+      "age_band": "4–6",
+      "prompt": "Which letter matches the beginning sound in van?",
+      "visual": "🚐",
+      "options": [
+        "G",
+        "V",
+        "W",
+        "H"
+      ],
+      "answer": "V",
+      "feedback": "The picture is van; it begins with V."
+    },
+    {
+      "id": "AH-150",
+      "category": "Beginning letter sounds",
+      "skill": "Initial sound",
+      "age_band": "4–6",
+      "prompt": "What is the first letter sound you hear in nest?",
+      "visual": "🪺",
+      "options": [
+        "Y",
+        "C",
+        "G",
+        "N"
+      ],
+      "answer": "N",
+      "feedback": "Nest begins with the /n/ sound."
+    },
+    {
+      "id": "AH-151",
+      "category": "Beginning letter sounds",
+      "skill": "Choose starting sound",
+      "age_band": "4–6",
+      "prompt": "You hear the word sun. Which letter makes its beginning sound?",
+      "visual": "☀️",
+      "options": [
+        "Z",
+        "F",
+        "Y",
+        "S"
+      ],
+      "answer": "S",
+      "feedback": "Sun starts with the letter S."
+    },
+    {
+      "id": "AH-152",
+      "category": "Beginning letter sounds",
+      "skill": "Sound and picture",
+      "age_band": "4–6",
+      "prompt": "Which letter matches the beginning sound in whale?",
+      "visual": "🐳",
+      "options": [
+        "A",
+        "W",
+        "R",
+        "O"
+      ],
+      "answer": "W",
+      "feedback": "The picture is whale; it begins with W."
+    },
+    {
+      "id": "AH-153",
+      "category": "Beginning letter sounds",
+      "skill": "Initial sound",
+      "age_band": "4–6",
+      "prompt": "What is the first letter sound you hear in octopus?",
+      "visual": "🐙",
+      "options": [
+        "V",
+        "O",
+        "Z",
+        "T"
+      ],
+      "answer": "O",
+      "feedback": "Octopus begins with the /o/ sound."
+    },
+    {
+      "id": "AH-154",
+      "category": "Beginning letter sounds",
+      "skill": "Choose starting sound",
+      "age_band": "4–6",
+      "prompt": "You hear the word tiger. Which letter makes its beginning sound?",
+      "visual": "🐯",
+      "options": [
+        "N",
+        "C",
+        "B",
+        "T"
+      ],
+      "answer": "T",
+      "feedback": "Tiger starts with the letter T."
+    },
+    {
+      "id": "AH-155",
+      "category": "Beginning letter sounds",
+      "skill": "Sound and picture",
+      "age_band": "4–6",
+      "prompt": "Which letter matches the beginning sound in xylophone?",
+      "visual": "🎼",
+      "options": [
+        "D",
+        "N",
+        "X",
+        "B"
+      ],
+      "answer": "X",
+      "feedback": "The picture is xylophone; it begins with X."
+    },
+    {
+      "id": "AH-156",
+      "category": "Beginning letter sounds",
+      "skill": "Initial sound",
+      "age_band": "4–6",
+      "prompt": "What is the first letter sound you hear in penguin?",
+      "visual": "🐧",
+      "options": [
+        "N",
+        "P",
+        "B",
+        "Y"
+      ],
+      "answer": "P",
+      "feedback": "Penguin begins with the /p/ sound."
+    },
+    {
+      "id": "AH-157",
+      "category": "Beginning letter sounds",
+      "skill": "Choose starting sound",
+      "age_band": "4–6",
+      "prompt": "You hear the word umbrella. Which letter makes its beginning sound?",
+      "visual": "☂️",
+      "options": [
+        "O",
+        "U",
+        "P",
+        "I"
+      ],
+      "answer": "U",
+      "feedback": "Umbrella starts with the letter U."
+    },
+    {
+      "id": "AH-158",
+      "category": "Beginning letter sounds",
+      "skill": "Sound and picture",
+      "age_band": "4–6",
+      "prompt": "Which letter matches the beginning sound in yo-yo?",
+      "visual": "🪀",
+      "options": [
+        "Y",
+        "W",
+        "R",
+        "P"
+      ],
+      "answer": "Y",
+      "feedback": "The picture is yo-yo; it begins with Y."
+    },
+    {
+      "id": "AH-159",
+      "category": "Beginning letter sounds",
+      "skill": "Initial sound",
+      "age_band": "4–6",
+      "prompt": "What is the first letter sound you hear in queen?",
+      "visual": "👑",
+      "options": [
+        "E",
+        "C",
+        "Q",
+        "X"
+      ],
+      "answer": "Q",
+      "feedback": "Queen begins with the /q/ sound."
+    },
+    {
+      "id": "AH-160",
+      "category": "Beginning letter sounds",
+      "skill": "Choose starting sound",
+      "age_band": "4–6",
+      "prompt": "You hear the word van. Which letter makes its beginning sound?",
+      "visual": "🚐",
+      "options": [
+        "P",
+        "V",
+        "D",
+        "Q"
+      ],
+      "answer": "V",
+      "feedback": "Van starts with the letter V."
+    },
+    {
+      "id": "AH-161",
+      "category": "Beginning letter sounds",
+      "skill": "Sound and picture",
+      "age_band": "4–6",
+      "prompt": "Which letter matches the beginning sound in zebra?",
+      "visual": "🦓",
+      "options": [
+        "R",
+        "C",
+        "Z",
+        "D"
+      ],
+      "answer": "Z",
+      "feedback": "The picture is zebra; it begins with Z."
+    },
+    {
+      "id": "AH-162",
+      "category": "Beginning letter sounds",
+      "skill": "Initial sound",
+      "age_band": "4–6",
+      "prompt": "What is the first letter sound you hear in rabbit?",
+      "visual": "🐰",
+      "options": [
+        "I",
+        "L",
+        "T",
+        "R"
+      ],
+      "answer": "R",
+      "feedback": "Rabbit begins with the /r/ sound."
+    },
+    {
+      "id": "AH-163",
+      "category": "Beginning letter sounds",
+      "skill": "Choose starting sound",
+      "age_band": "4–6",
+      "prompt": "You hear the word whale. Which letter makes its beginning sound?",
+      "visual": "🐳",
+      "options": [
+        "K",
+        "W",
+        "U",
+        "D"
+      ],
+      "answer": "W",
+      "feedback": "Whale starts with the letter W."
+    },
+    {
+      "id": "AH-164",
+      "category": "Beginning letter sounds",
+      "skill": "Sound and picture",
+      "age_band": "4–6",
+      "prompt": "Which letter matches the beginning sound in apple?",
+      "visual": "🍎",
+      "options": [
+        "S",
+        "B",
+        "A",
+        "Z"
+      ],
+      "answer": "A",
+      "feedback": "The picture is apple; it begins with A."
+    },
+    {
+      "id": "AH-165",
+      "category": "Beginning letter sounds",
+      "skill": "Initial sound",
+      "age_band": "4–6",
+      "prompt": "What is the first letter sound you hear in sun?",
+      "visual": "☀️",
+      "options": [
+        "K",
+        "U",
+        "S",
+        "Q"
+      ],
+      "answer": "S",
+      "feedback": "Sun begins with the /s/ sound."
+    },
+    {
+      "id": "AH-166",
+      "category": "Beginning letter sounds",
+      "skill": "Choose starting sound",
+      "age_band": "4–6",
+      "prompt": "You hear the word xylophone. Which letter makes its beginning sound?",
+      "visual": "🎼",
+      "options": [
+        "D",
+        "L",
+        "X",
+        "J"
+      ],
+      "answer": "X",
+      "feedback": "Xylophone starts with the letter X."
+    },
+    {
+      "id": "AH-167",
+      "category": "Beginning letter sounds",
+      "skill": "Sound and picture",
+      "age_band": "4–6",
+      "prompt": "Which letter matches the beginning sound in ball?",
+      "visual": "⚽",
+      "options": [
+        "B",
+        "Y",
+        "A",
+        "C"
+      ],
+      "answer": "B",
+      "feedback": "The picture is ball; it begins with B."
+    },
+    {
+      "id": "AH-168",
+      "category": "Beginning letter sounds",
+      "skill": "Initial sound",
+      "age_band": "4–6",
+      "prompt": "What is the first letter sound you hear in tiger?",
+      "visual": "🐯",
+      "options": [
+        "W",
+        "T",
+        "C",
+        "I"
+      ],
+      "answer": "T",
+      "feedback": "Tiger begins with the /t/ sound."
+    },
+    {
+      "id": "AH-169",
+      "category": "Beginning letter sounds",
+      "skill": "Choose starting sound",
+      "age_band": "4–6",
+      "prompt": "You hear the word yo-yo. Which letter makes its beginning sound?",
+      "visual": "🪀",
+      "options": [
+        "H",
+        "Y",
+        "K",
+        "G"
+      ],
+      "answer": "Y",
+      "feedback": "Yo-yo starts with the letter Y."
+    },
+    {
+      "id": "AH-170",
+      "category": "Beginning letter sounds",
+      "skill": "Sound and picture",
+      "age_band": "4–6",
+      "prompt": "Which letter matches the beginning sound in cat?",
+      "visual": "🐱",
+      "options": [
+        "O",
+        "V",
+        "E",
+        "C"
+      ],
+      "answer": "C",
+      "feedback": "The picture is cat; it begins with C."
+    },
+    {
+      "id": "AH-171",
+      "category": "Beginning letter sounds",
+      "skill": "Initial sound",
+      "age_band": "4–6",
+      "prompt": "What is the first letter sound you hear in umbrella?",
+      "visual": "☂️",
+      "options": [
+        "U",
+        "J",
+        "S",
+        "L"
+      ],
+      "answer": "U",
+      "feedback": "Umbrella begins with the /u/ sound."
+    },
+    {
+      "id": "AH-172",
+      "category": "Beginning letter sounds",
+      "skill": "Choose starting sound",
+      "age_band": "4–6",
+      "prompt": "You hear the word zebra. Which letter makes its beginning sound?",
+      "visual": "🦓",
+      "options": [
+        "J",
+        "Z",
+        "I",
+        "W"
+      ],
+      "answer": "Z",
+      "feedback": "Zebra starts with the letter Z."
+    },
+    {
+      "id": "AH-173",
+      "category": "Beginning letter sounds",
+      "skill": "Sound and picture",
+      "age_band": "4–6",
+      "prompt": "Which letter matches the beginning sound in dog?",
+      "visual": "🐶",
+      "options": [
+        "J",
+        "C",
+        "P",
+        "D"
+      ],
+      "answer": "D",
+      "feedback": "The picture is dog; it begins with D."
+    },
+    {
+      "id": "AH-174",
+      "category": "Beginning letter sounds",
+      "skill": "Initial sound",
+      "age_band": "4–6",
+      "prompt": "What is the first letter sound you hear in van?",
+      "visual": "🚐",
+      "options": [
+        "V",
+        "P",
+        "G",
+        "L"
+      ],
+      "answer": "V",
+      "feedback": "Van begins with the /v/ sound."
+    },
+    {
+      "id": "AH-175",
+      "category": "Beginning letter sounds",
+      "skill": "Choose starting sound",
+      "age_band": "4–6",
+      "prompt": "You hear the word apple. Which letter makes its beginning sound?",
+      "visual": "🍎",
+      "options": [
+        "I",
+        "A",
+        "J",
+        "T"
+      ],
+      "answer": "A",
+      "feedback": "Apple starts with the letter A."
+    },
+    {
+      "id": "AH-176",
+      "category": "Beginning letter sounds",
+      "skill": "Sound and picture",
+      "age_band": "4–6",
+      "prompt": "Which letter matches the beginning sound in elephant?",
+      "visual": "🐘",
+      "options": [
+        "W",
+        "E",
+        "X",
+        "L"
+      ],
+      "answer": "E",
+      "feedback": "The picture is elephant; it begins with E."
+    },
+    {
+      "id": "AH-177",
+      "category": "Beginning letter sounds",
+      "skill": "Initial sound",
+      "age_band": "4–6",
+      "prompt": "What is the first letter sound you hear in whale?",
+      "visual": "🐳",
+      "options": [
+        "F",
+        "O",
+        "M",
+        "W"
+      ],
+      "answer": "W",
+      "feedback": "Whale begins with the /w/ sound."
+    },
+    {
+      "id": "AH-178",
+      "category": "Beginning letter sounds",
+      "skill": "Initial sound",
+      "age_band": "4–6",
+      "prompt": "What is the first letter sound you hear in xylophone?",
+      "visual": "🎼",
+      "options": [
+        "X",
+        "K",
+        "C",
+        "N"
+      ],
+      "answer": "X",
+      "feedback": "Xylophone begins with the /x/ sound."
+    },
+    {
+      "id": "AH-179",
+      "category": "Beginning letter sounds",
+      "skill": "Initial sound",
+      "age_band": "4–6",
+      "prompt": "What is the first letter sound you hear in yo-yo?",
+      "visual": "🪀",
+      "options": [
+        "U",
+        "N",
+        "O",
+        "Y"
+      ],
+      "answer": "Y",
+      "feedback": "Yo-yo begins with the /y/ sound."
+    },
+    {
+      "id": "AH-180",
+      "category": "Beginning letter sounds",
+      "skill": "Initial sound",
+      "age_band": "4–6",
+      "prompt": "What is the first letter sound you hear in zebra?",
+      "visual": "🦓",
+      "options": [
+        "Z",
+        "M",
+        "O",
+        "C"
+      ],
+      "answer": "Z",
+      "feedback": "Zebra begins with the /z/ sound."
+    },
+    {
+      "id": "AH-181",
+      "category": "Missing letters",
+      "skill": "Fill the alphabet gap",
+      "age_band": "4–6",
+      "prompt": "Complete the alphabet: __, B, C. Which letter is missing?",
+      "visual": "",
+      "options": [
+        "B",
+        "A",
+        "W",
+        "Z"
+      ],
+      "answer": "A",
+      "feedback": "The missing letter is A."
+    },
+    {
+      "id": "AH-182",
+      "category": "Missing letters",
+      "skill": "Fill the alphabet gap",
+      "age_band": "4–6",
+      "prompt": "Complete the alphabet: A, __, C. Which letter is missing?",
+      "visual": "",
+      "options": [
+        "M",
+        "R",
+        "B",
+        "I"
+      ],
+      "answer": "B",
+      "feedback": "The missing letter is B."
+    },
+    {
+      "id": "AH-183",
+      "category": "Missing letters",
+      "skill": "Fill the alphabet gap",
+      "age_band": "4–6",
+      "prompt": "Complete the alphabet: B, __, D. Which letter is missing?",
+      "visual": "",
+      "options": [
+        "B",
+        "C",
+        "J",
+        "O"
+      ],
+      "answer": "C",
+      "feedback": "The missing letter is C."
+    },
+    {
+      "id": "AH-184",
+      "category": "Missing letters",
+      "skill": "Fill the alphabet gap",
+      "age_band": "4–6",
+      "prompt": "Complete the alphabet: C, __, E. Which letter is missing?",
+      "visual": "",
+      "options": [
+        "H",
+        "W",
+        "B",
+        "D"
+      ],
+      "answer": "D",
+      "feedback": "The missing letter is D."
+    },
+    {
+      "id": "AH-185",
+      "category": "Missing letters",
+      "skill": "Fill the alphabet gap",
+      "age_band": "4–6",
+      "prompt": "Complete the alphabet: D, __, F. Which letter is missing?",
+      "visual": "",
+      "options": [
+        "W",
+        "E",
+        "K",
+        "F"
+      ],
+      "answer": "E",
+      "feedback": "The missing letter is E."
+    },
+    {
+      "id": "AH-186",
+      "category": "Missing letters",
+      "skill": "Fill the alphabet gap",
+      "age_band": "4–6",
+      "prompt": "Complete the alphabet: E, __, G. Which letter is missing?",
+      "visual": "",
+      "options": [
+        "Z",
+        "D",
+        "F",
+        "E"
+      ],
+      "answer": "F",
+      "feedback": "The missing letter is F."
+    },
+    {
+      "id": "AH-187",
+      "category": "Missing letters",
+      "skill": "Fill the alphabet gap",
+      "age_band": "4–6",
+      "prompt": "Complete the alphabet: F, __, H. Which letter is missing?",
+      "visual": "",
+      "options": [
+        "Y",
+        "G",
+        "F",
+        "D"
+      ],
+      "answer": "G",
+      "feedback": "The missing letter is G."
+    },
+    {
+      "id": "AH-188",
+      "category": "Missing letters",
+      "skill": "Fill the alphabet gap",
+      "age_band": "4–6",
+      "prompt": "Complete the alphabet: G, __, I. Which letter is missing?",
+      "visual": "",
+      "options": [
+        "H",
+        "E",
+        "Y",
+        "W"
+      ],
+      "answer": "H",
+      "feedback": "The missing letter is H."
+    },
+    {
+      "id": "AH-189",
+      "category": "Missing letters",
+      "skill": "Fill the alphabet gap",
+      "age_band": "4–6",
+      "prompt": "Complete the alphabet: H, __, J. Which letter is missing?",
+      "visual": "",
+      "options": [
+        "U",
+        "I",
+        "D",
+        "W"
+      ],
+      "answer": "I",
+      "feedback": "The missing letter is I."
+    },
+    {
+      "id": "AH-190",
+      "category": "Missing letters",
+      "skill": "Fill the alphabet gap",
+      "age_band": "4–6",
+      "prompt": "Complete the alphabet: I, __, K. Which letter is missing?",
+      "visual": "",
+      "options": [
+        "C",
+        "J",
+        "Y",
+        "K"
+      ],
+      "answer": "J",
+      "feedback": "The missing letter is J."
+    },
+    {
+      "id": "AH-191",
+      "category": "Missing letters",
+      "skill": "Fill the alphabet gap",
+      "age_band": "4–6",
+      "prompt": "Complete the alphabet: J, __, L. Which letter is missing?",
+      "visual": "",
+      "options": [
+        "Q",
+        "X",
+        "K",
+        "Y"
+      ],
+      "answer": "K",
+      "feedback": "The missing letter is K."
+    },
+    {
+      "id": "AH-192",
+      "category": "Missing letters",
+      "skill": "Fill the alphabet gap",
+      "age_band": "4–6",
+      "prompt": "Complete the alphabet: K, __, M. Which letter is missing?",
+      "visual": "",
+      "options": [
+        "L",
+        "E",
+        "O",
+        "Q"
+      ],
+      "answer": "L",
+      "feedback": "The missing letter is L."
+    },
+    {
+      "id": "AH-193",
+      "category": "Missing letters",
+      "skill": "Fill the alphabet gap",
+      "age_band": "4–6",
+      "prompt": "Complete the alphabet: L, __, N. Which letter is missing?",
+      "visual": "",
+      "options": [
+        "M",
+        "J",
+        "O",
+        "U"
+      ],
+      "answer": "M",
+      "feedback": "The missing letter is M."
+    },
+    {
+      "id": "AH-194",
+      "category": "Missing letters",
+      "skill": "Fill the alphabet gap",
+      "age_band": "4–6",
+      "prompt": "Complete the alphabet: M, __, O. Which letter is missing?",
+      "visual": "",
+      "options": [
+        "U",
+        "N",
+        "O",
+        "Y"
+      ],
+      "answer": "N",
+      "feedback": "The missing letter is N."
+    },
+    {
+      "id": "AH-195",
+      "category": "Missing letters",
+      "skill": "Fill the alphabet gap",
+      "age_band": "4–6",
+      "prompt": "Complete the alphabet: N, __, P. Which letter is missing?",
+      "visual": "",
+      "options": [
+        "A",
+        "O",
+        "S",
+        "Q"
+      ],
+      "answer": "O",
+      "feedback": "The missing letter is O."
+    },
+    {
+      "id": "AH-196",
+      "category": "Missing letters",
+      "skill": "Fill the alphabet gap",
+      "age_band": "4–6",
+      "prompt": "Complete the alphabet: O, __, Q. Which letter is missing?",
+      "visual": "",
+      "options": [
+        "P",
+        "A",
+        "Q",
+        "V"
+      ],
+      "answer": "P",
+      "feedback": "The missing letter is P."
+    },
+    {
+      "id": "AH-197",
+      "category": "Missing letters",
+      "skill": "Fill the alphabet gap",
+      "age_band": "4–6",
+      "prompt": "Complete the alphabet: P, __, R. Which letter is missing?",
+      "visual": "",
+      "options": [
+        "I",
+        "Q",
+        "G",
+        "F"
+      ],
+      "answer": "Q",
+      "feedback": "The missing letter is Q."
+    },
+    {
+      "id": "AH-198",
+      "category": "Missing letters",
+      "skill": "Fill the alphabet gap",
+      "age_band": "4–6",
+      "prompt": "Complete the alphabet: Q, __, S. Which letter is missing?",
+      "visual": "",
+      "options": [
+        "O",
+        "T",
+        "R",
+        "P"
+      ],
+      "answer": "R",
+      "feedback": "The missing letter is R."
+    },
+    {
+      "id": "AH-199",
+      "category": "Missing letters",
+      "skill": "Fill the alphabet gap",
+      "age_band": "4–6",
+      "prompt": "Complete the alphabet: R, __, T. Which letter is missing?",
+      "visual": "",
+      "options": [
+        "S",
+        "L",
+        "X",
+        "C"
+      ],
+      "answer": "S",
+      "feedback": "The missing letter is S."
+    },
+    {
+      "id": "AH-200",
+      "category": "Missing letters",
+      "skill": "Fill the alphabet gap",
+      "age_band": "4–6",
+      "prompt": "Complete the alphabet: S, __, U. Which letter is missing?",
+      "visual": "",
+      "options": [
+        "F",
+        "B",
+        "V",
+        "T"
+      ],
+      "answer": "T",
+      "feedback": "The missing letter is T."
+    },
+    {
+      "id": "AH-201",
+      "category": "Missing letters",
+      "skill": "Fill the alphabet gap",
+      "age_band": "4–6",
+      "prompt": "Complete the alphabet: T, __, V. Which letter is missing?",
+      "visual": "",
+      "options": [
+        "L",
+        "Z",
+        "M",
+        "U"
+      ],
+      "answer": "U",
+      "feedback": "The missing letter is U."
+    },
+    {
+      "id": "AH-202",
+      "category": "Missing letters",
+      "skill": "Fill the alphabet gap",
+      "age_band": "4–6",
+      "prompt": "Complete the alphabet: U, __, W. Which letter is missing?",
+      "visual": "",
+      "options": [
+        "H",
+        "Y",
+        "Q",
+        "V"
+      ],
+      "answer": "V",
+      "feedback": "The missing letter is V."
+    },
+    {
+      "id": "AH-203",
+      "category": "Missing letters",
+      "skill": "Fill the alphabet gap",
+      "age_band": "4–6",
+      "prompt": "Complete the alphabet: V, __, X. Which letter is missing?",
+      "visual": "",
+      "options": [
+        "W",
+        "H",
+        "I",
+        "S"
+      ],
+      "answer": "W",
+      "feedback": "The missing letter is W."
+    },
+    {
+      "id": "AH-204",
+      "category": "Missing letters",
+      "skill": "Fill the alphabet gap",
+      "age_band": "4–6",
+      "prompt": "Complete the alphabet: W, __, Y. Which letter is missing?",
+      "visual": "",
+      "options": [
+        "E",
+        "D",
+        "I",
+        "X"
+      ],
+      "answer": "X",
+      "feedback": "The missing letter is X."
+    },
+    {
+      "id": "AH-205",
+      "category": "Missing letters",
+      "skill": "Fill the alphabet gap",
+      "age_band": "4–6",
+      "prompt": "Complete the alphabet: X, __, Z. Which letter is missing?",
+      "visual": "",
+      "options": [
+        "Y",
+        "A",
+        "Z",
+        "R"
+      ],
+      "answer": "Y",
+      "feedback": "The missing letter is Y."
+    },
+    {
+      "id": "AH-206",
+      "category": "Missing letters",
+      "skill": "Fill the alphabet gap",
+      "age_band": "4–6",
+      "prompt": "Complete the alphabet: X, Y, __. Which letter is missing?",
+      "visual": "",
+      "options": [
+        "T",
+        "N",
+        "A",
+        "Z"
+      ],
+      "answer": "Z",
+      "feedback": "The missing letter is Z."
+    },
+    {
+      "id": "AH-207",
+      "category": "Missing letters",
+      "skill": "Complete a word",
+      "age_band": "5–6",
+      "prompt": "The word dog is missing its first letter: _og. Which letter belongs in the blank?",
+      "visual": "🐶",
+      "options": [
+        "T",
+        "M",
+        "D",
+        "I"
+      ],
+      "answer": "D",
+      "feedback": "Dog begins with D."
+    },
+    {
+      "id": "AH-208",
+      "category": "Missing letters",
+      "skill": "Complete a word",
+      "age_band": "5–6",
+      "prompt": "The word kite is missing its first letter: _ite. Which letter belongs in the blank?",
+      "visual": "🪁",
+      "options": [
+        "R",
+        "L",
+        "T",
+        "K"
+      ],
+      "answer": "K",
+      "feedback": "Kite begins with K."
+    },
+    {
+      "id": "AH-209",
+      "category": "Missing letters",
+      "skill": "Complete a word",
+      "age_band": "5–6",
+      "prompt": "The word rabbit is missing its first letter: _abbit. Which letter belongs in the blank?",
+      "visual": "🐰",
+      "options": [
+        "R",
+        "Z",
+        "X",
+        "Q"
+      ],
+      "answer": "R",
+      "feedback": "Rabbit begins with R."
+    },
+    {
+      "id": "AH-210",
+      "category": "Missing letters",
+      "skill": "Complete a word",
+      "age_band": "5–6",
+      "prompt": "The word yo-yo is missing its first letter: _o-yo. Which letter belongs in the blank?",
+      "visual": "🪀",
+      "options": [
+        "C",
+        "Y",
+        "M",
+        "E"
+      ],
+      "answer": "Y",
+      "feedback": "Yo-yo begins with Y."
+    },
+    {
+      "id": "AH-211",
+      "category": "Missing letters",
+      "skill": "Complete a word",
+      "age_band": "5–6",
+      "prompt": "The word fish is missing its first letter: _ish. Which letter belongs in the blank?",
+      "visual": "🐟",
+      "options": [
+        "S",
+        "T",
+        "W",
+        "F"
+      ],
+      "answer": "F",
+      "feedback": "Fish begins with F."
+    },
+    {
+      "id": "AH-212",
+      "category": "Missing letters",
+      "skill": "Complete a word",
+      "age_band": "5–6",
+      "prompt": "The word moon is missing its first letter: _oon. Which letter belongs in the blank?",
+      "visual": "🌙",
+      "options": [
+        "S",
+        "E",
+        "U",
+        "M"
+      ],
+      "answer": "M",
+      "feedback": "Moon begins with M."
+    },
+    {
+      "id": "AH-213",
+      "category": "Missing letters",
+      "skill": "Complete a word",
+      "age_band": "5–6",
+      "prompt": "The word tiger is missing its first letter: _iger. Which letter belongs in the blank?",
+      "visual": "🐯",
+      "options": [
+        "R",
+        "T",
+        "S",
+        "B"
+      ],
+      "answer": "T",
+      "feedback": "Tiger begins with T."
+    },
+    {
+      "id": "AH-214",
+      "category": "Missing letters",
+      "skill": "Complete a word",
+      "age_band": "5–6",
+      "prompt": "The word apple is missing its first letter: _pple. Which letter belongs in the blank?",
+      "visual": "🍎",
+      "options": [
+        "N",
+        "I",
+        "A",
+        "H"
+      ],
+      "answer": "A",
+      "feedback": "Apple begins with A."
+    },
+    {
+      "id": "AH-215",
+      "category": "Missing letters",
+      "skill": "Complete a word",
+      "age_band": "5–6",
+      "prompt": "The word hat is missing its first letter: _at. Which letter belongs in the blank?",
+      "visual": "🎩",
+      "options": [
+        "H",
+        "Z",
+        "P",
+        "F"
+      ],
+      "answer": "H",
+      "feedback": "Hat begins with H."
+    },
+    {
+      "id": "AH-216",
+      "category": "Missing letters",
+      "skill": "Complete a word",
+      "age_band": "5–6",
+      "prompt": "The word octopus is missing its first letter: _ctopus. Which letter belongs in the blank?",
+      "visual": "🐙",
+      "options": [
+        "N",
+        "D",
+        "O",
+        "T"
+      ],
+      "answer": "O",
+      "feedback": "Octopus begins with O."
+    },
+    {
+      "id": "AH-217",
+      "category": "Missing letters",
+      "skill": "Complete a word",
+      "age_band": "5–6",
+      "prompt": "The word van is missing its first letter: _an. Which letter belongs in the blank?",
+      "visual": "🚐",
+      "options": [
+        "A",
+        "R",
+        "P",
+        "V"
+      ],
+      "answer": "V",
+      "feedback": "Van begins with V."
+    },
+    {
+      "id": "AH-218",
+      "category": "Missing letters",
+      "skill": "Complete a word",
+      "age_band": "5–6",
+      "prompt": "The word cat is missing its first letter: _at. Which letter belongs in the blank?",
+      "visual": "🐱",
+      "options": [
+        "C",
+        "Y",
+        "R",
+        "U"
+      ],
+      "answer": "C",
+      "feedback": "Cat begins with C."
+    },
+    {
+      "id": "AH-219",
+      "category": "Missing letters",
+      "skill": "Complete a word",
+      "age_band": "5–6",
+      "prompt": "The word jam is missing its first letter: _am. Which letter belongs in the blank?",
+      "visual": "🍓",
+      "options": [
+        "B",
+        "Z",
+        "R",
+        "J"
+      ],
+      "answer": "J",
+      "feedback": "Jam begins with J."
+    },
+    {
+      "id": "AH-220",
+      "category": "Missing letters",
+      "skill": "Complete a word",
+      "age_band": "5–6",
+      "prompt": "The word queen is missing its first letter: _ueen. Which letter belongs in the blank?",
+      "visual": "👑",
+      "options": [
+        "Q",
+        "P",
+        "J",
+        "D"
+      ],
+      "answer": "Q",
+      "feedback": "Queen begins with Q."
+    },
+    {
+      "id": "AH-221",
+      "category": "Missing letters",
+      "skill": "Complete a word",
+      "age_band": "5–6",
+      "prompt": "The word xylophone is missing its first letter: _ylophone. Which letter belongs in the blank?",
+      "visual": "🎼",
+      "options": [
+        "O",
+        "Z",
+        "N",
+        "X"
+      ],
+      "answer": "X",
+      "feedback": "Xylophone begins with X."
+    },
+    {
+      "id": "AH-222",
+      "category": "Missing letters",
+      "skill": "Complete a word",
+      "age_band": "5–6",
+      "prompt": "The word elephant is missing its first letter: _lephant. Which letter belongs in the blank?",
+      "visual": "🐘",
+      "options": [
+        "F",
+        "X",
+        "B",
+        "E"
+      ],
+      "answer": "E",
+      "feedback": "Elephant begins with E."
+    },
+    {
+      "id": "AH-223",
+      "category": "Missing letters",
+      "skill": "Complete a word",
+      "age_band": "5–6",
+      "prompt": "The word lion is missing its first letter: _ion. Which letter belongs in the blank?",
+      "visual": "🦁",
+      "options": [
+        "M",
+        "L",
+        "Y",
+        "N"
+      ],
+      "answer": "L",
+      "feedback": "Lion begins with L."
+    },
+    {
+      "id": "AH-224",
+      "category": "Missing letters",
+      "skill": "Complete a word",
+      "age_band": "5–6",
+      "prompt": "The word sun is missing its first letter: _un. Which letter belongs in the blank?",
+      "visual": "☀️",
+      "options": [
+        "Y",
+        "S",
+        "J",
+        "C"
+      ],
+      "answer": "S",
+      "feedback": "Sun begins with S."
+    },
+    {
+      "id": "AH-225",
+      "category": "Missing letters",
+      "skill": "Complete a word",
+      "age_band": "5–6",
+      "prompt": "The word zebra is missing its first letter: _ebra. Which letter belongs in the blank?",
+      "visual": "🦓",
+      "options": [
+        "K",
+        "Z",
+        "S",
+        "A"
+      ],
+      "answer": "Z",
+      "feedback": "Zebra begins with Z."
+    },
+    {
+      "id": "AH-226",
+      "category": "Missing letters",
+      "skill": "Complete a word",
+      "age_band": "5–6",
+      "prompt": "The word goat is missing its first letter: _oat. Which letter belongs in the blank?",
+      "visual": "🐐",
+      "options": [
+        "A",
+        "M",
+        "G",
+        "W"
+      ],
+      "answer": "G",
+      "feedback": "Goat begins with G."
+    },
+    {
+      "id": "AH-227",
+      "category": "Missing letters",
+      "skill": "Complete a word",
+      "age_band": "5–6",
+      "prompt": "The word nest is missing its first letter: _est. Which letter belongs in the blank?",
+      "visual": "🪺",
+      "options": [
+        "X",
+        "N",
+        "Z",
+        "L"
+      ],
+      "answer": "N",
+      "feedback": "Nest begins with N."
+    },
+    {
+      "id": "AH-228",
+      "category": "Missing letters",
+      "skill": "Complete a word",
+      "age_band": "5–6",
+      "prompt": "The word umbrella is missing its first letter: _mbrella. Which letter belongs in the blank?",
+      "visual": "☂️",
+      "options": [
+        "Y",
+        "O",
+        "S",
+        "U"
+      ],
+      "answer": "U",
+      "feedback": "Umbrella begins with U."
+    },
+    {
+      "id": "AH-229",
+      "category": "Missing letters",
+      "skill": "Complete a word",
+      "age_band": "5–6",
+      "prompt": "The word ball is missing its first letter: _all. Which letter belongs in the blank?",
+      "visual": "⚽",
+      "options": [
+        "B",
+        "G",
+        "K",
+        "F"
+      ],
+      "answer": "B",
+      "feedback": "Ball begins with B."
+    },
+    {
+      "id": "AH-230",
+      "category": "Missing letters",
+      "skill": "Complete a word",
+      "age_band": "5–6",
+      "prompt": "The word igloo is missing its first letter: _gloo. Which letter belongs in the blank?",
+      "visual": "🧊",
+      "options": [
+        "B",
+        "Y",
+        "R",
+        "I"
+      ],
+      "answer": "I",
+      "feedback": "Igloo begins with I."
+    },
+    {
+      "id": "AH-231",
+      "category": "Alphabet sequencing",
+      "skill": "Next letter",
+      "age_band": "4–6",
+      "prompt": "What letter comes after A?",
+      "visual": "",
+      "options": [
+        "I",
+        "B",
+        "Z",
+        "O"
+      ],
+      "answer": "B",
+      "feedback": "B comes after A."
+    },
+    {
+      "id": "AH-232",
+      "category": "Alphabet sequencing",
+      "skill": "Next letter",
+      "age_band": "4–6",
+      "prompt": "What letter comes after B?",
+      "visual": "",
+      "options": [
+        "F",
+        "C",
+        "S",
+        "B"
+      ],
+      "answer": "C",
+      "feedback": "C comes after B."
+    },
+    {
+      "id": "AH-233",
+      "category": "Alphabet sequencing",
+      "skill": "Next letter",
+      "age_band": "4–6",
+      "prompt": "What letter comes after C?",
+      "visual": "",
+      "options": [
+        "J",
+        "D",
+        "V",
+        "B"
+      ],
+      "answer": "D",
+      "feedback": "D comes after C."
+    },
+    {
+      "id": "AH-234",
+      "category": "Alphabet sequencing",
+      "skill": "Next letter",
+      "age_band": "4–6",
+      "prompt": "What letter comes after D?",
+      "visual": "",
+      "options": [
+        "H",
+        "D",
+        "E",
+        "J"
+      ],
+      "answer": "E",
+      "feedback": "E comes after D."
+    },
+    {
+      "id": "AH-235",
+      "category": "Alphabet sequencing",
+      "skill": "Next letter",
+      "age_band": "4–6",
+      "prompt": "What letter comes after E?",
+      "visual": "",
+      "options": [
+        "U",
+        "R",
+        "I",
+        "F"
+      ],
+      "answer": "F",
+      "feedback": "F comes after E."
+    },
+    {
+      "id": "AH-236",
+      "category": "Alphabet sequencing",
+      "skill": "Next letter",
+      "age_band": "4–6",
+      "prompt": "What letter comes after F?",
+      "visual": "",
+      "options": [
+        "F",
+        "G",
+        "A",
+        "P"
+      ],
+      "answer": "G",
+      "feedback": "G comes after F."
+    },
+    {
+      "id": "AH-237",
+      "category": "Alphabet sequencing",
+      "skill": "Next letter",
+      "age_band": "4–6",
+      "prompt": "What letter comes after G?",
+      "visual": "",
+      "options": [
+        "R",
+        "H",
+        "Q",
+        "D"
+      ],
+      "answer": "H",
+      "feedback": "H comes after G."
+    },
+    {
+      "id": "AH-238",
+      "category": "Alphabet sequencing",
+      "skill": "Next letter",
+      "age_band": "4–6",
+      "prompt": "What letter comes after H?",
+      "visual": "",
+      "options": [
+        "S",
+        "P",
+        "I",
+        "X"
+      ],
+      "answer": "I",
+      "feedback": "I comes after H."
+    },
+    {
+      "id": "AH-239",
+      "category": "Alphabet sequencing",
+      "skill": "Next letter",
+      "age_band": "4–6",
+      "prompt": "What letter comes after I?",
+      "visual": "",
+      "options": [
+        "J",
+        "S",
+        "U",
+        "A"
+      ],
+      "answer": "J",
+      "feedback": "J comes after I."
+    },
+    {
+      "id": "AH-240",
+      "category": "Alphabet sequencing",
+      "skill": "Next letter",
+      "age_band": "4–6",
+      "prompt": "What letter comes after J?",
+      "visual": "",
+      "options": [
+        "K",
+        "Z",
+        "S",
+        "J"
+      ],
+      "answer": "K",
+      "feedback": "K comes after J."
+    },
+    {
+      "id": "AH-241",
+      "category": "Alphabet sequencing",
+      "skill": "Next letter",
+      "age_band": "4–6",
+      "prompt": "What letter comes after K?",
+      "visual": "",
+      "options": [
+        "V",
+        "K",
+        "L",
+        "Y"
+      ],
+      "answer": "L",
+      "feedback": "L comes after K."
+    },
+    {
+      "id": "AH-242",
+      "category": "Alphabet sequencing",
+      "skill": "Next letter",
+      "age_band": "4–6",
+      "prompt": "What letter comes after L?",
+      "visual": "",
+      "options": [
+        "P",
+        "M",
+        "N",
+        "W"
+      ],
+      "answer": "M",
+      "feedback": "M comes after L."
+    },
+    {
+      "id": "AH-243",
+      "category": "Alphabet sequencing",
+      "skill": "Next letter",
+      "age_band": "4–6",
+      "prompt": "What letter comes after M?",
+      "visual": "",
+      "options": [
+        "Z",
+        "N",
+        "P",
+        "U"
+      ],
+      "answer": "N",
+      "feedback": "N comes after M."
+    },
+    {
+      "id": "AH-244",
+      "category": "Alphabet sequencing",
+      "skill": "Next letter",
+      "age_band": "4–6",
+      "prompt": "What letter comes after N?",
+      "visual": "",
+      "options": [
+        "O",
+        "S",
+        "M",
+        "X"
+      ],
+      "answer": "O",
+      "feedback": "O comes after N."
+    },
+    {
+      "id": "AH-245",
+      "category": "Alphabet sequencing",
+      "skill": "Next letter",
+      "age_band": "4–6",
+      "prompt": "What letter comes after O?",
+      "visual": "",
+      "options": [
+        "D",
+        "P",
+        "J",
+        "L"
+      ],
+      "answer": "P",
+      "feedback": "P comes after O."
+    },
+    {
+      "id": "AH-246",
+      "category": "Alphabet sequencing",
+      "skill": "Next letter",
+      "age_band": "4–6",
+      "prompt": "What letter comes after P?",
+      "visual": "",
+      "options": [
+        "Q",
+        "G",
+        "A",
+        "Y"
+      ],
+      "answer": "Q",
+      "feedback": "Q comes after P."
+    },
+    {
+      "id": "AH-247",
+      "category": "Alphabet sequencing",
+      "skill": "Next letter",
+      "age_band": "4–6",
+      "prompt": "What letter comes after Q?",
+      "visual": "",
+      "options": [
+        "A",
+        "V",
+        "R",
+        "O"
+      ],
+      "answer": "R",
+      "feedback": "R comes after Q."
+    },
+    {
+      "id": "AH-248",
+      "category": "Alphabet sequencing",
+      "skill": "Next letter",
+      "age_band": "4–6",
+      "prompt": "What letter comes after R?",
+      "visual": "",
+      "options": [
+        "N",
+        "J",
+        "L",
+        "S"
+      ],
+      "answer": "S",
+      "feedback": "S comes after R."
+    },
+    {
+      "id": "AH-249",
+      "category": "Alphabet sequencing",
+      "skill": "Next letter",
+      "age_band": "4–6",
+      "prompt": "What letter comes after S?",
+      "visual": "",
+      "options": [
+        "T",
+        "V",
+        "P",
+        "X"
+      ],
+      "answer": "T",
+      "feedback": "T comes after S."
+    },
+    {
+      "id": "AH-250",
+      "category": "Alphabet sequencing",
+      "skill": "Next letter",
+      "age_band": "4–6",
+      "prompt": "What letter comes after T?",
+      "visual": "",
+      "options": [
+        "A",
+        "R",
+        "W",
+        "U"
+      ],
+      "answer": "U",
+      "feedback": "U comes after T."
+    },
+    {
+      "id": "AH-251",
+      "category": "Alphabet sequencing",
+      "skill": "Next letter",
+      "age_band": "4–6",
+      "prompt": "What letter comes after U?",
+      "visual": "",
+      "options": [
+        "M",
+        "P",
+        "V",
+        "N"
+      ],
+      "answer": "V",
+      "feedback": "V comes after U."
+    },
+    {
+      "id": "AH-252",
+      "category": "Alphabet sequencing",
+      "skill": "Next letter",
+      "age_band": "4–6",
+      "prompt": "What letter comes after V?",
+      "visual": "",
+      "options": [
+        "W",
+        "C",
+        "P",
+        "I"
+      ],
+      "answer": "W",
+      "feedback": "W comes after V."
+    },
+    {
+      "id": "AH-253",
+      "category": "Alphabet sequencing",
+      "skill": "Next letter",
+      "age_band": "4–6",
+      "prompt": "What letter comes after W?",
+      "visual": "",
+      "options": [
+        "S",
+        "T",
+        "R",
+        "X"
+      ],
+      "answer": "X",
+      "feedback": "X comes after W."
+    },
+    {
+      "id": "AH-254",
+      "category": "Alphabet sequencing",
+      "skill": "Next letter",
+      "age_band": "4–6",
+      "prompt": "What letter comes after X?",
+      "visual": "",
+      "options": [
+        "G",
+        "E",
+        "Q",
+        "Y"
+      ],
+      "answer": "Y",
+      "feedback": "Y comes after X."
+    },
+    {
+      "id": "AH-255",
+      "category": "Alphabet sequencing",
+      "skill": "Next letter",
+      "age_band": "4–6",
+      "prompt": "What letter comes after Y?",
+      "visual": "",
+      "options": [
+        "I",
+        "K",
+        "Z",
+        "V"
+      ],
+      "answer": "Z",
+      "feedback": "Z comes after Y."
+    },
+    {
+      "id": "AH-256",
+      "category": "Alphabet sequencing",
+      "skill": "Previous letter",
+      "age_band": "4–6",
+      "prompt": "What letter comes before B?",
+      "visual": "",
+      "options": [
+        "U",
+        "X",
+        "A",
+        "N"
+      ],
+      "answer": "A",
+      "feedback": "A comes before B."
+    },
+    {
+      "id": "AH-257",
+      "category": "Alphabet sequencing",
+      "skill": "Previous letter",
+      "age_band": "4–6",
+      "prompt": "What letter comes before C?",
+      "visual": "",
+      "options": [
+        "H",
+        "B",
+        "W",
+        "O"
+      ],
+      "answer": "B",
+      "feedback": "B comes before C."
+    },
+    {
+      "id": "AH-258",
+      "category": "Alphabet sequencing",
+      "skill": "Previous letter",
+      "age_band": "4–6",
+      "prompt": "What letter comes before D?",
+      "visual": "",
+      "options": [
+        "L",
+        "T",
+        "C",
+        "U"
+      ],
+      "answer": "C",
+      "feedback": "C comes before D."
+    },
+    {
+      "id": "AH-259",
+      "category": "Alphabet sequencing",
+      "skill": "Previous letter",
+      "age_band": "4–6",
+      "prompt": "What letter comes before E?",
+      "visual": "",
+      "options": [
+        "D",
+        "K",
+        "A",
+        "W"
+      ],
+      "answer": "D",
+      "feedback": "D comes before E."
+    },
+    {
+      "id": "AH-260",
+      "category": "Alphabet sequencing",
+      "skill": "Previous letter",
+      "age_band": "4–6",
+      "prompt": "What letter comes before F?",
+      "visual": "",
+      "options": [
+        "C",
+        "E",
+        "G",
+        "X"
+      ],
+      "answer": "E",
+      "feedback": "E comes before F."
+    },
+    {
+      "id": "AH-261",
+      "category": "Alphabet sequencing",
+      "skill": "Previous letter",
+      "age_band": "4–6",
+      "prompt": "What letter comes before G?",
+      "visual": "",
+      "options": [
+        "F",
+        "J",
+        "W",
+        "I"
+      ],
+      "answer": "F",
+      "feedback": "F comes before G."
+    },
+    {
+      "id": "AH-262",
+      "category": "Alphabet sequencing",
+      "skill": "Previous letter",
+      "age_band": "4–6",
+      "prompt": "What letter comes before H?",
+      "visual": "",
+      "options": [
+        "G",
+        "L",
+        "K",
+        "I"
+      ],
+      "answer": "G",
+      "feedback": "G comes before H."
+    },
+    {
+      "id": "AH-263",
+      "category": "Alphabet sequencing",
+      "skill": "Previous letter",
+      "age_band": "4–6",
+      "prompt": "What letter comes before I?",
+      "visual": "",
+      "options": [
+        "Q",
+        "K",
+        "H",
+        "V"
+      ],
+      "answer": "H",
+      "feedback": "H comes before I."
+    },
+    {
+      "id": "AH-264",
+      "category": "Alphabet sequencing",
+      "skill": "Previous letter",
+      "age_band": "4–6",
+      "prompt": "What letter comes before J?",
+      "visual": "",
+      "options": [
+        "H",
+        "I",
+        "R",
+        "Y"
+      ],
+      "answer": "I",
+      "feedback": "I comes before J."
+    },
+    {
+      "id": "AH-265",
+      "category": "Alphabet sequencing",
+      "skill": "Previous letter",
+      "age_band": "4–6",
+      "prompt": "What letter comes before K?",
+      "visual": "",
+      "options": [
+        "Q",
+        "I",
+        "L",
+        "J"
+      ],
+      "answer": "J",
+      "feedback": "J comes before K."
+    },
+    {
+      "id": "AH-266",
+      "category": "Alphabet sequencing",
+      "skill": "Previous letter",
+      "age_band": "4–6",
+      "prompt": "What letter comes before L?",
+      "visual": "",
+      "options": [
+        "K",
+        "V",
+        "F",
+        "P"
+      ],
+      "answer": "K",
+      "feedback": "K comes before L."
+    },
+    {
+      "id": "AH-267",
+      "category": "Alphabet sequencing",
+      "skill": "Previous letter",
+      "age_band": "4–6",
+      "prompt": "What letter comes before M?",
+      "visual": "",
+      "options": [
+        "U",
+        "L",
+        "H",
+        "Z"
+      ],
+      "answer": "L",
+      "feedback": "L comes before M."
+    },
+    {
+      "id": "AH-268",
+      "category": "Alphabet sequencing",
+      "skill": "Previous letter",
+      "age_band": "4–6",
+      "prompt": "What letter comes before N?",
+      "visual": "",
+      "options": [
+        "Y",
+        "M",
+        "F",
+        "O"
+      ],
+      "answer": "M",
+      "feedback": "M comes before N."
+    },
+    {
+      "id": "AH-269",
+      "category": "Alphabet sequencing",
+      "skill": "Previous letter",
+      "age_band": "4–6",
+      "prompt": "What letter comes before O?",
+      "visual": "",
+      "options": [
+        "Q",
+        "N",
+        "O",
+        "I"
+      ],
+      "answer": "N",
+      "feedback": "N comes before O."
+    },
+    {
+      "id": "AH-270",
+      "category": "Alphabet sequencing",
+      "skill": "Previous letter",
+      "age_band": "4–6",
+      "prompt": "What letter comes before P?",
+      "visual": "",
+      "options": [
+        "I",
+        "O",
+        "W",
+        "R"
+      ],
+      "answer": "O",
+      "feedback": "O comes before P."
+    },
+    {
+      "id": "AH-271",
+      "category": "Alphabet sequencing",
+      "skill": "Previous letter",
+      "age_band": "4–6",
+      "prompt": "What letter comes before Q?",
+      "visual": "",
+      "options": [
+        "K",
+        "B",
+        "C",
+        "P"
+      ],
+      "answer": "P",
+      "feedback": "P comes before Q."
+    },
+    {
+      "id": "AH-272",
+      "category": "Alphabet sequencing",
+      "skill": "Previous letter",
+      "age_band": "4–6",
+      "prompt": "What letter comes before R?",
+      "visual": "",
+      "options": [
+        "C",
+        "K",
+        "Z",
+        "Q"
+      ],
+      "answer": "Q",
+      "feedback": "Q comes before R."
+    },
+    {
+      "id": "AH-273",
+      "category": "Alphabet sequencing",
+      "skill": "Previous letter",
+      "age_band": "4–6",
+      "prompt": "What letter comes before S?",
+      "visual": "",
+      "options": [
+        "A",
+        "R",
+        "L",
+        "H"
+      ],
+      "answer": "R",
+      "feedback": "R comes before S."
+    },
+    {
+      "id": "AH-274",
+      "category": "Alphabet sequencing",
+      "skill": "Previous letter",
+      "age_band": "4–6",
+      "prompt": "What letter comes before T?",
+      "visual": "",
+      "options": [
+        "M",
+        "J",
+        "F",
+        "S"
+      ],
+      "answer": "S",
+      "feedback": "S comes before T."
+    },
+    {
+      "id": "AH-275",
+      "category": "Alphabet sequencing",
+      "skill": "Previous letter",
+      "age_band": "4–6",
+      "prompt": "What letter comes before U?",
+      "visual": "",
+      "options": [
+        "O",
+        "A",
+        "C",
+        "T"
+      ],
+      "answer": "T",
+      "feedback": "T comes before U."
+    },
+    {
+      "id": "AH-276",
+      "category": "Alphabet sequencing",
+      "skill": "Previous letter",
+      "age_band": "4–6",
+      "prompt": "What letter comes before V?",
+      "visual": "",
+      "options": [
+        "T",
+        "U",
+        "B",
+        "L"
+      ],
+      "answer": "U",
+      "feedback": "U comes before V."
+    },
+    {
+      "id": "AH-277",
+      "category": "Alphabet sequencing",
+      "skill": "Previous letter",
+      "age_band": "4–6",
+      "prompt": "What letter comes before W?",
+      "visual": "",
+      "options": [
+        "Q",
+        "V",
+        "P",
+        "D"
+      ],
+      "answer": "V",
+      "feedback": "V comes before W."
+    },
+    {
+      "id": "AH-278",
+      "category": "Alphabet sequencing",
+      "skill": "Previous letter",
+      "age_band": "4–6",
+      "prompt": "What letter comes before X?",
+      "visual": "",
+      "options": [
+        "R",
+        "U",
+        "G",
+        "W"
+      ],
+      "answer": "W",
+      "feedback": "W comes before X."
+    },
+    {
+      "id": "AH-279",
+      "category": "Alphabet sequencing",
+      "skill": "Previous letter",
+      "age_band": "4–6",
+      "prompt": "What letter comes before Y?",
+      "visual": "",
+      "options": [
+        "X",
+        "R",
+        "L",
+        "V"
+      ],
+      "answer": "X",
+      "feedback": "X comes before Y."
+    },
+    {
+      "id": "AH-280",
+      "category": "Alphabet sequencing",
+      "skill": "Previous letter",
+      "age_band": "4–6",
+      "prompt": "What letter comes before Z?",
+      "visual": "",
+      "options": [
+        "T",
+        "D",
+        "Y",
+        "F"
+      ],
+      "answer": "Y",
+      "feedback": "Y comes before Z."
+    },
+    {
+      "id": "AH-281",
+      "category": "Picture and word matching",
+      "skill": "Picture to word",
+      "age_band": "3–6",
+      "prompt": "Which word names this picture of a apple?",
+      "visual": "🍎",
+      "options": [
+        "ball",
+        "nest",
+        "apple",
+        "umbrella"
+      ],
+      "answer": "apple",
+      "feedback": "This picture shows a apple."
+    },
+    {
+      "id": "AH-282",
+      "category": "Picture and word matching",
+      "skill": "Word to picture",
+      "age_band": "3–6",
+      "prompt": "Choose the picture for the word apple.",
+      "visual": "Apple",
+      "options": [
+        "🍎",
+        "🐶",
+        "🐟",
+        "🌙"
+      ],
+      "answer": "🍎",
+      "feedback": "The word apple matches this picture."
+    },
+    {
+      "id": "AH-283",
+      "category": "Picture and word matching",
+      "skill": "Word meaning",
+      "age_band": "4–6",
+      "prompt": "Which of these is a apple?",
+      "visual": "",
+      "options": [
+        "nest",
+        "umbrella",
+        "ball",
+        "apple"
+      ],
+      "answer": "apple",
+      "feedback": "The correct word is apple."
+    },
+    {
+      "id": "AH-284",
+      "category": "Picture and word matching",
+      "skill": "Picture to word",
+      "age_band": "3–6",
+      "prompt": "Which word names this picture of a ball?",
+      "visual": "⚽",
+      "options": [
+        "cat",
+        "ball",
+        "dog",
+        "queen"
+      ],
+      "answer": "ball",
+      "feedback": "This picture shows a ball."
+    },
+    {
+      "id": "AH-285",
+      "category": "Picture and word matching",
+      "skill": "Word to picture",
+      "age_band": "3–6",
+      "prompt": "Choose the picture for the word ball.",
+      "visual": "Ball",
+      "options": [
+        "🐐",
+        "🪁",
+        "🐟",
+        "⚽"
+      ],
+      "answer": "⚽",
+      "feedback": "The word ball matches this picture."
+    },
+    {
+      "id": "AH-286",
+      "category": "Picture and word matching",
+      "skill": "Word meaning",
+      "age_band": "4–6",
+      "prompt": "Which of these is a ball?",
+      "visual": "",
+      "options": [
+        "ball",
+        "dog",
+        "cat",
+        "queen"
+      ],
+      "answer": "ball",
+      "feedback": "The correct word is ball."
+    },
+    {
+      "id": "AH-287",
+      "category": "Picture and word matching",
+      "skill": "Picture to word",
+      "age_band": "3–6",
+      "prompt": "Which word names this picture of a cat?",
+      "visual": "🐱",
+      "options": [
+        "xylophone",
+        "cat",
+        "lion",
+        "kite"
+      ],
+      "answer": "cat",
+      "feedback": "This picture shows a cat."
+    },
+    {
+      "id": "AH-288",
+      "category": "Picture and word matching",
+      "skill": "Word to picture",
+      "age_band": "3–6",
+      "prompt": "Choose the picture for the word cat.",
+      "visual": "Cat",
+      "options": [
+        "🐱",
+        "🪀",
+        "🐧",
+        "☀️"
+      ],
+      "answer": "🐱",
+      "feedback": "The word cat matches this picture."
+    },
+    {
+      "id": "AH-289",
+      "category": "Picture and word matching",
+      "skill": "Word meaning",
+      "age_band": "4–6",
+      "prompt": "Which of these is a cat?",
+      "visual": "",
+      "options": [
+        "lion",
+        "cat",
+        "kite",
+        "xylophone"
+      ],
+      "answer": "cat",
+      "feedback": "The correct word is cat."
+    },
+    {
+      "id": "AH-290",
+      "category": "Picture and word matching",
+      "skill": "Picture to word",
+      "age_band": "3–6",
+      "prompt": "Which word names this picture of a dog?",
+      "visual": "🐶",
+      "options": [
+        "dog",
+        "queen",
+        "tiger",
+        "octopus"
+      ],
+      "answer": "dog",
+      "feedback": "This picture shows a dog."
+    },
+    {
+      "id": "AH-291",
+      "category": "Picture and word matching",
+      "skill": "Word to picture",
+      "age_band": "3–6",
+      "prompt": "Choose the picture for the word dog.",
+      "visual": "Dog",
+      "options": [
+        "⚽",
+        "🐱",
+        "🦁",
+        "🐶"
+      ],
+      "answer": "🐶",
+      "feedback": "The word dog matches this picture."
+    },
+    {
+      "id": "AH-292",
+      "category": "Picture and word matching",
+      "skill": "Word meaning",
+      "age_band": "4–6",
+      "prompt": "Which of these is a dog?",
+      "visual": "",
+      "options": [
+        "queen",
+        "tiger",
+        "dog",
+        "octopus"
+      ],
+      "answer": "dog",
+      "feedback": "The correct word is dog."
+    },
+    {
+      "id": "AH-293",
+      "category": "Picture and word matching",
+      "skill": "Picture to word",
+      "age_band": "3–6",
+      "prompt": "Which word names this picture of a elephant?",
+      "visual": "🐘",
+      "options": [
+        "hat",
+        "penguin",
+        "queen",
+        "elephant"
+      ],
+      "answer": "elephant",
+      "feedback": "This picture shows a elephant."
+    },
+    {
+      "id": "AH-294",
+      "category": "Picture and word matching",
+      "skill": "Word to picture",
+      "age_band": "3–6",
+      "prompt": "Choose the picture for the word elephant.",
+      "visual": "Elephant",
+      "options": [
+        "🐘",
+        "🪺",
+        "🐟",
+        "🐱"
+      ],
+      "answer": "🐘",
+      "feedback": "The word elephant matches this picture."
+    },
+    {
+      "id": "AH-295",
+      "category": "Picture and word matching",
+      "skill": "Word meaning",
+      "age_band": "4–6",
+      "prompt": "Which of these is a elephant?",
+      "visual": "",
+      "options": [
+        "elephant",
+        "penguin",
+        "queen",
+        "hat"
+      ],
+      "answer": "elephant",
+      "feedback": "The correct word is elephant."
+    },
+    {
+      "id": "AH-296",
+      "category": "Picture and word matching",
+      "skill": "Picture to word",
+      "age_band": "3–6",
+      "prompt": "Which word names this picture of a fish?",
+      "visual": "🐟",
+      "options": [
+        "penguin",
+        "fish",
+        "jam",
+        "rabbit"
+      ],
+      "answer": "fish",
+      "feedback": "This picture shows a fish."
+    },
+    {
+      "id": "AH-297",
+      "category": "Picture and word matching",
+      "skill": "Word to picture",
+      "age_band": "3–6",
+      "prompt": "Choose the picture for the word fish.",
+      "visual": "Fish",
+      "options": [
+        "☀️",
+        "🐟",
+        "🐳",
+        "🐱"
+      ],
+      "answer": "🐟",
+      "feedback": "The word fish matches this picture."
+    },
+    {
+      "id": "AH-298",
+      "category": "Picture and word matching",
+      "skill": "Word meaning",
+      "age_band": "4–6",
+      "prompt": "Which of these is a fish?",
+      "visual": "",
+      "options": [
+        "rabbit",
+        "jam",
+        "penguin",
+        "fish"
+      ],
+      "answer": "fish",
+      "feedback": "The correct word is fish."
+    },
+    {
+      "id": "AH-299",
+      "category": "Picture and word matching",
+      "skill": "Picture to word",
+      "age_band": "3–6",
+      "prompt": "Which word names this picture of a goat?",
+      "visual": "🐐",
+      "options": [
+        "hat",
+        "goat",
+        "sun",
+        "kite"
+      ],
+      "answer": "goat",
+      "feedback": "This picture shows a goat."
+    },
+    {
+      "id": "AH-300",
+      "category": "Picture and word matching",
+      "skill": "Word to picture",
+      "age_band": "3–6",
+      "prompt": "Choose the picture for the word goat.",
+      "visual": "Goat",
+      "options": [
+        "☀️",
+        "🪀",
+        "🎼",
+        "🐐"
+      ],
+      "answer": "🐐",
+      "feedback": "The word goat matches this picture."
+    },
+    {
+      "id": "AH-301",
+      "category": "Picture and word matching",
+      "skill": "Word meaning",
+      "age_band": "4–6",
+      "prompt": "Which of these is a goat?",
+      "visual": "",
+      "options": [
+        "goat",
+        "kite",
+        "hat",
+        "sun"
+      ],
+      "answer": "goat",
+      "feedback": "The correct word is goat."
+    },
+    {
+      "id": "AH-302",
+      "category": "Picture and word matching",
+      "skill": "Picture to word",
+      "age_band": "3–6",
+      "prompt": "Which word names this picture of a hat?",
+      "visual": "🎩",
+      "options": [
+        "ball",
+        "hat",
+        "yo-yo",
+        "cat"
+      ],
+      "answer": "hat",
+      "feedback": "This picture shows a hat."
+    },
+    {
+      "id": "AH-303",
+      "category": "Picture and word matching",
+      "skill": "Word to picture",
+      "age_band": "3–6",
+      "prompt": "Choose the picture for the word hat.",
+      "visual": "Hat",
+      "options": [
+        "🎩",
+        "🐐",
+        "🌙",
+        "🐳"
+      ],
+      "answer": "🎩",
+      "feedback": "The word hat matches this picture."
+    },
+    {
+      "id": "AH-304",
+      "category": "Picture and word matching",
+      "skill": "Word meaning",
+      "age_band": "4–6",
+      "prompt": "Which of these is a hat?",
+      "visual": "",
+      "options": [
+        "ball",
+        "cat",
+        "yo-yo",
+        "hat"
+      ],
+      "answer": "hat",
+      "feedback": "The correct word is hat."
+    },
+    {
+      "id": "AH-305",
+      "category": "Picture and word matching",
+      "skill": "Picture to word",
+      "age_band": "3–6",
+      "prompt": "Which word names this picture of a igloo?",
+      "visual": "🧊",
+      "options": [
+        "apple",
+        "zebra",
+        "goat",
+        "igloo"
+      ],
+      "answer": "igloo",
+      "feedback": "This picture shows a igloo."
+    },
+    {
+      "id": "AH-306",
+      "category": "Picture and word matching",
+      "skill": "Word to picture",
+      "age_band": "3–6",
+      "prompt": "Choose the picture for the word igloo.",
+      "visual": "Igloo",
+      "options": [
+        "🐶",
+        "🧊",
+        "🐘",
+        "🐟"
+      ],
+      "answer": "🧊",
+      "feedback": "The word igloo matches this picture."
+    },
+    {
+      "id": "AH-307",
+      "category": "Picture and word matching",
+      "skill": "Picture to word",
+      "age_band": "3–6",
+      "prompt": "Which word names this picture of a jam?",
+      "visual": "🍓",
+      "options": [
+        "elephant",
+        "dog",
+        "jam",
+        "sun"
+      ],
+      "answer": "jam",
+      "feedback": "This picture shows a jam."
+    },
+    {
+      "id": "AH-308",
+      "category": "Picture and word matching",
+      "skill": "Word to picture",
+      "age_band": "3–6",
+      "prompt": "Choose the picture for the word jam.",
+      "visual": "Jam",
+      "options": [
+        "🐧",
+        "🐱",
+        "🐰",
+        "🍓"
+      ],
+      "answer": "🍓",
+      "feedback": "The word jam matches this picture."
+    },
+    {
+      "id": "AH-309",
+      "category": "Picture and word matching",
+      "skill": "Picture to word",
+      "age_band": "3–6",
+      "prompt": "Which word names this picture of a kite?",
+      "visual": "🪁",
+      "options": [
+        "jam",
+        "kite",
+        "octopus",
+        "cat"
+      ],
+      "answer": "kite",
+      "feedback": "This picture shows a kite."
+    },
+    {
+      "id": "AH-310",
+      "category": "Picture and word matching",
+      "skill": "Word to picture",
+      "age_band": "3–6",
+      "prompt": "Choose the picture for the word kite.",
+      "visual": "Kite",
+      "options": [
+        "🐯",
+        "🐙",
+        "🧊",
+        "🪁"
+      ],
+      "answer": "🪁",
+      "feedback": "The word kite matches this picture."
+    },
+    {
+      "id": "AH-311",
+      "category": "Picture and word matching",
+      "skill": "Picture to word",
+      "age_band": "3–6",
+      "prompt": "Which word names this picture of a lion?",
+      "visual": "🦁",
+      "options": [
+        "kite",
+        "lion",
+        "queen",
+        "moon"
+      ],
+      "answer": "lion",
+      "feedback": "This picture shows a lion."
+    },
+    {
+      "id": "AH-312",
+      "category": "Picture and word matching",
+      "skill": "Word to picture",
+      "age_band": "3–6",
+      "prompt": "Choose the picture for the word lion.",
+      "visual": "Lion",
+      "options": [
+        "🐟",
+        "🐰",
+        "🐶",
+        "🦁"
+      ],
+      "answer": "🦁",
+      "feedback": "The word lion matches this picture."
+    },
+    {
+      "id": "AH-313",
+      "category": "Picture and word matching",
+      "skill": "Picture to word",
+      "age_band": "3–6",
+      "prompt": "Which word names this picture of a moon?",
+      "visual": "🌙",
+      "options": [
+        "kite",
+        "lion",
+        "moon",
+        "zebra"
+      ],
+      "answer": "moon",
+      "feedback": "This picture shows a moon."
+    },
+    {
+      "id": "AH-314",
+      "category": "Picture and word matching",
+      "skill": "Word to picture",
+      "age_band": "3–6",
+      "prompt": "Choose the picture for the word moon.",
+      "visual": "Moon",
+      "options": [
+        "🐘",
+        "🌙",
+        "🎩",
+        "🐰"
+      ],
+      "answer": "🌙",
+      "feedback": "The word moon matches this picture."
+    },
+    {
+      "id": "AH-315",
+      "category": "Picture and word matching",
+      "skill": "Picture to word",
+      "age_band": "3–6",
+      "prompt": "Which word names this picture of a nest?",
+      "visual": "🪺",
+      "options": [
+        "moon",
+        "apple",
+        "nest",
+        "ball"
+      ],
+      "answer": "nest",
+      "feedback": "This picture shows a nest."
+    },
+    {
+      "id": "AH-316",
+      "category": "Picture and word matching",
+      "skill": "Word to picture",
+      "age_band": "3–6",
+      "prompt": "Choose the picture for the word nest.",
+      "visual": "Nest",
+      "options": [
+        "🪀",
+        "🐱",
+        "🪺",
+        "🐰"
+      ],
+      "answer": "🪺",
+      "feedback": "The word nest matches this picture."
+    },
+    {
+      "id": "AH-317",
+      "category": "Picture and word matching",
+      "skill": "Picture to word",
+      "age_band": "3–6",
+      "prompt": "Which word names this picture of a octopus?",
+      "visual": "🐙",
+      "options": [
+        "lion",
+        "penguin",
+        "octopus",
+        "umbrella"
+      ],
+      "answer": "octopus",
+      "feedback": "This picture shows a octopus."
+    },
+    {
+      "id": "AH-318",
+      "category": "Picture and word matching",
+      "skill": "Word to picture",
+      "age_band": "3–6",
+      "prompt": "Choose the picture for the word octopus.",
+      "visual": "Octopus",
+      "options": [
+        "🍎",
+        "🐙",
+        "🐳",
+        "🍓"
+      ],
+      "answer": "🐙",
+      "feedback": "The word octopus matches this picture."
+    },
+    {
+      "id": "AH-319",
+      "category": "Picture and word matching",
+      "skill": "Picture to word",
+      "age_band": "3–6",
+      "prompt": "Which word names this picture of a penguin?",
+      "visual": "🐧",
+      "options": [
+        "lion",
+        "xylophone",
+        "octopus",
+        "penguin"
+      ],
+      "answer": "penguin",
+      "feedback": "This picture shows a penguin."
+    },
+    {
+      "id": "AH-320",
+      "category": "Picture and word matching",
+      "skill": "Word to picture",
+      "age_band": "3–6",
+      "prompt": "Choose the picture for the word penguin.",
+      "visual": "Penguin",
+      "options": [
+        "🐐",
+        "🐱",
+        "⚽",
+        "🐧"
+      ],
+      "answer": "🐧",
+      "feedback": "The word penguin matches this picture."
+    },
+    {
+      "id": "AH-321",
+      "category": "Picture and word matching",
+      "skill": "Picture to word",
+      "age_band": "3–6",
+      "prompt": "Which word names this picture of a queen?",
+      "visual": "👑",
+      "options": [
+        "sun",
+        "dog",
+        "queen",
+        "igloo"
+      ],
+      "answer": "queen",
+      "feedback": "This picture shows a queen."
+    },
+    {
+      "id": "AH-322",
+      "category": "Picture and word matching",
+      "skill": "Word to picture",
+      "age_band": "3–6",
+      "prompt": "Choose the picture for the word queen.",
+      "visual": "Queen",
+      "options": [
+        "🐟",
+        "🪀",
+        "🎩",
+        "👑"
+      ],
+      "answer": "👑",
+      "feedback": "The word queen matches this picture."
+    },
+    {
+      "id": "AH-323",
+      "category": "Picture and word matching",
+      "skill": "Picture to word",
+      "age_band": "3–6",
+      "prompt": "Which word names this picture of a rabbit?",
+      "visual": "🐰",
+      "options": [
+        "van",
+        "nest",
+        "sun",
+        "rabbit"
+      ],
+      "answer": "rabbit",
+      "feedback": "This picture shows a rabbit."
+    },
+    {
+      "id": "AH-324",
+      "category": "Picture and word matching",
+      "skill": "Word to picture",
+      "age_band": "3–6",
+      "prompt": "Choose the picture for the word rabbit.",
+      "visual": "Rabbit",
+      "options": [
+        "🧊",
+        "🐰",
+        "🦓",
+        "🍎"
+      ],
+      "answer": "🐰",
+      "feedback": "The word rabbit matches this picture."
+    },
+    {
+      "id": "AH-325",
+      "category": "Picture and word matching",
+      "skill": "Picture to word",
+      "age_band": "3–6",
+      "prompt": "Which word names this picture of a sun?",
+      "visual": "☀️",
+      "options": [
+        "sun",
+        "rabbit",
+        "octopus",
+        "apple"
+      ],
+      "answer": "sun",
+      "feedback": "This picture shows a sun."
+    },
+    {
+      "id": "AH-326",
+      "category": "Picture and word matching",
+      "skill": "Word to picture",
+      "age_band": "3–6",
+      "prompt": "Choose the picture for the word sun.",
+      "visual": "Sun",
+      "options": [
+        "🐘",
+        "☀️",
+        "🧊",
+        "👑"
+      ],
+      "answer": "☀️",
+      "feedback": "The word sun matches this picture."
+    },
+    {
+      "id": "AH-327",
+      "category": "Picture and word matching",
+      "skill": "Picture to word",
+      "age_band": "3–6",
+      "prompt": "Which word names this picture of a tiger?",
+      "visual": "🐯",
+      "options": [
+        "tiger",
+        "rabbit",
+        "lion",
+        "jam"
+      ],
+      "answer": "tiger",
+      "feedback": "This picture shows a tiger."
+    },
+    {
+      "id": "AH-328",
+      "category": "Picture and word matching",
+      "skill": "Word to picture",
+      "age_band": "3–6",
+      "prompt": "Choose the picture for the word tiger.",
+      "visual": "Tiger",
+      "options": [
+        "⚽",
+        "🦓",
+        "🐯",
+        "🧊"
+      ],
+      "answer": "🐯",
+      "feedback": "The word tiger matches this picture."
+    },
+    {
+      "id": "AH-329",
+      "category": "Picture and word matching",
+      "skill": "Picture to word",
+      "age_band": "3–6",
+      "prompt": "Which word names this picture of a umbrella?",
+      "visual": "☂️",
+      "options": [
+        "van",
+        "kite",
+        "umbrella",
+        "rabbit"
+      ],
+      "answer": "umbrella",
+      "feedback": "This picture shows a umbrella."
+    },
+    {
+      "id": "AH-330",
+      "category": "Picture and word matching",
+      "skill": "Word to picture",
+      "age_band": "3–6",
+      "prompt": "Choose the picture for the word umbrella.",
+      "visual": "Umbrella",
+      "options": [
+        "🐟",
+        "☀️",
+        "☂️",
+        "🐱"
+      ],
+      "answer": "☂️",
+      "feedback": "The word umbrella matches this picture."
+    },
+    {
+      "id": "AH-331",
+      "category": "Picture and word matching",
+      "skill": "Picture to word",
+      "age_band": "3–6",
+      "prompt": "Which word names this picture of a van?",
+      "visual": "🚐",
+      "options": [
+        "hat",
+        "xylophone",
+        "elephant",
+        "van"
+      ],
+      "answer": "van",
+      "feedback": "This picture shows a van."
+    },
+    {
+      "id": "AH-332",
+      "category": "Picture and word matching",
+      "skill": "Word to picture",
+      "age_band": "3–6",
+      "prompt": "Choose the picture for the word van.",
+      "visual": "Van",
+      "options": [
+        "🐱",
+        "🐯",
+        "⚽",
+        "🚐"
+      ],
+      "answer": "🚐",
+      "feedback": "The word van matches this picture."
+    },
+    {
+      "id": "AH-333",
+      "category": "Picture and word matching",
+      "skill": "Picture to word",
+      "age_band": "3–6",
+      "prompt": "Which word names this picture of a whale?",
+      "visual": "🐳",
+      "options": [
+        "penguin",
+        "rabbit",
+        "whale",
+        "apple"
+      ],
+      "answer": "whale",
+      "feedback": "This picture shows a whale."
+    },
+    {
+      "id": "AH-334",
+      "category": "Picture and word matching",
+      "skill": "Word to picture",
+      "age_band": "3–6",
+      "prompt": "Choose the picture for the word whale.",
+      "visual": "Whale",
+      "options": [
+        "🦓",
+        "🐳",
+        "🐰",
+        "🐟"
+      ],
+      "answer": "🐳",
+      "feedback": "The word whale matches this picture."
+    },
+    {
+      "id": "AH-335",
+      "category": "Picture and word matching",
+      "skill": "Picture to word",
+      "age_band": "3–6",
+      "prompt": "Which word names this picture of a xylophone?",
+      "visual": "🎼",
+      "options": [
+        "xylophone",
+        "rabbit",
+        "apple",
+        "penguin"
+      ],
+      "answer": "xylophone",
+      "feedback": "This picture shows a xylophone."
+    },
+    {
+      "id": "AH-336",
+      "category": "Picture and word matching",
+      "skill": "Word to picture",
+      "age_band": "3–6",
+      "prompt": "Choose the picture for the word xylophone.",
+      "visual": "Xylophone",
+      "options": [
+        "🍎",
+        "🐶",
+        "🦓",
+        "🎼"
+      ],
+      "answer": "🎼",
+      "feedback": "The word xylophone matches this picture."
+    },
+    {
+      "id": "AH-337",
+      "category": "Picture and word matching",
+      "skill": "Picture to word",
+      "age_band": "3–6",
+      "prompt": "Which word names this picture of a yo-yo?",
+      "visual": "🪀",
+      "options": [
+        "yo-yo",
+        "goat",
+        "apple",
+        "penguin"
+      ],
+      "answer": "yo-yo",
+      "feedback": "This picture shows a yo-yo."
+    },
+    {
+      "id": "AH-338",
+      "category": "Picture and word matching",
+      "skill": "Word to picture",
+      "age_band": "3–6",
+      "prompt": "Choose the picture for the word yo-yo.",
+      "visual": "Yo-yo",
+      "options": [
+        "🪁",
+        "🐧",
+        "🐟",
+        "🪀"
+      ],
+      "answer": "🪀",
+      "feedback": "The word yo-yo matches this picture."
+    },
+    {
+      "id": "AH-339",
+      "category": "Picture and word matching",
+      "skill": "Picture to word",
+      "age_band": "3–6",
+      "prompt": "Which word names this picture of a zebra?",
+      "visual": "🦓",
+      "options": [
+        "kite",
+        "lion",
+        "xylophone",
+        "zebra"
+      ],
+      "answer": "zebra",
+      "feedback": "This picture shows a zebra."
+    },
+    {
+      "id": "AH-340",
+      "category": "Picture and word matching",
+      "skill": "Word to picture",
+      "age_band": "3–6",
+      "prompt": "Choose the picture for the word zebra.",
+      "visual": "Zebra",
+      "options": [
+        "🐳",
+        "🦓",
+        "🎩",
+        "🪁"
+      ],
+      "answer": "🦓",
+      "feedback": "The word zebra matches this picture."
+    },
+    {
+      "id": "AH-341",
+      "category": "Early word spelling",
+      "skill": "Missing final letter",
+      "age_band": "5–7",
+      "prompt": "Finish spelling the word: ca_.",
+      "visual": "",
+      "options": [
+        "A",
+        "C",
+        "t",
+        "B"
+      ],
+      "answer": "t",
+      "feedback": "The word is cat."
+    },
+    {
+      "id": "AH-342",
+      "category": "Early word spelling",
+      "skill": "Choose the spelled word",
+      "age_band": "5–7",
+      "prompt": "Which word is spelled C-A-T?",
+      "visual": "🐱",
+      "options": [
+        "cot",
+        "cut",
+        "cat",
+        "can"
+      ],
+      "answer": "cat",
+      "feedback": "C-A-T spells cat."
+    },
+    {
+      "id": "AH-343",
+      "category": "Early word spelling",
+      "skill": "Letter order",
+      "age_band": "5–7",
+      "prompt": "Which letter comes second in the word cat?",
+      "visual": "",
+      "options": [
+        "C",
+        "B",
+        "a",
+        "A"
+      ],
+      "answer": "a",
+      "feedback": "The second letter in cat is A."
+    },
+    {
+      "id": "AH-344",
+      "category": "Early word spelling",
+      "skill": "Missing final letter",
+      "age_band": "5–7",
+      "prompt": "Finish spelling the word: do_.",
+      "visual": "",
+      "options": [
+        "g",
+        "C",
+        "B",
+        "A"
+      ],
+      "answer": "g",
+      "feedback": "The word is dog."
+    },
+    {
+      "id": "AH-345",
+      "category": "Early word spelling",
+      "skill": "Choose the spelled word",
+      "age_band": "5–7",
+      "prompt": "Which word is spelled D-O-G?",
+      "visual": "🐱",
+      "options": [
+        "cut",
+        "cot",
+        "can",
+        "dog"
+      ],
+      "answer": "dog",
+      "feedback": "D-O-G spells dog."
+    },
+    {
+      "id": "AH-346",
+      "category": "Early word spelling",
+      "skill": "Letter order",
+      "age_band": "5–7",
+      "prompt": "Which letter comes second in the word dog?",
+      "visual": "",
+      "options": [
+        "o",
+        "A",
+        "B",
+        "C"
+      ],
+      "answer": "o",
+      "feedback": "The second letter in dog is O."
+    },
+    {
+      "id": "AH-347",
+      "category": "Early word spelling",
+      "skill": "Missing final letter",
+      "age_band": "5–7",
+      "prompt": "Finish spelling the word: su_.",
+      "visual": "",
+      "options": [
+        "n",
+        "C",
+        "A",
+        "B"
+      ],
+      "answer": "n",
+      "feedback": "The word is sun."
+    },
+    {
+      "id": "AH-348",
+      "category": "Early word spelling",
+      "skill": "Choose the spelled word",
+      "age_band": "5–7",
+      "prompt": "Which word is spelled S-U-N?",
+      "visual": "🐱",
+      "options": [
+        "cut",
+        "can",
+        "sun",
+        "cot"
+      ],
+      "answer": "sun",
+      "feedback": "S-U-N spells sun."
+    },
+    {
+      "id": "AH-349",
+      "category": "Early word spelling",
+      "skill": "Letter order",
+      "age_band": "5–7",
+      "prompt": "Which letter comes second in the word sun?",
+      "visual": "",
+      "options": [
+        "A",
+        "C",
+        "u",
+        "B"
+      ],
+      "answer": "u",
+      "feedback": "The second letter in sun is U."
+    },
+    {
+      "id": "AH-350",
+      "category": "Early word spelling",
+      "skill": "Missing final letter",
+      "age_band": "5–7",
+      "prompt": "Finish spelling the word: ha_.",
+      "visual": "",
+      "options": [
+        "t",
+        "C",
+        "B",
+        "A"
+      ],
+      "answer": "t",
+      "feedback": "The word is hat."
+    },
+    {
+      "id": "AH-351",
+      "category": "Early word spelling",
+      "skill": "Choose the spelled word",
+      "age_band": "5–7",
+      "prompt": "Which word is spelled H-A-T?",
+      "visual": "🐱",
+      "options": [
+        "hat",
+        "can",
+        "cut",
+        "cot"
+      ],
+      "answer": "hat",
+      "feedback": "H-A-T spells hat."
+    },
+    {
+      "id": "AH-352",
+      "category": "Early word spelling",
+      "skill": "Letter order",
+      "age_band": "5–7",
+      "prompt": "Which letter comes second in the word hat?",
+      "visual": "",
+      "options": [
+        "C",
+        "B",
+        "a",
+        "A"
+      ],
+      "answer": "a",
+      "feedback": "The second letter in hat is A."
+    },
+    {
+      "id": "AH-353",
+      "category": "Early word spelling",
+      "skill": "Missing final letter",
+      "age_band": "5–7",
+      "prompt": "Finish spelling the word: bu_.",
+      "visual": "",
+      "options": [
+        "C",
+        "A",
+        "s",
+        "B"
+      ],
+      "answer": "s",
+      "feedback": "The word is bus."
+    },
+    {
+      "id": "AH-354",
+      "category": "Early word spelling",
+      "skill": "Choose the spelled word",
+      "age_band": "5–7",
+      "prompt": "Which word is spelled B-U-S?",
+      "visual": "🐱",
+      "options": [
+        "bus",
+        "can",
+        "cut",
+        "cot"
+      ],
+      "answer": "bus",
+      "feedback": "B-U-S spells bus."
+    },
+    {
+      "id": "AH-355",
+      "category": "Early word spelling",
+      "skill": "Letter order",
+      "age_band": "5–7",
+      "prompt": "Which letter comes second in the word bus?",
+      "visual": "",
+      "options": [
+        "A",
+        "u",
+        "C",
+        "B"
+      ],
+      "answer": "u",
+      "feedback": "The second letter in bus is U."
+    },
+    {
+      "id": "AH-356",
+      "category": "Early word spelling",
+      "skill": "Missing final letter",
+      "age_band": "5–7",
+      "prompt": "Finish spelling the word: pe_.",
+      "visual": "",
+      "options": [
+        "B",
+        "n",
+        "C",
+        "A"
+      ],
+      "answer": "n",
+      "feedback": "The word is pen."
+    },
+    {
+      "id": "AH-357",
+      "category": "Early word spelling",
+      "skill": "Choose the spelled word",
+      "age_band": "5–7",
+      "prompt": "Which word is spelled P-E-N?",
+      "visual": "🐱",
+      "options": [
+        "pen",
+        "cut",
+        "cot",
+        "can"
+      ],
+      "answer": "pen",
+      "feedback": "P-E-N spells pen."
+    },
+    {
+      "id": "AH-358",
+      "category": "Early word spelling",
+      "skill": "Letter order",
+      "age_band": "5–7",
+      "prompt": "Which letter comes second in the word pen?",
+      "visual": "",
+      "options": [
+        "C",
+        "A",
+        "e",
+        "B"
+      ],
+      "answer": "e",
+      "feedback": "The second letter in pen is E."
+    },
+    {
+      "id": "AH-359",
+      "category": "Early word spelling",
+      "skill": "Missing final letter",
+      "age_band": "5–7",
+      "prompt": "Finish spelling the word: cu_.",
+      "visual": "",
+      "options": [
+        "B",
+        "p",
+        "A",
+        "C"
+      ],
+      "answer": "p",
+      "feedback": "The word is cup."
+    },
+    {
+      "id": "AH-360",
+      "category": "Early word spelling",
+      "skill": "Choose the spelled word",
+      "age_band": "5–7",
+      "prompt": "Which word is spelled C-U-P?",
+      "visual": "🐱",
+      "options": [
+        "cup",
+        "cot",
+        "can",
+        "cut"
+      ],
+      "answer": "cup",
+      "feedback": "C-U-P spells cup."
+    },
+    {
+      "id": "AH-361",
+      "category": "Early word spelling",
+      "skill": "Letter order",
+      "age_band": "5–7",
+      "prompt": "Which letter comes second in the word cup?",
+      "visual": "",
+      "options": [
+        "C",
+        "B",
+        "u",
+        "A"
+      ],
+      "answer": "u",
+      "feedback": "The second letter in cup is U."
+    },
+    {
+      "id": "AH-362",
+      "category": "Early word spelling",
+      "skill": "Missing final letter",
+      "age_band": "5–7",
+      "prompt": "Finish spelling the word: be_.",
+      "visual": "",
+      "options": [
+        "A",
+        "d",
+        "C",
+        "B"
+      ],
+      "answer": "d",
+      "feedback": "The word is bed."
+    },
+    {
+      "id": "AH-363",
+      "category": "Early word spelling",
+      "skill": "Choose the spelled word",
+      "age_band": "5–7",
+      "prompt": "Which word is spelled B-E-D?",
+      "visual": "🐱",
+      "options": [
+        "cot",
+        "bed",
+        "can",
+        "cut"
+      ],
+      "answer": "bed",
+      "feedback": "B-E-D spells bed."
+    },
+    {
+      "id": "AH-364",
+      "category": "Early word spelling",
+      "skill": "Letter order",
+      "age_band": "5–7",
+      "prompt": "Which letter comes second in the word bed?",
+      "visual": "",
+      "options": [
+        "A",
+        "e",
+        "B",
+        "C"
+      ],
+      "answer": "e",
+      "feedback": "The second letter in bed is E."
+    },
+    {
+      "id": "AH-365",
+      "category": "Early word spelling",
+      "skill": "Missing final letter",
+      "age_band": "5–7",
+      "prompt": "Finish spelling the word: fo_.",
+      "visual": "",
+      "options": [
+        "A",
+        "B",
+        "x",
+        "C"
+      ],
+      "answer": "x",
+      "feedback": "The word is fox."
+    },
+    {
+      "id": "AH-366",
+      "category": "Early word spelling",
+      "skill": "Choose the spelled word",
+      "age_band": "5–7",
+      "prompt": "Which word is spelled F-O-X?",
+      "visual": "🐱",
+      "options": [
+        "fox",
+        "can",
+        "cot",
+        "cut"
+      ],
+      "answer": "fox",
+      "feedback": "F-O-X spells fox."
+    },
+    {
+      "id": "AH-367",
+      "category": "Early word spelling",
+      "skill": "Letter order",
+      "age_band": "5–7",
+      "prompt": "Which letter comes second in the word fox?",
+      "visual": "",
+      "options": [
+        "C",
+        "A",
+        "o",
+        "B"
+      ],
+      "answer": "o",
+      "feedback": "The second letter in fox is O."
+    },
+    {
+      "id": "AH-368",
+      "category": "Early word spelling",
+      "skill": "Missing final letter",
+      "age_band": "5–7",
+      "prompt": "Finish spelling the word: ma_.",
+      "visual": "",
+      "options": [
+        "C",
+        "A",
+        "B",
+        "p"
+      ],
+      "answer": "p",
+      "feedback": "The word is map."
+    },
+    {
+      "id": "AH-369",
+      "category": "Early word spelling",
+      "skill": "Choose the spelled word",
+      "age_band": "5–7",
+      "prompt": "Which word is spelled M-A-P?",
+      "visual": "🐱",
+      "options": [
+        "cot",
+        "map",
+        "can",
+        "cut"
+      ],
+      "answer": "map",
+      "feedback": "M-A-P spells map."
+    },
+    {
+      "id": "AH-370",
+      "category": "Early word spelling",
+      "skill": "Letter order",
+      "age_band": "5–7",
+      "prompt": "Which letter comes second in the word map?",
+      "visual": "",
+      "options": [
+        "B",
+        "A",
+        "C",
+        "a"
+      ],
+      "answer": "a",
+      "feedback": "The second letter in map is A."
+    },
+    {
+      "id": "AH-371",
+      "category": "Early word spelling",
+      "skill": "Missing final letter",
+      "age_band": "5–7",
+      "prompt": "Finish spelling the word: ru_.",
+      "visual": "",
+      "options": [
+        "A",
+        "g",
+        "C",
+        "B"
+      ],
+      "answer": "g",
+      "feedback": "The word is rug."
+    },
+    {
+      "id": "AH-372",
+      "category": "Early word spelling",
+      "skill": "Choose the spelled word",
+      "age_band": "5–7",
+      "prompt": "Which word is spelled R-U-G?",
+      "visual": "🐱",
+      "options": [
+        "can",
+        "cot",
+        "rug",
+        "cut"
+      ],
+      "answer": "rug",
+      "feedback": "R-U-G spells rug."
+    },
+    {
+      "id": "AH-373",
+      "category": "Early word spelling",
+      "skill": "Letter order",
+      "age_band": "5–7",
+      "prompt": "Which letter comes second in the word rug?",
+      "visual": "",
+      "options": [
+        "A",
+        "u",
+        "C",
+        "B"
+      ],
+      "answer": "u",
+      "feedback": "The second letter in rug is U."
+    },
+    {
+      "id": "AH-374",
+      "category": "Early word spelling",
+      "skill": "Missing final letter",
+      "age_band": "5–7",
+      "prompt": "Finish spelling the word: ja_.",
+      "visual": "",
+      "options": [
+        "A",
+        "m",
+        "B",
+        "C"
+      ],
+      "answer": "m",
+      "feedback": "The word is jam."
+    },
+    {
+      "id": "AH-375",
+      "category": "Early word spelling",
+      "skill": "Choose the spelled word",
+      "age_band": "5–7",
+      "prompt": "Which word is spelled J-A-M?",
+      "visual": "🐱",
+      "options": [
+        "jam",
+        "cut",
+        "cot",
+        "can"
+      ],
+      "answer": "jam",
+      "feedback": "J-A-M spells jam."
+    },
+    {
+      "id": "AH-376",
+      "category": "Early word spelling",
+      "skill": "Letter order",
+      "age_band": "5–7",
+      "prompt": "Which letter comes second in the word jam?",
+      "visual": "",
+      "options": [
+        "a",
+        "C",
+        "B",
+        "A"
+      ],
+      "answer": "a",
+      "feedback": "The second letter in jam is A."
+    },
+    {
+      "id": "AH-377",
+      "category": "Early word spelling",
+      "skill": "Missing final letter",
+      "age_band": "5–7",
+      "prompt": "Finish spelling the word: va_.",
+      "visual": "",
+      "options": [
+        "C",
+        "A",
+        "B",
+        "n"
+      ],
+      "answer": "n",
+      "feedback": "The word is van."
+    },
+    {
+      "id": "AH-378",
+      "category": "Early word spelling",
+      "skill": "Choose the spelled word",
+      "age_band": "5–7",
+      "prompt": "Which word is spelled V-A-N?",
+      "visual": "🐱",
+      "options": [
+        "can",
+        "cut",
+        "cot",
+        "van"
+      ],
+      "answer": "van",
+      "feedback": "V-A-N spells van."
+    },
+    {
+      "id": "AH-379",
+      "category": "Early word spelling",
+      "skill": "Letter order",
+      "age_band": "5–7",
+      "prompt": "Which letter comes second in the word van?",
+      "visual": "",
+      "options": [
+        "C",
+        "a",
+        "A",
+        "B"
+      ],
+      "answer": "a",
+      "feedback": "The second letter in van is A."
+    },
+    {
+      "id": "AH-380",
+      "category": "Early word spelling",
+      "skill": "Missing final letter",
+      "age_band": "5–7",
+      "prompt": "Finish spelling the word: we_.",
+      "visual": "",
+      "options": [
+        "B",
+        "C",
+        "A",
+        "b"
+      ],
+      "answer": "b",
+      "feedback": "The word is web."
+    },
+    {
+      "id": "AH-381",
+      "category": "Early word spelling",
+      "skill": "Choose the spelled word",
+      "age_band": "5–7",
+      "prompt": "Which word is spelled W-E-B?",
+      "visual": "🐱",
+      "options": [
+        "can",
+        "cut",
+        "web",
+        "cot"
+      ],
+      "answer": "web",
+      "feedback": "W-E-B spells web."
+    },
+    {
+      "id": "AH-382",
+      "category": "Early word spelling",
+      "skill": "Letter order",
+      "age_band": "5–7",
+      "prompt": "Which letter comes second in the word web?",
+      "visual": "",
+      "options": [
+        "e",
+        "B",
+        "A",
+        "C"
+      ],
+      "answer": "e",
+      "feedback": "The second letter in web is E."
+    },
+    {
+      "id": "AH-383",
+      "category": "Early word spelling",
+      "skill": "Missing final letter",
+      "age_band": "5–7",
+      "prompt": "Finish spelling the word: le_.",
+      "visual": "",
+      "options": [
+        "A",
+        "g",
+        "B",
+        "C"
+      ],
+      "answer": "g",
+      "feedback": "The word is leg."
+    },
+    {
+      "id": "AH-384",
+      "category": "Early word spelling",
+      "skill": "Choose the spelled word",
+      "age_band": "5–7",
+      "prompt": "Which word is spelled L-E-G?",
+      "visual": "🐱",
+      "options": [
+        "cut",
+        "leg",
+        "cot",
+        "can"
+      ],
+      "answer": "leg",
+      "feedback": "L-E-G spells leg."
+    },
+    {
+      "id": "AH-385",
+      "category": "Early word spelling",
+      "skill": "Letter order",
+      "age_band": "5–7",
+      "prompt": "Which letter comes second in the word leg?",
+      "visual": "",
+      "options": [
+        "B",
+        "e",
+        "C",
+        "A"
+      ],
+      "answer": "e",
+      "feedback": "The second letter in leg is E."
+    },
+    {
+      "id": "AH-386",
+      "category": "Early word spelling",
+      "skill": "Missing final letter",
+      "age_band": "5–7",
+      "prompt": "Finish spelling the word: ne_.",
+      "visual": "",
+      "options": [
+        "C",
+        "t",
+        "B",
+        "A"
+      ],
+      "answer": "t",
+      "feedback": "The word is net."
+    },
+    {
+      "id": "AH-387",
+      "category": "Early word spelling",
+      "skill": "Missing final letter",
+      "age_band": "5–7",
+      "prompt": "Finish spelling the word: po_.",
+      "visual": "",
+      "options": [
+        "t",
+        "A",
+        "C",
+        "B"
+      ],
+      "answer": "t",
+      "feedback": "The word is pot."
+    },
+    {
+      "id": "AH-388",
+      "category": "Early word spelling",
+      "skill": "Missing final letter",
+      "age_band": "5–7",
+      "prompt": "Finish spelling the word: si_.",
+      "visual": "",
+      "options": [
+        "B",
+        "C",
+        "t",
+        "A"
+      ],
+      "answer": "t",
+      "feedback": "The word is sit."
+    },
+    {
+      "id": "AH-389",
+      "category": "Early word spelling",
+      "skill": "Missing final letter",
+      "age_band": "5–7",
+      "prompt": "Finish spelling the word: he_.",
+      "visual": "",
+      "options": [
+        "A",
+        "n",
+        "C",
+        "B"
+      ],
+      "answer": "n",
+      "feedback": "The word is hen."
+    },
+    {
+      "id": "AH-390",
+      "category": "Early word spelling",
+      "skill": "Missing final letter",
+      "age_band": "5–7",
+      "prompt": "Finish spelling the word: ba_.",
+      "visual": "",
+      "options": [
+        "A",
+        "C",
+        "g",
+        "B"
+      ],
+      "answer": "g",
+      "feedback": "The word is bag."
+    },
+    {
+      "id": "AH-391",
+      "category": "Vowels and consonants",
+      "skill": "Classify letter",
+      "age_band": "6–8",
+      "prompt": "Is the letter A a vowel or a consonant?",
+      "visual": "",
+      "options": [
+        "Consonant",
+        "Shape",
+        "Number",
+        "Vowel"
+      ],
+      "answer": "Vowel",
+      "feedback": "A is a vowel."
+    },
+    {
+      "id": "AH-392",
+      "category": "Vowels and consonants",
+      "skill": "Classify letter",
+      "age_band": "6–8",
+      "prompt": "Is the letter B a vowel or a consonant?",
+      "visual": "",
+      "options": [
+        "Shape",
+        "Consonant",
+        "Vowel",
+        "Number"
+      ],
+      "answer": "Consonant",
+      "feedback": "B is a consonant."
+    },
+    {
+      "id": "AH-393",
+      "category": "Vowels and consonants",
+      "skill": "Classify letter",
+      "age_band": "6–8",
+      "prompt": "Is the letter C a vowel or a consonant?",
+      "visual": "",
+      "options": [
+        "Shape",
+        "Number",
+        "Consonant",
+        "Vowel"
+      ],
+      "answer": "Consonant",
+      "feedback": "C is a consonant."
+    },
+    {
+      "id": "AH-394",
+      "category": "Vowels and consonants",
+      "skill": "Classify letter",
+      "age_band": "6–8",
+      "prompt": "Is the letter D a vowel or a consonant?",
+      "visual": "",
+      "options": [
+        "Consonant",
+        "Number",
+        "Shape",
+        "Vowel"
+      ],
+      "answer": "Consonant",
+      "feedback": "D is a consonant."
+    },
+    {
+      "id": "AH-395",
+      "category": "Vowels and consonants",
+      "skill": "Classify letter",
+      "age_band": "6–8",
+      "prompt": "Is the letter E a vowel or a consonant?",
+      "visual": "",
+      "options": [
+        "Number",
+        "Consonant",
+        "Shape",
+        "Vowel"
+      ],
+      "answer": "Vowel",
+      "feedback": "E is a vowel."
+    },
+    {
+      "id": "AH-396",
+      "category": "Vowels and consonants",
+      "skill": "Classify letter",
+      "age_band": "6–8",
+      "prompt": "Is the letter F a vowel or a consonant?",
+      "visual": "",
+      "options": [
+        "Vowel",
+        "Number",
+        "Consonant",
+        "Shape"
+      ],
+      "answer": "Consonant",
+      "feedback": "F is a consonant."
+    },
+    {
+      "id": "AH-397",
+      "category": "Vowels and consonants",
+      "skill": "Classify letter",
+      "age_band": "6–8",
+      "prompt": "Is the letter G a vowel or a consonant?",
+      "visual": "",
+      "options": [
+        "Number",
+        "Vowel",
+        "Shape",
+        "Consonant"
+      ],
+      "answer": "Consonant",
+      "feedback": "G is a consonant."
+    },
+    {
+      "id": "AH-398",
+      "category": "Vowels and consonants",
+      "skill": "Classify letter",
+      "age_band": "6–8",
+      "prompt": "Is the letter H a vowel or a consonant?",
+      "visual": "",
+      "options": [
+        "Consonant",
+        "Vowel",
+        "Number",
+        "Shape"
+      ],
+      "answer": "Consonant",
+      "feedback": "H is a consonant."
+    },
+    {
+      "id": "AH-399",
+      "category": "Vowels and consonants",
+      "skill": "Classify letter",
+      "age_band": "6–8",
+      "prompt": "Is the letter I a vowel or a consonant?",
+      "visual": "",
+      "options": [
+        "Vowel",
+        "Shape",
+        "Consonant",
+        "Number"
+      ],
+      "answer": "Vowel",
+      "feedback": "I is a vowel."
+    },
+    {
+      "id": "AH-400",
+      "category": "Vowels and consonants",
+      "skill": "Classify letter",
+      "age_band": "6–8",
+      "prompt": "Is the letter J a vowel or a consonant?",
+      "visual": "",
+      "options": [
+        "Shape",
+        "Consonant",
+        "Vowel",
+        "Number"
+      ],
+      "answer": "Consonant",
+      "feedback": "J is a consonant."
+    },
+    {
+      "id": "AH-401",
+      "category": "Vowels and consonants",
+      "skill": "Classify letter",
+      "age_band": "6–8",
+      "prompt": "Is the letter K a vowel or a consonant?",
+      "visual": "",
+      "options": [
+        "Shape",
+        "Number",
+        "Consonant",
+        "Vowel"
+      ],
+      "answer": "Consonant",
+      "feedback": "K is a consonant."
+    },
+    {
+      "id": "AH-402",
+      "category": "Vowels and consonants",
+      "skill": "Classify letter",
+      "age_band": "6–8",
+      "prompt": "Is the letter L a vowel or a consonant?",
+      "visual": "",
+      "options": [
+        "Consonant",
+        "Vowel",
+        "Shape",
+        "Number"
+      ],
+      "answer": "Consonant",
+      "feedback": "L is a consonant."
+    },
+    {
+      "id": "AH-403",
+      "category": "Vowels and consonants",
+      "skill": "Classify letter",
+      "age_band": "6–8",
+      "prompt": "Is the letter M a vowel or a consonant?",
+      "visual": "",
+      "options": [
+        "Shape",
+        "Consonant",
+        "Vowel",
+        "Number"
+      ],
+      "answer": "Consonant",
+      "feedback": "M is a consonant."
+    },
+    {
+      "id": "AH-404",
+      "category": "Vowels and consonants",
+      "skill": "Classify letter",
+      "age_band": "6–8",
+      "prompt": "Is the letter N a vowel or a consonant?",
+      "visual": "",
+      "options": [
+        "Shape",
+        "Number",
+        "Vowel",
+        "Consonant"
+      ],
+      "answer": "Consonant",
+      "feedback": "N is a consonant."
+    },
+    {
+      "id": "AH-405",
+      "category": "Vowels and consonants",
+      "skill": "Classify letter",
+      "age_band": "6–8",
+      "prompt": "Is the letter O a vowel or a consonant?",
+      "visual": "",
+      "options": [
+        "Consonant",
+        "Shape",
+        "Number",
+        "Vowel"
+      ],
+      "answer": "Vowel",
+      "feedback": "O is a vowel."
+    },
+    {
+      "id": "AH-406",
+      "category": "Vowels and consonants",
+      "skill": "Classify letter",
+      "age_band": "6–8",
+      "prompt": "Is the letter P a vowel or a consonant?",
+      "visual": "",
+      "options": [
+        "Consonant",
+        "Number",
+        "Shape",
+        "Vowel"
+      ],
+      "answer": "Consonant",
+      "feedback": "P is a consonant."
+    },
+    {
+      "id": "AH-407",
+      "category": "Vowels and consonants",
+      "skill": "Classify letter",
+      "age_band": "6–8",
+      "prompt": "Is the letter Q a vowel or a consonant?",
+      "visual": "",
+      "options": [
+        "Shape",
+        "Consonant",
+        "Vowel",
+        "Number"
+      ],
+      "answer": "Consonant",
+      "feedback": "Q is a consonant."
+    },
+    {
+      "id": "AH-408",
+      "category": "Vowels and consonants",
+      "skill": "Classify letter",
+      "age_band": "6–8",
+      "prompt": "Is the letter R a vowel or a consonant?",
+      "visual": "",
+      "options": [
+        "Shape",
+        "Vowel",
+        "Consonant",
+        "Number"
+      ],
+      "answer": "Consonant",
+      "feedback": "R is a consonant."
+    },
+    {
+      "id": "AH-409",
+      "category": "Vowels and consonants",
+      "skill": "Classify letter",
+      "age_band": "6–8",
+      "prompt": "Is the letter S a vowel or a consonant?",
+      "visual": "",
+      "options": [
+        "Vowel",
+        "Number",
+        "Shape",
+        "Consonant"
+      ],
+      "answer": "Consonant",
+      "feedback": "S is a consonant."
+    },
+    {
+      "id": "AH-410",
+      "category": "Vowels and consonants",
+      "skill": "Classify letter",
+      "age_band": "6–8",
+      "prompt": "Is the letter T a vowel or a consonant?",
+      "visual": "",
+      "options": [
+        "Consonant",
+        "Number",
+        "Vowel",
+        "Shape"
+      ],
+      "answer": "Consonant",
+      "feedback": "T is a consonant."
+    },
+    {
+      "id": "AH-411",
+      "category": "Vowels and consonants",
+      "skill": "Classify letter",
+      "age_band": "6–8",
+      "prompt": "Is the letter U a vowel or a consonant?",
+      "visual": "",
+      "options": [
+        "Vowel",
+        "Number",
+        "Shape",
+        "Consonant"
+      ],
+      "answer": "Vowel",
+      "feedback": "U is a vowel."
+    },
+    {
+      "id": "AH-412",
+      "category": "Vowels and consonants",
+      "skill": "Classify letter",
+      "age_band": "6–8",
+      "prompt": "Is the letter V a vowel or a consonant?",
+      "visual": "",
+      "options": [
+        "Number",
+        "Consonant",
+        "Vowel",
+        "Shape"
+      ],
+      "answer": "Consonant",
+      "feedback": "V is a consonant."
+    },
+    {
+      "id": "AH-413",
+      "category": "Vowels and consonants",
+      "skill": "Classify letter",
+      "age_band": "6–8",
+      "prompt": "Is the letter W a vowel or a consonant?",
+      "visual": "",
+      "options": [
+        "Number",
+        "Consonant",
+        "Vowel",
+        "Shape"
+      ],
+      "answer": "Consonant",
+      "feedback": "W is a consonant."
+    },
+    {
+      "id": "AH-414",
+      "category": "Vowels and consonants",
+      "skill": "Classify letter",
+      "age_band": "6–8",
+      "prompt": "Is the letter X a vowel or a consonant?",
+      "visual": "",
+      "options": [
+        "Shape",
+        "Consonant",
+        "Vowel",
+        "Number"
+      ],
+      "answer": "Consonant",
+      "feedback": "X is a consonant."
+    },
+    {
+      "id": "AH-415",
+      "category": "Vowels and consonants",
+      "skill": "Classify letter",
+      "age_band": "6–8",
+      "prompt": "Is the letter Y a vowel or a consonant?",
+      "visual": "",
+      "options": [
+        "Consonant",
+        "Shape",
+        "Vowel",
+        "Number"
+      ],
+      "answer": "Consonant",
+      "feedback": "Y is a consonant."
+    },
+    {
+      "id": "AH-416",
+      "category": "Vowels and consonants",
+      "skill": "Classify letter",
+      "age_band": "6–8",
+      "prompt": "Is the letter Z a vowel or a consonant?",
+      "visual": "",
+      "options": [
+        "Vowel",
+        "Number",
+        "Consonant",
+        "Shape"
+      ],
+      "answer": "Consonant",
+      "feedback": "Z is a consonant."
+    },
+    {
+      "id": "AH-417",
+      "category": "Vowels and consonants",
+      "skill": "Identify vowel",
+      "age_band": "6–8",
+      "prompt": "Which of these letters is a vowel? Choose the letter A if you can spot it.",
+      "visual": "",
+      "options": [
+        "F",
+        "Z",
+        "A",
+        "Y"
+      ],
+      "answer": "A",
+      "feedback": "A is one of the five vowels."
+    },
+    {
+      "id": "AH-418",
+      "category": "Vowels and consonants",
+      "skill": "Identify vowel",
+      "age_band": "6–8",
+      "prompt": "Which of these letters is a vowel? Choose the letter E if you can spot it.",
+      "visual": "",
+      "options": [
+        "E",
+        "Q",
+        "B",
+        "R"
+      ],
+      "answer": "E",
+      "feedback": "E is one of the five vowels."
+    },
+    {
+      "id": "AH-419",
+      "category": "Vowels and consonants",
+      "skill": "Identify vowel",
+      "age_band": "6–8",
+      "prompt": "Which of these letters is a vowel? Choose the letter I if you can spot it.",
+      "visual": "",
+      "options": [
+        "I",
+        "K",
+        "H",
+        "G"
+      ],
+      "answer": "I",
+      "feedback": "I is one of the five vowels."
+    },
+    {
+      "id": "AH-420",
+      "category": "Vowels and consonants",
+      "skill": "Identify vowel",
+      "age_band": "6–8",
+      "prompt": "Which of these letters is a vowel? Choose the letter O if you can spot it.",
+      "visual": "",
+      "options": [
+        "Y",
+        "K",
+        "O",
+        "N"
+      ],
+      "answer": "O",
+      "feedback": "O is one of the five vowels."
+    },
+    {
+      "id": "AH-421",
+      "category": "Vowels and consonants",
+      "skill": "Identify vowel",
+      "age_band": "6–8",
+      "prompt": "Which of these letters is a vowel? Choose the letter U if you can spot it.",
+      "visual": "",
+      "options": [
+        "W",
+        "U",
+        "B",
+        "M"
+      ],
+      "answer": "U",
+      "feedback": "U is one of the five vowels."
+    },
+    {
+      "id": "AH-422",
+      "category": "Vowels and consonants",
+      "skill": "Identify consonant",
+      "age_band": "6–8",
+      "prompt": "Which of these letters is a consonant? Find B.",
+      "visual": "",
+      "options": [
+        "O",
+        "U",
+        "E",
+        "B"
+      ],
+      "answer": "B",
+      "feedback": "B is a consonant."
+    },
+    {
+      "id": "AH-423",
+      "category": "Vowels and consonants",
+      "skill": "Identify consonant",
+      "age_band": "6–8",
+      "prompt": "Which of these letters is a consonant? Find C.",
+      "visual": "",
+      "options": [
+        "O",
+        "C",
+        "A",
+        "E"
+      ],
+      "answer": "C",
+      "feedback": "C is a consonant."
+    },
+    {
+      "id": "AH-424",
+      "category": "Vowels and consonants",
+      "skill": "Identify consonant",
+      "age_band": "6–8",
+      "prompt": "Which of these letters is a consonant? Find D.",
+      "visual": "",
+      "options": [
+        "E",
+        "D",
+        "I",
+        "U"
+      ],
+      "answer": "D",
+      "feedback": "D is a consonant."
+    },
+    {
+      "id": "AH-425",
+      "category": "Vowels and consonants",
+      "skill": "Identify consonant",
+      "age_band": "6–8",
+      "prompt": "Which of these letters is a consonant? Find F.",
+      "visual": "",
+      "options": [
+        "E",
+        "U",
+        "F",
+        "A"
+      ],
+      "answer": "F",
+      "feedback": "F is a consonant."
+    },
+    {
+      "id": "AH-426",
+      "category": "Word puzzles and simple riddles",
+      "skill": "Riddle",
+      "age_band": "5–8",
+      "prompt": "I am yellow and monkeys may peel me. What am I?",
+      "visual": "🍌",
+      "options": [
+        "bread",
+        "grape",
+        "carrot",
+        "banana"
+      ],
+      "answer": "banana",
+      "feedback": "The answer is banana."
+    },
+    {
+      "id": "AH-427",
+      "category": "Word puzzles and simple riddles",
+      "skill": "Riddle",
+      "age_band": "5–8",
+      "prompt": "I shine in the sky during the day. What am I?",
+      "visual": "☀️",
+      "options": [
+        "star",
+        "sun",
+        "moon",
+        "lamp"
+      ],
+      "answer": "sun",
+      "feedback": "The answer is sun."
+    },
+    {
+      "id": "AH-428",
+      "category": "Word puzzles and simple riddles",
+      "skill": "Riddle",
+      "age_band": "5–8",
+      "prompt": "I have pages and a cover. You can read me. What am I?",
+      "visual": "📖",
+      "options": [
+        "ball",
+        "spoon",
+        "book",
+        "shoe"
+      ],
+      "answer": "book",
+      "feedback": "The answer is book."
+    },
+    {
+      "id": "AH-429",
+      "category": "Word puzzles and simple riddles",
+      "skill": "Riddle",
+      "age_band": "5–8",
+      "prompt": "I keep your head warm. What am I?",
+      "visual": "🧢",
+      "options": [
+        "plate",
+        "sock",
+        "cup",
+        "hat"
+      ],
+      "answer": "hat",
+      "feedback": "The answer is hat."
+    },
+    {
+      "id": "AH-430",
+      "category": "Word puzzles and simple riddles",
+      "skill": "Riddle",
+      "age_band": "5–8",
+      "prompt": "I can tell the time. What am I?",
+      "visual": "🕒",
+      "options": [
+        "kite",
+        "brush",
+        "clock",
+        "pillow"
+      ],
+      "answer": "clock",
+      "feedback": "The answer is clock."
+    },
+    {
+      "id": "AH-431",
+      "category": "Word puzzles and simple riddles",
+      "skill": "Riddle",
+      "age_band": "5–8",
+      "prompt": "I have wheels and can take you to school. What am I?",
+      "visual": "🚌",
+      "options": [
+        "bed",
+        "bus",
+        "kite",
+        "boat"
+      ],
+      "answer": "bus",
+      "feedback": "The answer is bus."
+    },
+    {
+      "id": "AH-432",
+      "category": "Word puzzles and simple riddles",
+      "skill": "Riddle",
+      "age_band": "5–8",
+      "prompt": "I am cold and can melt. What am I?",
+      "visual": "🧊",
+      "options": [
+        "ice",
+        "sand",
+        "wool",
+        "wood"
+      ],
+      "answer": "ice",
+      "feedback": "The answer is ice."
+    },
+    {
+      "id": "AH-433",
+      "category": "Word puzzles and simple riddles",
+      "skill": "Riddle",
+      "age_band": "5–8",
+      "prompt": "I have a long neck and spots. What am I?",
+      "visual": "🦒",
+      "options": [
+        "duck",
+        "frog",
+        "mouse",
+        "giraffe"
+      ],
+      "answer": "giraffe",
+      "feedback": "The answer is giraffe."
+    },
+    {
+      "id": "AH-434",
+      "category": "Word puzzles and simple riddles",
+      "skill": "Riddle",
+      "age_band": "5–8",
+      "prompt": "I live in water and have fins. What am I?",
+      "visual": "🐟",
+      "options": [
+        "cat",
+        "fish",
+        "hen",
+        "horse"
+      ],
+      "answer": "fish",
+      "feedback": "The answer is fish."
+    },
+    {
+      "id": "AH-435",
+      "category": "Word puzzles and simple riddles",
+      "skill": "Riddle",
+      "age_band": "5–8",
+      "prompt": "I am a place where birds may lay eggs. What am I?",
+      "visual": "🪺",
+      "options": [
+        "tent",
+        "nest",
+        "pond",
+        "cave"
+      ],
+      "answer": "nest",
+      "feedback": "The answer is nest."
+    },
+    {
+      "id": "AH-436",
+      "category": "Word puzzles and simple riddles",
+      "skill": "Riddle",
+      "age_band": "5–8",
+      "prompt": "I help you see in the dark. I can be switched on. What am I?",
+      "visual": "💡",
+      "options": [
+        "cake",
+        "lamp",
+        "leaf",
+        "shoe"
+      ],
+      "answer": "lamp",
+      "feedback": "The answer is lamp."
+    },
+    {
+      "id": "AH-437",
+      "category": "Word puzzles and simple riddles",
+      "skill": "Riddle",
+      "age_band": "5–8",
+      "prompt": "I fall from clouds and make puddles. What am I?",
+      "visual": "🌧️",
+      "options": [
+        "snowman",
+        "smoke",
+        "rain",
+        "sunshine"
+      ],
+      "answer": "rain",
+      "feedback": "The answer is rain."
+    },
+    {
+      "id": "AH-438",
+      "category": "Word puzzles and simple riddles",
+      "skill": "Riddle",
+      "age_band": "5–8",
+      "prompt": "I have four legs and may bark. What am I?",
+      "visual": "🐶",
+      "options": [
+        "dog",
+        "snake",
+        "fish",
+        "bird"
+      ],
+      "answer": "dog",
+      "feedback": "The answer is dog."
+    },
+    {
+      "id": "AH-439",
+      "category": "Word puzzles and simple riddles",
+      "skill": "Riddle",
+      "age_band": "5–8",
+      "prompt": "I am made of bristles and help clean your teeth. What am I?",
+      "visual": "🪥",
+      "options": [
+        "comb",
+        "fork",
+        "toothbrush",
+        "pencil"
+      ],
+      "answer": "toothbrush",
+      "feedback": "The answer is toothbrush."
+    },
+    {
+      "id": "AH-440",
+      "category": "Word puzzles and simple riddles",
+      "skill": "Riddle",
+      "age_band": "5–8",
+      "prompt": "I am round, you kick or throw me in a game. What am I?",
+      "visual": "⚽",
+      "options": [
+        "ball",
+        "cup",
+        "hat",
+        "book"
+      ],
+      "answer": "ball",
+      "feedback": "The answer is ball."
+    },
+    {
+      "id": "AH-441",
+      "category": "Word puzzles and simple riddles",
+      "skill": "Riddle",
+      "age_band": "5–8",
+      "prompt": "I grow in a garden and can be red. What am I?",
+      "visual": "🍅",
+      "options": [
+        "cloud",
+        "tomato",
+        "stone",
+        "sock"
+      ],
+      "answer": "tomato",
+      "feedback": "The answer is tomato."
+    },
+    {
+      "id": "AH-442",
+      "category": "Word puzzles and simple riddles",
+      "skill": "Riddle",
+      "age_band": "5–8",
+      "prompt": "I have wings and can fly. What am I?",
+      "visual": "🐦",
+      "options": [
+        "turtle",
+        "fish",
+        "snail",
+        "bird"
+      ],
+      "answer": "bird",
+      "feedback": "The answer is bird."
+    },
+    {
+      "id": "AH-443",
+      "category": "Word puzzles and simple riddles",
+      "skill": "Riddle",
+      "age_band": "5–8",
+      "prompt": "I am worn on your feet in pairs. What am I?",
+      "visual": "👟",
+      "options": [
+        "gloves",
+        "shoes",
+        "scarf",
+        "hat"
+      ],
+      "answer": "shoes",
+      "feedback": "The answer is shoes."
+    },
+    {
+      "id": "AH-444",
+      "category": "Word puzzles and simple riddles",
+      "skill": "Riddle",
+      "age_band": "5–8",
+      "prompt": "I am a sweet frozen treat. What am I?",
+      "visual": "🍦",
+      "options": [
+        "soup",
+        "toast",
+        "ice cream",
+        "rice"
+      ],
+      "answer": "ice cream",
+      "feedback": "The answer is ice cream."
+    },
+    {
+      "id": "AH-445",
+      "category": "Word puzzles and simple riddles",
+      "skill": "Riddle",
+      "age_band": "5–8",
+      "prompt": "I open when it rains to help keep you dry. What am I?",
+      "visual": "☂️",
+      "options": [
+        "mirror",
+        "basket",
+        "blanket",
+        "umbrella"
+      ],
+      "answer": "umbrella",
+      "feedback": "The answer is umbrella."
+    },
+    {
+      "id": "AH-446",
+      "category": "Word puzzles and simple riddles",
+      "skill": "Riddle",
+      "age_band": "5–8",
+      "prompt": "I am a big animal with a trunk. What am I?",
+      "visual": "🐘",
+      "options": [
+        "goat",
+        "rabbit",
+        "elephant",
+        "lion"
+      ],
+      "answer": "elephant",
+      "feedback": "The answer is elephant."
+    },
+    {
+      "id": "AH-447",
+      "category": "Word puzzles and simple riddles",
+      "skill": "Riddle",
+      "age_band": "5–8",
+      "prompt": "I have a shell and move slowly. What am I?",
+      "visual": "🐢",
+      "options": [
+        "eagle",
+        "turtle",
+        "whale",
+        "tiger"
+      ],
+      "answer": "turtle",
+      "feedback": "The answer is turtle."
+    },
+    {
+      "id": "AH-448",
+      "category": "Word puzzles and simple riddles",
+      "skill": "Riddle",
+      "age_band": "5–8",
+      "prompt": "I am a place where you sleep at night. What am I?",
+      "visual": "🛏️",
+      "options": [
+        "door",
+        "sink",
+        "bed",
+        "desk"
+      ],
+      "answer": "bed",
+      "feedback": "The answer is bed."
+    },
+    {
+      "id": "AH-449",
+      "category": "Word puzzles and simple riddles",
+      "skill": "Riddle",
+      "age_band": "5–8",
+      "prompt": "I help you write and have a point. What am I?",
+      "visual": "✏️",
+      "options": [
+        "sock",
+        "pencil",
+        "plate",
+        "spoon"
+      ],
+      "answer": "pencil",
+      "feedback": "The answer is pencil."
+    },
+    {
+      "id": "AH-450",
+      "category": "Word puzzles and simple riddles",
+      "skill": "Riddle",
+      "age_band": "5–8",
+      "prompt": "I am a rainbow of colours in the sky after rain. What am I?",
+      "visual": "🌈",
+      "options": [
+        "shadow",
+        "rainbow",
+        "mountain",
+        "cloud"
+      ],
+      "answer": "rainbow",
+      "feedback": "The answer is rainbow."
+    },
+    {
+      "id": "AH-451",
+      "category": "Word puzzles and simple riddles",
+      "skill": "Riddle",
+      "age_band": "5–8",
+      "prompt": "I am a baby cat. What am I?",
+      "visual": "🐈",
+      "options": [
+        "kitten",
+        "puppy",
+        "calf",
+        "chick"
+      ],
+      "answer": "kitten",
+      "feedback": "The answer is kitten."
+    },
+    {
+      "id": "AH-452",
+      "category": "Word puzzles and simple riddles",
+      "skill": "Riddle",
+      "age_band": "5–8",
+      "prompt": "I am a baby dog. What am I?",
+      "visual": "🐕",
+      "options": [
+        "puppy",
+        "kitten",
+        "cub",
+        "foal"
+      ],
+      "answer": "puppy",
+      "feedback": "The answer is puppy."
+    },
+    {
+      "id": "AH-453",
+      "category": "Word puzzles and simple riddles",
+      "skill": "Riddle",
+      "age_band": "5–8",
+      "prompt": "I have a mane and roar. What am I?",
+      "visual": "🦁",
+      "options": [
+        "lion",
+        "deer",
+        "mouse",
+        "sheep"
+      ],
+      "answer": "lion",
+      "feedback": "The answer is lion."
+    },
+    {
+      "id": "AH-454",
+      "category": "Word puzzles and simple riddles",
+      "skill": "Riddle",
+      "age_band": "5–8",
+      "prompt": "I am a farm animal that gives us wool. What am I?",
+      "visual": "🐑",
+      "options": [
+        "duck",
+        "cat",
+        "fish",
+        "sheep"
+      ],
+      "answer": "sheep",
+      "feedback": "The answer is sheep."
+    },
+    {
+      "id": "AH-455",
+      "category": "Word puzzles and simple riddles",
+      "skill": "Riddle",
+      "age_band": "5–8",
+      "prompt": "I am used to cut paper safely with grown-up help. What am I?",
+      "visual": "✂️",
+      "options": [
+        "spoon",
+        "scissors",
+        "cup",
+        "pillow"
+      ],
+      "answer": "scissors",
+      "feedback": "The answer is scissors."
+    },
+    {
+      "id": "AH-456",
+      "category": "Word puzzles and simple riddles",
+      "skill": "Riddle",
+      "age_band": "5–8",
+      "prompt": "I am a round fruit that can be green or red. What am I?",
+      "visual": "🍎",
+      "options": [
+        "onion",
+        "bread",
+        "apple",
+        "potato"
+      ],
+      "answer": "apple",
+      "feedback": "The answer is apple."
+    },
+    {
+      "id": "AH-457",
+      "category": "Word puzzles and simple riddles",
+      "skill": "Riddle",
+      "age_band": "5–8",
+      "prompt": "I am a place with many books to borrow. What am I?",
+      "visual": "📚",
+      "options": [
+        "garage",
+        "garden",
+        "bakery",
+        "library"
+      ],
+      "answer": "library",
+      "feedback": "The answer is library."
+    },
+    {
+      "id": "AH-458",
+      "category": "Word puzzles and simple riddles",
+      "skill": "Riddle",
+      "age_band": "5–8",
+      "prompt": "I am a vehicle with two wheels that you pedal. What am I?",
+      "visual": "🚲",
+      "options": [
+        "boat",
+        "train",
+        "plane",
+        "bicycle"
+      ],
+      "answer": "bicycle",
+      "feedback": "The answer is bicycle."
+    },
+    {
+      "id": "AH-459",
+      "category": "Word puzzles and simple riddles",
+      "skill": "Riddle",
+      "age_band": "5–8",
+      "prompt": "I am a shape with three sides. What am I?",
+      "visual": "🔺",
+      "options": [
+        "triangle",
+        "square",
+        "oval",
+        "circle"
+      ],
+      "answer": "triangle",
+      "feedback": "The answer is triangle."
+    },
+    {
+      "id": "AH-460",
+      "category": "Word puzzles and simple riddles",
+      "skill": "Riddle",
+      "age_band": "5–8",
+      "prompt": "I am a shape with no corners. What am I?",
+      "visual": "⭕",
+      "options": [
+        "rectangle",
+        "circle",
+        "square",
+        "triangle"
+      ],
+      "answer": "circle",
+      "feedback": "The answer is circle."
+    },
+    {
+      "id": "AH-461",
+      "category": "Mixed alphabet challenges",
+      "skill": "Mixed review",
+      "age_band": "5–8",
+      "prompt": "Quick challenge: Which letter begins cat?",
+      "visual": "🐱",
+      "options": [
+        "G",
+        "T",
+        "C",
+        "X"
+      ],
+      "answer": "C",
+      "feedback": "Well done! C is correct."
+    },
+    {
+      "id": "AH-462",
+      "category": "Mixed alphabet challenges",
+      "skill": "Mixed review",
+      "age_band": "5–8",
+      "prompt": "Quick challenge: Match the uppercase N to its lowercase form.",
+      "visual": "🔠",
+      "options": [
+        "s",
+        "n",
+        "c",
+        "l"
+      ],
+      "answer": "n",
+      "feedback": "Well done! n is correct."
+    },
+    {
+      "id": "AH-463",
+      "category": "Mixed alphabet challenges",
+      "skill": "Mixed review",
+      "age_band": "5–8",
+      "prompt": "Quick challenge: What comes after Y?",
+      "visual": "🔤",
+      "options": [
+        "Z",
+        "D",
+        "P",
+        "O"
+      ],
+      "answer": "Z",
+      "feedback": "Well done! Z is correct."
+    },
+    {
+      "id": "AH-464",
+      "category": "Mixed alphabet challenges",
+      "skill": "Mixed review",
+      "age_band": "5–8",
+      "prompt": "Quick challenge: Which word matches the picture of a jam?",
+      "visual": "🍓",
+      "options": [
+        "cat",
+        "jam",
+        "goat",
+        "yo-yo"
+      ],
+      "answer": "jam",
+      "feedback": "Well done! jam is correct."
+    },
+    {
+      "id": "AH-465",
+      "category": "Mixed alphabet challenges",
+      "skill": "Mixed review",
+      "age_band": "5–8",
+      "prompt": "Quick challenge: Is U a vowel or a consonant?",
+      "visual": "U",
+      "options": [
+        "Number",
+        "Consonant",
+        "Shape",
+        "Vowel"
+      ],
+      "answer": "Vowel",
+      "feedback": "Well done! Vowel is correct."
+    },
+    {
+      "id": "AH-466",
+      "category": "Mixed alphabet challenges",
+      "skill": "Mixed review",
+      "age_band": "5–8",
+      "prompt": "Quick challenge: Which letter begins fish?",
+      "visual": "🐟",
+      "options": [
+        "K",
+        "U",
+        "F",
+        "C"
+      ],
+      "answer": "F",
+      "feedback": "Well done! F is correct."
+    },
+    {
+      "id": "AH-467",
+      "category": "Mixed alphabet challenges",
+      "skill": "Mixed review",
+      "age_band": "5–8",
+      "prompt": "Quick challenge: Match the uppercase Q to its lowercase form.",
+      "visual": "🔠",
+      "options": [
+        "t",
+        "q",
+        "l",
+        "h"
+      ],
+      "answer": "q",
+      "feedback": "Well done! q is correct."
+    },
+    {
+      "id": "AH-468",
+      "category": "Mixed alphabet challenges",
+      "skill": "Mixed review",
+      "age_band": "5–8",
+      "prompt": "Quick challenge: What comes after B?",
+      "visual": "🔤",
+      "options": [
+        "U",
+        "C",
+        "D",
+        "R"
+      ],
+      "answer": "C",
+      "feedback": "Well done! C is correct."
+    },
+    {
+      "id": "AH-469",
+      "category": "Mixed alphabet challenges",
+      "skill": "Mixed review",
+      "age_band": "5–8",
+      "prompt": "Quick challenge: Which word matches the picture of a moon?",
+      "visual": "🌙",
+      "options": [
+        "apple",
+        "ball",
+        "moon",
+        "umbrella"
+      ],
+      "answer": "moon",
+      "feedback": "Well done! moon is correct."
+    },
+    {
+      "id": "AH-470",
+      "category": "Mixed alphabet challenges",
+      "skill": "Mixed review",
+      "age_band": "5–8",
+      "prompt": "Quick challenge: Is X a vowel or a consonant?",
+      "visual": "X",
+      "options": [
+        "Vowel",
+        "Shape",
+        "Number",
+        "Consonant"
+      ],
+      "answer": "Consonant",
+      "feedback": "Well done! Consonant is correct."
+    },
+    {
+      "id": "AH-471",
+      "category": "Mixed alphabet challenges",
+      "skill": "Mixed review",
+      "age_band": "5–8",
+      "prompt": "Quick challenge: Which letter begins igloo?",
+      "visual": "🧊",
+      "options": [
+        "X",
+        "A",
+        "N",
+        "I"
+      ],
+      "answer": "I",
+      "feedback": "Well done! I is correct."
+    },
+    {
+      "id": "AH-472",
+      "category": "Mixed alphabet challenges",
+      "skill": "Mixed review",
+      "age_band": "5–8",
+      "prompt": "Quick challenge: Match the uppercase T to its lowercase form.",
+      "visual": "🔠",
+      "options": [
+        "o",
+        "l",
+        "t",
+        "f"
+      ],
+      "answer": "t",
+      "feedback": "Well done! t is correct."
+    },
+    {
+      "id": "AH-473",
+      "category": "Mixed alphabet challenges",
+      "skill": "Mixed review",
+      "age_band": "5–8",
+      "prompt": "Quick challenge: What comes after E?",
+      "visual": "🔤",
+      "options": [
+        "F",
+        "D",
+        "W",
+        "Q"
+      ],
+      "answer": "F",
+      "feedback": "Well done! F is correct."
+    },
+    {
+      "id": "AH-474",
+      "category": "Mixed alphabet challenges",
+      "skill": "Mixed review",
+      "age_band": "5–8",
+      "prompt": "Quick challenge: Which word matches the picture of a penguin?",
+      "visual": "🐧",
+      "options": [
+        "xylophone",
+        "penguin",
+        "van",
+        "lion"
+      ],
+      "answer": "penguin",
+      "feedback": "Well done! penguin is correct."
+    },
+    {
+      "id": "AH-475",
+      "category": "Mixed alphabet challenges",
+      "skill": "Mixed review",
+      "age_band": "5–8",
+      "prompt": "Quick challenge: Is A a vowel or a consonant?",
+      "visual": "A",
+      "options": [
+        "Shape",
+        "Number",
+        "Vowel",
+        "Consonant"
+      ],
+      "answer": "Vowel",
+      "feedback": "Well done! Vowel is correct."
+    },
+    {
+      "id": "AH-476",
+      "category": "Mixed alphabet challenges",
+      "skill": "Mixed review",
+      "age_band": "5–8",
+      "prompt": "Quick challenge: Which letter begins lion?",
+      "visual": "🦁",
+      "options": [
+        "E",
+        "K",
+        "N",
+        "L"
+      ],
+      "answer": "L",
+      "feedback": "Well done! L is correct."
+    },
+    {
+      "id": "AH-477",
+      "category": "Mixed alphabet challenges",
+      "skill": "Mixed review",
+      "age_band": "5–8",
+      "prompt": "Quick challenge: Match the uppercase W to its lowercase form.",
+      "visual": "🔠",
+      "options": [
+        "j",
+        "w",
+        "l",
+        "u"
+      ],
+      "answer": "w",
+      "feedback": "Well done! w is correct."
+    },
+    {
+      "id": "AH-478",
+      "category": "Mixed alphabet challenges",
+      "skill": "Mixed review",
+      "age_band": "5–8",
+      "prompt": "Quick challenge: What comes after H?",
+      "visual": "🔤",
+      "options": [
+        "V",
+        "O",
+        "I",
+        "C"
+      ],
+      "answer": "I",
+      "feedback": "Well done! I is correct."
+    },
+    {
+      "id": "AH-479",
+      "category": "Mixed alphabet challenges",
+      "skill": "Mixed review",
+      "age_band": "5–8",
+      "prompt": "Quick challenge: Which word matches the picture of a sun?",
+      "visual": "☀️",
+      "options": [
+        "hat",
+        "apple",
+        "sun",
+        "kite"
+      ],
+      "answer": "sun",
+      "feedback": "Well done! sun is correct."
+    },
+    {
+      "id": "AH-480",
+      "category": "Mixed alphabet challenges",
+      "skill": "Mixed review",
+      "age_band": "5–8",
+      "prompt": "Quick challenge: Is D a vowel or a consonant?",
+      "visual": "D",
+      "options": [
+        "Consonant",
+        "Shape",
+        "Vowel",
+        "Number"
+      ],
+      "answer": "Consonant",
+      "feedback": "Well done! Consonant is correct."
+    },
+    {
+      "id": "AH-481",
+      "category": "Mixed alphabet challenges",
+      "skill": "Mixed review",
+      "age_band": "5–8",
+      "prompt": "Quick challenge: Which letter begins octopus?",
+      "visual": "🐙",
+      "options": [
+        "O",
+        "U",
+        "V",
+        "R"
+      ],
+      "answer": "O",
+      "feedback": "Well done! O is correct."
+    },
+    {
+      "id": "AH-482",
+      "category": "Mixed alphabet challenges",
+      "skill": "Mixed review",
+      "age_band": "5–8",
+      "prompt": "Quick challenge: Match the uppercase Z to its lowercase form.",
+      "visual": "🔠",
+      "options": [
+        "t",
+        "e",
+        "z",
+        "i"
+      ],
+      "answer": "z",
+      "feedback": "Well done! z is correct."
+    },
+    {
+      "id": "AH-483",
+      "category": "Mixed alphabet challenges",
+      "skill": "Mixed review",
+      "age_band": "5–8",
+      "prompt": "Quick challenge: What comes after K?",
+      "visual": "🔤",
+      "options": [
+        "H",
+        "L",
+        "R",
+        "D"
+      ],
+      "answer": "L",
+      "feedback": "Well done! L is correct."
+    },
+    {
+      "id": "AH-484",
+      "category": "Mixed alphabet challenges",
+      "skill": "Mixed review",
+      "age_band": "5–8",
+      "prompt": "Quick challenge: Which word matches the picture of a van?",
+      "visual": "🚐",
+      "options": [
+        "sun",
+        "octopus",
+        "van",
+        "fish"
+      ],
+      "answer": "van",
+      "feedback": "Well done! van is correct."
+    },
+    {
+      "id": "AH-485",
+      "category": "Mixed alphabet challenges",
+      "skill": "Mixed review",
+      "age_band": "5–8",
+      "prompt": "Quick challenge: Is G a vowel or a consonant?",
+      "visual": "G",
+      "options": [
+        "Shape",
+        "Number",
+        "Consonant",
+        "Vowel"
+      ],
+      "answer": "Consonant",
+      "feedback": "Well done! Consonant is correct."
+    },
+    {
+      "id": "AH-486",
+      "category": "Mixed alphabet challenges",
+      "skill": "Mixed review",
+      "age_band": "5–8",
+      "prompt": "Quick challenge: Which letter begins rabbit?",
+      "visual": "🐰",
+      "options": [
+        "Q",
+        "R",
+        "E",
+        "X"
+      ],
+      "answer": "R",
+      "feedback": "Well done! R is correct."
+    },
+    {
+      "id": "AH-487",
+      "category": "Mixed alphabet challenges",
+      "skill": "Mixed review",
+      "age_band": "5–8",
+      "prompt": "Quick challenge: Match the uppercase C to its lowercase form.",
+      "visual": "🔠",
+      "options": [
+        "k",
+        "l",
+        "c",
+        "x"
+      ],
+      "answer": "c",
+      "feedback": "Well done! c is correct."
+    },
+    {
+      "id": "AH-488",
+      "category": "Mixed alphabet challenges",
+      "skill": "Mixed review",
+      "age_band": "5–8",
+      "prompt": "Quick challenge: What comes after N?",
+      "visual": "🔤",
+      "options": [
+        "O",
+        "A",
+        "M",
+        "G"
+      ],
+      "answer": "O",
+      "feedback": "Well done! O is correct."
+    },
+    {
+      "id": "AH-489",
+      "category": "Mixed alphabet challenges",
+      "skill": "Mixed review",
+      "age_band": "5–8",
+      "prompt": "Quick challenge: Which word matches the picture of a yo-yo?",
+      "visual": "🪀",
+      "options": [
+        "hat",
+        "sun",
+        "igloo",
+        "yo-yo"
+      ],
+      "answer": "yo-yo",
+      "feedback": "Well done! yo-yo is correct."
+    },
+    {
+      "id": "AH-490",
+      "category": "Mixed alphabet challenges",
+      "skill": "Mixed review",
+      "age_band": "5–8",
+      "prompt": "Quick challenge: Is J a vowel or a consonant?",
+      "visual": "J",
+      "options": [
+        "Number",
+        "Consonant",
+        "Shape",
+        "Vowel"
+      ],
+      "answer": "Consonant",
+      "feedback": "Well done! Consonant is correct."
+    },
+    {
+      "id": "AH-491",
+      "category": "Mixed alphabet challenges",
+      "skill": "Mixed review",
+      "age_band": "5–8",
+      "prompt": "Quick challenge: Which letter begins umbrella?",
+      "visual": "☂️",
+      "options": [
+        "H",
+        "Q",
+        "U",
+        "X"
+      ],
+      "answer": "U",
+      "feedback": "Well done! U is correct."
+    },
+    {
+      "id": "AH-492",
+      "category": "Mixed alphabet challenges",
+      "skill": "Mixed review",
+      "age_band": "5–8",
+      "prompt": "Quick challenge: Match the uppercase F to its lowercase form.",
+      "visual": "🔠",
+      "options": [
+        "c",
+        "o",
+        "j",
+        "f"
+      ],
+      "answer": "f",
+      "feedback": "Well done! f is correct."
+    },
+    {
+      "id": "AH-493",
+      "category": "Mixed alphabet challenges",
+      "skill": "Mixed review",
+      "age_band": "5–8",
+      "prompt": "Quick challenge: What comes after Q?",
+      "visual": "🔤",
+      "options": [
+        "L",
+        "B",
+        "X",
+        "R"
+      ],
+      "answer": "R",
+      "feedback": "Well done! R is correct."
+    },
+    {
+      "id": "AH-494",
+      "category": "Mixed alphabet challenges",
+      "skill": "Mixed review",
+      "age_band": "5–8",
+      "prompt": "Quick challenge: Which word matches the picture of a ball?",
+      "visual": "⚽",
+      "options": [
+        "van",
+        "nest",
+        "moon",
+        "ball"
+      ],
+      "answer": "ball",
+      "feedback": "Well done! ball is correct."
+    },
+    {
+      "id": "AH-495",
+      "category": "Mixed alphabet challenges",
+      "skill": "Mixed review",
+      "age_band": "5–8",
+      "prompt": "Quick challenge: Is M a vowel or a consonant?",
+      "visual": "M",
+      "options": [
+        "Consonant",
+        "Number",
+        "Vowel",
+        "Shape"
+      ],
+      "answer": "Consonant",
+      "feedback": "Well done! Consonant is correct."
+    },
+    {
+      "id": "AH-496",
+      "category": "Mixed alphabet challenges",
+      "skill": "Mixed review",
+      "age_band": "5–8",
+      "prompt": "Quick challenge: Which letter begins xylophone?",
+      "visual": "🎼",
+      "options": [
+        "I",
+        "V",
+        "N",
+        "X"
+      ],
+      "answer": "X",
+      "feedback": "Well done! X is correct."
+    },
+    {
+      "id": "AH-497",
+      "category": "Mixed alphabet challenges",
+      "skill": "Mixed review",
+      "age_band": "5–8",
+      "prompt": "Quick challenge: Match the uppercase I to its lowercase form.",
+      "visual": "🔠",
+      "options": [
+        "i",
+        "y",
+        "m",
+        "g"
+      ],
+      "answer": "i",
+      "feedback": "Well done! i is correct."
+    },
+    {
+      "id": "AH-498",
+      "category": "Mixed alphabet challenges",
+      "skill": "Mixed review",
+      "age_band": "5–8",
+      "prompt": "Quick challenge: What comes after T?",
+      "visual": "🔤",
+      "options": [
+        "V",
+        "A",
+        "U",
+        "K"
+      ],
+      "answer": "U",
+      "feedback": "Well done! U is correct."
+    },
+    {
+      "id": "AH-499",
+      "category": "Mixed alphabet challenges",
+      "skill": "Mixed review",
+      "age_band": "5–8",
+      "prompt": "Quick challenge: Which word matches the picture of a elephant?",
+      "visual": "🐘",
+      "options": [
+        "queen",
+        "elephant",
+        "tiger",
+        "sun"
+      ],
+      "answer": "elephant",
+      "feedback": "Well done! elephant is correct."
+    },
+    {
+      "id": "AH-500",
+      "category": "Mixed alphabet challenges",
+      "skill": "Mixed review",
+      "age_band": "5–8",
+      "prompt": "Quick challenge: Is P a vowel or a consonant?",
+      "visual": "P",
+      "options": [
+        "Vowel",
+        "Consonant",
+        "Shape",
+        "Number"
+      ],
+      "answer": "Consonant",
+      "feedback": "Well done! Consonant is correct."
+    }
+  ]
+}
