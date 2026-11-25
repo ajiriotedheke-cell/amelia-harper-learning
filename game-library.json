@@ -1,7 +1,7 @@
 {
   "version": 1,
   "games": [
-    {"id":"abc-letter-adventure","title":"ABC Letter Adventure","description":"A 500-question alphabet challenge covering letter recognition, sounds, sequencing and early word puzzles.","ageBands":["2-4","5-7","8-10","11-12"],"path":"/games/abc-letter-adventure/","category":"Learning Adventures","status":"published","featured":true,"icon":"🔤"},
+    {"id":"abc-letter-adventure","title":"ABC Letter Adventure","description":"A 500-question alphabet challenge covering letter recognition, sounds, sequencing and early word puzzles.","ageBands":["2-4","5-7","8-10"],"coverageNote":"The question bank is strongest for early learners. A smaller set of questions overlaps with age 8; broader 8–10 content and an 11–12 collection are still being developed.","path":"/games/abc-letter-adventure/","category":"Learning Adventures","status":"published","featured":true,"icon":"🔤"},
     {"id":"tobis-rainbow-run","title":"Tobi's Rainbow Run","description":"A colourful collect-the-stars adventure with gentle obstacles.","ageBands":["5-7","8-10"],"path":"#","category":"Adventure Island","status":"coming-soon","featured":false,"icon":"🌈"},
     {"id":"magical-memory-match","title":"Magical Memory Match","description":"A friendly memory game for matching pictures and patterns.","ageBands":["2-4","5-7","8-10"],"path":"#","category":"Puzzle Kingdom","status":"coming-soon","featured":false,"icon":"🧩"},
     {"id":"my-happy-pet","title":"My Happy Pet","description":"A gentle creative game about caring for a virtual animal friend.","ageBands":["5-7","8-10"],"path":"#","category":"Pet Adventures","status":"coming-soon","featured":false,"icon":"🐾"}
