@@ -1,3 +1,55 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>All Games | Amelia Harper</title><link rel="stylesheet" href="../styles.css"><style>.catalogue{max-width:1100px;margin:50px auto;padding:0 22px}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.game-card{background:white;border:1px solid #eee;border-radius:20px;padding:22px}.game-card .icon{font-size:42px}.game-card h2{font:600 22px Fredoka}.game-card p{font-size:13px;color:#777;line-height:1.6}.tag{font-size:10px;font-weight:800;color:#745cae}.disabled{opacity:.7}@media(max-width:700px){.cards{grid-template-columns:1fr 1fr}}@media(max-width:480px){.cards{grid-template-columns:1fr}}</style></head><body><div class="announcement">PICK A WORLD · FIND YOUR NEXT ADVENTURE</div><main class="catalogue"><a href="../">← Amelia Harper home</a><span class="eyebrow" style="display:block;margin-top:25px">THE GAME LIBRARY</span><h1 style="font:600 44px Fredoka">All adventures</h1><p style="color:#777">Explore games for different ages and stages.</p><div id="cards" class="cards">Loading games…</div></main><script>
-(async()=>{const params=new URLSearchParams(location.search),age=params.get('age');const r=await fetch('../game-library.json');const data=await r.json();const games=data.games.filter(g=>!age||g.ageBands.includes(age));document.getElementById('cards').innerHTML=games.map(g=>`<article class="game-card ${g.status!=='published'?'disabled':''}"><div class="icon">${g.icon}</div><span class="tag">${g.category} · Ages ${g.ageBands.join(', ')}</span><h2>${g.title}</h2><p>${g.description}</p>${g.status==='published'?`<a class="btn primary" href="..${g.path}">Play now →</a>`:'<span class="tag">Coming soon</span>'}</article>`).join('')})();
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Browse Amelia Harper learning games and playful adventures by age group.">
+<meta name="theme-color" content="#4f39a8"><title>Game Library | Amelia Harper</title>
+<link rel="icon" href="../assets/images/amelia-harper-logo.png"><link rel="stylesheet" href="../styles.css">
+<style>
+.catalogue{max-width:1160px;margin:auto;padding:54px 24px 90px}.catalogue-hero{padding:35px;border-radius:28px;background:linear-gradient(120deg,#f1ebff,#fff2e9);margin:25px 0 30px}.catalogue-hero h1{font:600 clamp(38px,6vw,58px)/1.05 Fredoka;margin:10px 0}.catalogue-hero p{max-width:620px;color:#706c83;line-height:1.7}.filters{display:flex;gap:12px;flex-wrap:wrap;margin:24px 0}.filters input,.filters select{min-height:46px;padding:0 14px;border:1px solid #e6e0f0;border-radius:12px;background:#fff;font:600 13px 'DM Sans';color:#292344}.filters input{flex:1;min-width:210px}.catalogue-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.catalogue-card{border:1px solid #eeeaf5;border-radius:22px;padding:23px;background:white;box-shadow:0 10px 28px #33245e08;display:flex;flex-direction:column;min-height:265px}.catalogue-card .icon{width:62px;height:62px;border-radius:18px;background:#f5f0ff;display:grid;place-items:center;font-size:34px;margin-bottom:15px}.catalogue-card h2{font:600 23px Fredoka;margin:8px 0}.catalogue-card p{font-size:13px;line-height:1.65;color:#706c83;margin:0 0 17px}.catalogue-card .meta{font-size:10px;font-weight:800;color:#8b70c7;letter-spacing:.04em}.catalogue-card .coverage-note{padding:10px 12px;background:#fff8e8;border-left:3px solid #e8bb58;border-radius:8px;color:#765c28;font-size:11px}.catalogue-card .btn{align-self:flex-start;margin-top:auto}.status-pill{font-size:10px;font-weight:800;color:#92722b;background:#fff5d9;border-radius:30px;padding:7px 10px;align-self:flex-start;margin-top:auto}.empty{padding:30px;text-align:center;color:#706c83;background:#faf8ff;border-radius:18px;grid-column:1/-1}@media(max-width:850px){.catalogue-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:560px){.catalogue{padding:32px 18px 60px}.catalogue-hero{padding:25px}.catalogue-grid{grid-template-columns:1fr}.filters{flex-direction:column}.filters input,.filters select{width:100%}}
+</style></head>
+<body><a class="skip-link" href="#main-content">Skip to content</a><div class="announcement">PICK A WORLD · FIND YOUR NEXT ADVENTURE</div>
+<header class="site-header"><a class="brand" href="../"><img src="../assets/images/amelia-harper-logo.png" alt=""><span>Amelia Harper<small>Learn. Play. Sing. Dance. Grow.</small></span></a><button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">☰</button><nav id="nav"><a href="../#games">Home</a><a href="../stories.html">Bedtime stories</a><a href="../songs.html">Songs</a><a href="../resources.html">Resources</a><a class="nav-cta" href="../#parents">For parents</a></nav></header>
+<main id="main-content" class="catalogue"><a class="text-link" href="../">← Back to home</a><section class="catalogue-hero hero-with-art"><div><span class="eyebrow">THE AMELIA HARPER GAME LIBRARY</span><h1>Choose your next adventure!</h1><p>Explore playful learning challenges designed for different ages and stages. Choose an age group or search for a game to get started.</p></div><img src="../assets/images/amelia-harper-banner.png" alt="Colourful Amelia Harper learning adventure world" loading="eager" decoding="async"></section>
+<div class="filters"><input id="search" type="search" placeholder="Search games…" aria-label="Search games"><select id="age" aria-label="Filter by age"><option value="">All age groups</option><option value="2-4">Ages 2–4</option><option value="5-7">Ages 5–7</option><option value="8-10">Ages 8–10</option><option value="11-12">Ages 11–12</option></select><select id="category" aria-label="Filter by category"><option value="">All categories</option></select></div>
+<p id="result-count" class="muted" aria-live="polite">Loading adventures…</p><section id="cards" class="catalogue-grid" aria-label="Available games"></section></main>
+<footer><div class="footer-brand"><img src="../assets/images/amelia-harper-logo.png" alt=""><b>Amelia Harper</b><p>Learn. Play. Sing. Dance. Grow.</p></div><div><b>Explore</b><a href="../stories.html">Audio stories</a><a href="../songs.html">Songs</a><a href="../resources.html">Learning resources</a></div><div><b>Parents</b><a href="../#parents">Community</a><a href="../privacy.html">Privacy & safety</a></div><small>© <span id="year"></span> Amelia Harper.</small></footer>
+<script>
+(async()=>{
+ const cards=document.getElementById('cards'),search=document.getElementById('search'),age=document.getElementById('age'),category=document.getElementById('category'),count=document.getElementById('result-count');
+ document.getElementById('year').textContent=new Date().getFullYear();
+ let games=[];
+ const requestedAge=new URLSearchParams(location.search).get('age');
+ if(['2-4','5-7','8-10','11-12'].includes(requestedAge)) age.value=requestedAge;
+ function render(){
+  const q=search.value.trim().toLowerCase(),a=age.value,c=category.value;
+  const shown=games.filter(g=>(!a||g.ageBands.includes(a))&&(!c||g.category===c)&&(!q||(g.title+' '+g.description+' '+(g.coverageNote||'')+' '+g.category).toLowerCase().includes(q)));
+  cards.replaceChildren();
+  count.textContent=shown.length+' '+(shown.length===1?'adventure':'adventures')+' found';
+  if(!shown.length){const empty=document.createElement('p');empty.className='empty';empty.textContent='No games match those filters yet. Try another age group or search.';cards.append(empty);return;}
+  shown.forEach(g=>{
+   const card=document.createElement('article');card.className='catalogue-card';
+   const icon=document.createElement('div');icon.className='icon';icon.setAttribute('aria-hidden','true');icon.textContent=g.icon||'✨';
+   const meta=document.createElement('span');meta.className='meta';meta.textContent=g.category+' · Ages '+g.ageBands.join(', ');
+   const title=document.createElement('h2');title.textContent=g.title;
+   const desc=document.createElement('p');desc.textContent=g.description;
+   card.append(icon,meta,title,desc);
+   if(g.coverageNote){const note=document.createElement('p');note.className='coverage-note';note.textContent=g.coverageNote;card.append(note);}
+   if(g.status==='published'&&g.path){const link=document.createElement('a');link.className='btn primary';link.href='..'+g.path+(a?'?age='+encodeURIComponent(a):'');link.textContent='Play now →';card.append(link);}
+   else{const status=document.createElement('span');status.className='status-pill';status.textContent='Coming soon';card.append(status);}
+   cards.append(card);
+  });
+ }
+ try{
+  const response=await fetch('../game-library.json');if(!response.ok)throw new Error('Could not load game library');
+  const data=await response.json();games=Array.isArray(data.games)?data.games:[];
+  [...new Set(games.map(g=>g.category).filter(Boolean))].sort().forEach(value=>{const o=document.createElement('option');o.value=value;o.textContent=value;category.append(o)});
+  render();
+ }catch(e){count.textContent='The game library could not be loaded.';cards.textContent='Please refresh the page in a moment.';}
+ [search,age,category].forEach(el=>el.addEventListener(el===search?'input':'change',render));
+ const menu=document.querySelector('.menu-toggle'),nav=document.getElementById('nav');
+ menu.addEventListener('click',()=>{const open=nav.classList.toggle('open');menu.setAttribute('aria-expanded',String(open));menu.setAttribute('aria-label',open?'Close menu':'Open menu')});
+ nav.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{nav.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.setAttribute('aria-label','Open menu')}));
+ document.addEventListener('keydown',e=>{if(e.key==='Escape'){nav.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.setAttribute('aria-label','Open menu')}});
+})();
 </script></body></html>

@@ -1,0 +1,57 @@
+# Amelia Harper Kids — development QA status
+
+## Implemented on the development branch
+
+- Homepage navigation connects to dedicated game, story, song and resource pages.
+- Game library supports search, age-band filtering and category filtering. Catalogue content is inserted with DOM text nodes rather than interpolated into HTML.
+- Audio story page uses the existing Tumi and the Little Star cover and MP3.
+- Good-manners song page clearly labels planned themes as coming soon; no unavailable audio is presented as playable.
+- Learning resources page links to the existing My Alphabet & Numbers Adventure Gumroad product.
+- Parent-facing privacy and safety draft describes the event fields currently implemented and calls out outstanding legal/operational work.
+- Admin-managed Sweet Bedtime Moments title, description, button label and published link are connected to the public homepage.
+- Mobile navigation has expanded-state labels, closes on navigation and supports Escape on the homepage.
+- ABC game age selection uses the actual select element and matches overlapping age ranges. It does not silently fall back to unrelated questions when a selected age has no suitable content.
+- ABC game shows progress and answer feedback, supports text, image and emoji-only picture answer options, and sends only game start/completion analytics using the API's expected field names.
+- The AH-020 goat picture question now presents four emoji-only choices (hat, kite, goat and sun), with accessible answer names.
+- Seven incorrect article usages in picture-matching prompts were corrected.
+
+## Static checks performed
+
+- Question bank parsed as JSON and contains 500 records, 500 unique IDs, four options per question and an answer matching an option in every record.
+- Age-band overlap audit found: 316 records match ages 2–4; 440 match ages 5–7; 110 match ages 8–10; zero match ages 11–12. These are overlapping counts, not additive totals.
+- Catalogue and homepage copy now disclose that the ABC bank is strongest for early learners, has limited overlap for age 8, and has no 11–12 questions. Game availability is distinguished from the wider age-group roadmap.
+- The question-bank record for AH-020 was checked after editing: four distinct picture options are present and the correct answer label matches one option.
+- No live browser/device test has been completed in this workflow. No production deployment or merge has been performed.
+
+## Required before production launch
+
+1. Add and playtest age-appropriate content for ages 9–12, especially the missing 11–12 band.
+2. Produce and add approved 3D picture assets for picture-answer activities; validate every referenced file path.
+3. Add original good-manners and bedtime song audio, with documented music and voice rights.
+4. Compress large PNG and MP3 assets, then test mobile loading on slower connections.
+5. Complete and obtain legal review of the privacy notice for each intended market; add operator identity, contact channel, retention schedule and parent-rights process.
+6. Confirm Cloudflare Access protects both /admin/* and /api/admin/*; verify D1 binding and administrator email.
+7. Add suitable rate limiting/abuse controls and data retention/deletion automation to analytics.
+8. Select and securely integrate a payment provider before introducing paid memberships or subscriptions. Do not rely on front-end-only gating.
+9. Connect a newsletter provider only after consent, unsubscribe and data-handling workflows are configured.
+10. Perform real browser tests at desktop, tablet and mobile sizes; test keyboard access, screen readers, audio controls, error states and all navigation links.
+11. Verify external Gumroad/social links, domain DNS, Cloudflare Pages preview and production deployments.
+12. Complete child-focused educational review and supervised usability testing before monetisation or broad release.
+
+## Latest visual and navigation refinements
+
+- Added a shared visual polish layer across the homepage, game catalogue, story, song, resource and privacy pages: softer layered backgrounds, consistent card treatments, clearer hierarchy, improved hover/focus states and responsive spacing.
+- Refined homepage hero, age cards, featured game, audio player, song tiles, bedtime banner, resource card and parent section.
+- Refined shared library-page hero panels and content cards for a more consistent premium feel.
+- Standardised mobile menu behaviour across pages: expanded state, close after selecting a link and Escape-key support.
+- Static JavaScript syntax checks passed for shared scripts and inline page scripts after these changes.
+- Visual appearance has not yet been verified in a real browser at desktop/tablet/mobile breakpoints; screenshot review and device testing remain required.
+
+
+## Latest content-page visual and accessibility pass
+
+- Added dedicated page artwork to the game library, bedtime stories, good-manners songs and learning resources hero panels, reusing existing repository assets.
+- Added keyboard-accessible skip-to-content links on the homepage and all content-library pages.
+- Standardised mobile menu buttons as explicit non-submit buttons.
+- Added responsive hero-art layout rules and visible keyboard focus treatment for the skip link.
+- These changes are committed to the development branch only; browser screenshot review is still outstanding.

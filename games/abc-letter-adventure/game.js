@@ -31,20 +31,26 @@ function shuffle(items) {
    ANALYTICS
 --------------------------------------------------------- */
 
-function track(eventName, details = {}) {
+function track(eventName) {
+  // Store only aggregate game events; never send answers or child-entered information.
+  const selectedAge = $('age')?.value || 'unknown';
+  const deviceType = /iPad|Tablet/i.test(navigator.userAgent)
+    ? 'tablet'
+    : /Mobi|Android/i.test(navigator.userAgent)
+      ? 'mobile'
+      : 'desktop';
   fetch('/api/events', {
     method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
+    headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
-      event: eventName,
-      game: 'abc-letter-adventure',
-      details,
-      timestamp: new Date().toISOString()
-    })
+      eventName,
+      gameSlug: 'abc-letter-adventure',
+      ageBand: selectedAge,
+      deviceType
+    }),
+    keepalive: true
   }).catch(() => {
-    // Analytics errors must not interrupt the game.
+    // Analytics errors must never interrupt play.
   });
 }
 
@@ -89,19 +95,36 @@ async function init() {
 function start() {
   if (!bank.length) return;
 
-  const ageFilter = $('age-filter')?.value || 'all';
+  const ageFilter = $('age')?.value || 'all';
 
   let availableQuestions = bank;
 
   if (ageFilter !== 'all') {
-    availableQuestions = bank.filter(question =>
-      question.age_band &&
-      question.age_band.includes(ageFilter)
-    );
+    const [selectedMin, selectedMax] = ageFilter.split('-').map(Number);
+    availableQuestions = bank.filter(question => {
+      if (!question.age_band) return false;
+      const band = question.age_band.match(/\d+/g);
+      if (!band || !band.length) return false;
+      const questionMin = Number(band[0]);
+      const questionMax = Number(band[1] || band[0]);
+      return questionMin <= selectedMax && questionMax >= selectedMin;
+    });
   }
 
   if (!availableQuestions.length) {
-    availableQuestions = bank;
+    round = [];
+    index = 0;
+    score = 0;
+    answered = false;
+    $('question').textContent = 'A new adventure for this age group is coming soon!';
+    const visual = document.getElementById('question-visual');
+    if (visual) visual.style.display = 'none';
+    $('answers').replaceChildren();
+    $('feedback').textContent = 'Please choose another age group to explore the questions currently available.';
+    $('progress').textContent = 'More questions are being prepared.';
+    updateProgress();
+    $('next').hidden = true;
+    return;
   }
 
   round = shuffle(availableQuestions).slice(0, 20);
@@ -115,9 +138,7 @@ function start() {
     $('next').hidden = true;
   }
 
-  track('game_start', {
-    question_count: round.length
-  });
+  track('game_start');
 
   show();
 }
@@ -142,7 +163,7 @@ function displayQuestionVisual(question) {
     const image = document.createElement('img');
 
     image.src = question.image;
-    image.alt = 'Question picture';
+    image.alt = question.imageAlt || 'Picture clue';
     image.style.width = '100%';
     image.style.maxWidth = '320px';
     image.style.height = '240px';
@@ -203,7 +224,7 @@ function displayAnswers(question) {
       const image = document.createElement('img');
 
       image.src = option.image;
-      image.alt = label;
+      image.alt = label ? `Picture answer: ${label}` : 'Picture answer';
       image.loading = 'eager';
       image.style.width = '100%';
       image.style.height = '150px';
@@ -214,6 +235,15 @@ function displayAnswers(question) {
 
       // No written answer label is shown for picture questions.
       button.setAttribute('aria-label', label);
+
+    } else if (isPicture && option.emoji) {
+      const picture = document.createElement('span');
+      picture.textContent = option.emoji;
+      picture.setAttribute('aria-hidden', 'true');
+      picture.style.fontSize = '76px';
+      picture.style.lineHeight = '1.2';
+      button.appendChild(picture);
+      button.setAttribute('aria-label', label || 'Picture answer');
 
     } else {
       // Text-only options for letter and word questions.
@@ -226,6 +256,21 @@ function displayAnswers(question) {
 
     answerArea.appendChild(button);
   });
+}
+
+/* ---------------------------------------------------------
+   DISPLAY QUESTION
+--------------------------------------------------------- */
+
+function updateProgress() {
+  const fill = $('progress-fill');
+  const track = fill?.parentElement;
+  if (!fill || !track) return;
+  const completed = Math.min(index + (answered ? 1 : 0), round.length);
+  const percent = round.length ? (completed / round.length) * 100 : 0;
+  fill.style.width = percent + '%';
+  track.setAttribute('aria-valuemax', String(round.length || 20));
+  track.setAttribute('aria-valuenow', String(completed));
 }
 
 /* ---------------------------------------------------------
@@ -246,12 +291,14 @@ function show() {
     $('progress').textContent =
       `Question ${index + 1} of ${round.length} · Score ${score}`;
   }
+  updateProgress();
 
   $('question').textContent = question.prompt;
 
   displayQuestionVisual(question);
 
   $('feedback').textContent = '';
+  updateProgress();
 
   if ($('next')) {
     $('next').hidden = true;
@@ -300,12 +347,9 @@ function choose(selectedAnswer, question, selectedButton) {
   $('progress').textContent =
     `Question ${index + 1} of ${round.length} · Score ${score}`;
 
-  track('question_answered', {
-    question_id: question.id,
-    selected_answer: selectedAnswer,
-    correct_answer: question.answer,
-    is_correct: correct
-  });
+  // Per-question answers are kept in the browser and are not sent to analytics.
+
+  updateProgress();
 
   if ($('next')) {
     $('next').hidden = false;
@@ -338,12 +382,10 @@ function nextQuestion() {
 --------------------------------------------------------- */
 
 function finishGame() {
-  track('game_complete', {
-    score,
-    total_questions: round.length
-  });
+  track('game_complete');
 
   $('question').textContent = 'Amazing Work!';
+  updateProgress();
 
   const visual = document.getElementById('question-visual');
 
@@ -354,7 +396,7 @@ function finishGame() {
   $('answers').innerHTML = '';
 
   $('feedback').textContent =
-    `You scored ${score} out of ${round.length}!`;
+    `⭐ You scored ${score} out of ${round.length}! ${score === round.length ? 'A perfect adventure!' : 'Keep practising — you are growing every time!'}`;
 
   if ($('progress')) {
     $('progress').textContent = 'Challenge completed!';
@@ -389,6 +431,10 @@ if ($('start')) {
 
 if ($('restart')) {
   $('restart').addEventListener('click', replay);
+}
+
+if ($('age')) {
+  $('age').addEventListener('change', start);
 }
 
 if ($('next')) {
