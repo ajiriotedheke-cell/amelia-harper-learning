@@ -112,7 +112,18 @@ function start() {
   }
 
   if (!availableQuestions.length) {
-    availableQuestions = bank;
+    round = [];
+    index = 0;
+    score = 0;
+    answered = false;
+    $('question').textContent = 'A new adventure for this age group is coming soon!';
+    const visual = document.getElementById('question-visual');
+    if (visual) visual.style.display = 'none';
+    $('answers').replaceChildren();
+    $('feedback').textContent = 'Please choose another age group to explore the questions currently available.';
+    $('progress').textContent = 'More questions are being prepared.';
+    $('next').hidden = true;
+    return;
   }
 
   round = shuffle(availableQuestions).slice(0, 20);
@@ -390,6 +401,10 @@ if ($('start')) {
 
 if ($('restart')) {
   $('restart').addEventListener('click', replay);
+}
+
+if ($('age')) {
+  $('age').addEventListener('change', start);
 }
 
 if ($('next')) {
