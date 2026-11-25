@@ -4531,7 +4531,7 @@
       "category": "Picture and word matching",
       "skill": "Picture to word",
       "age_band": "3–6",
-      "prompt": "Which word names this picture of a apple?",
+      "prompt": "Which word names this picture of an apple?",
       "visual": "🍎",
       "options": [
         "ball",
@@ -4563,7 +4563,7 @@
       "category": "Picture and word matching",
       "skill": "Word meaning",
       "age_band": "4–6",
-      "prompt": "Which of these is a apple?",
+      "prompt": "Which of these is an apple?",
       "visual": "",
       "options": [
         "nest",
@@ -4723,7 +4723,7 @@
       "category": "Picture and word matching",
       "skill": "Picture to word",
       "age_band": "3–6",
-      "prompt": "Which word names this picture of a elephant?",
+      "prompt": "Which word names this picture of an elephant?",
       "visual": "🐘",
       "options": [
         "hat",
@@ -4755,7 +4755,7 @@
       "category": "Picture and word matching",
       "skill": "Word meaning",
       "age_band": "4–6",
-      "prompt": "Which of these is a elephant?",
+      "prompt": "Which of these is an elephant?",
       "visual": "",
       "options": [
         "elephant",
@@ -5107,7 +5107,7 @@
       "category": "Picture and word matching",
       "skill": "Picture to word",
       "age_band": "3–6",
-      "prompt": "Which word names this picture of a octopus?",
+      "prompt": "Which word names this picture of an octopus?",
       "visual": "🐙",
       "options": [
         "lion",
@@ -5299,7 +5299,7 @@
       "category": "Picture and word matching",
       "skill": "Picture to word",
       "age_band": "3–6",
-      "prompt": "Which word names this picture of a umbrella?",
+      "prompt": "Which word names this picture of an umbrella?",
       "visual": "☂️",
       "options": [
         "van",
@@ -8019,7 +8019,7 @@
       "category": "Mixed alphabet challenges",
       "skill": "Mixed review",
       "age_band": "5–8",
-      "prompt": "Quick challenge: Which word matches the picture of a elephant?",
+      "prompt": "Quick challenge: Which word matches the picture of an elephant?",
       "visual": "🐘",
       "options": [
         "queen",
