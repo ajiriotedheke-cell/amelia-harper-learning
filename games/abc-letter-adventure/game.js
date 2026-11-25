@@ -122,6 +122,7 @@ function start() {
     $('answers').replaceChildren();
     $('feedback').textContent = 'Please choose another age group to explore the questions currently available.';
     $('progress').textContent = 'More questions are being prepared.';
+    updateProgress();
     $('next').hidden = true;
     return;
   }
