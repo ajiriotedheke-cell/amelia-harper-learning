@@ -37,3 +37,12 @@
 10. Perform real browser tests at desktop, tablet and mobile sizes; test keyboard access, screen readers, audio controls, error states and all navigation links.
 11. Verify external Gumroad/social links, domain DNS, Cloudflare Pages preview and production deployments.
 12. Complete child-focused educational review and supervised usability testing before monetisation or broad release.
+
+## Latest visual and navigation refinements
+
+- Added a shared visual polish layer across the homepage, game catalogue, story, song, resource and privacy pages: softer layered backgrounds, consistent card treatments, clearer hierarchy, improved hover/focus states and responsive spacing.
+- Refined homepage hero, age cards, featured game, audio player, song tiles, bedtime banner, resource card and parent section.
+- Refined shared library-page hero panels and content cards for a more consistent premium feel.
+- Standardised mobile menu behaviour across pages: expanded state, close after selecting a link and Escape-key support.
+- Static JavaScript syntax checks passed for shared scripts and inline page scripts after these changes.
+- Visual appearance has not yet been verified in a real browser at desktop/tablet/mobile breakpoints; screenshot review and device testing remain required.
