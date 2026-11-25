@@ -355,16 +355,28 @@
       "category": "Letter recognition",
       "skill": "Identify first letter",
       "age_band": "3–4",
-      "prompt": "Which letter does the word goat begin with?",
-      "visual": "🐐",
+      "prompt": "Which picture shows a goat?",
+      "visual": "",
       "options": [
-        "A",
-        "G",
-        "T",
-        "Q"
+        {
+          "label": "hat",
+          "emoji": "🎩"
+        },
+        {
+          "label": "kite",
+          "emoji": "🪁"
+        },
+        {
+          "label": "goat",
+          "emoji": "🐐"
+        },
+        {
+          "label": "sun",
+          "emoji": "☀️"
+        }
       ],
-      "answer": "G",
-      "feedback": "Goat begins with G."
+      "answer": "goat",
+      "feedback": "That is a goat! Goats have four legs and can climb."
     },
     {
       "id": "AH-021",
