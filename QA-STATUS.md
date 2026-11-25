@@ -46,3 +46,12 @@
 - Standardised mobile menu behaviour across pages: expanded state, close after selecting a link and Escape-key support.
 - Static JavaScript syntax checks passed for shared scripts and inline page scripts after these changes.
 - Visual appearance has not yet been verified in a real browser at desktop/tablet/mobile breakpoints; screenshot review and device testing remain required.
+
+
+## Latest content-page visual and accessibility pass
+
+- Added dedicated page artwork to the game library, bedtime stories, good-manners songs and learning resources hero panels, reusing existing repository assets.
+- Added keyboard-accessible skip-to-content links on the homepage and all content-library pages.
+- Standardised mobile menu buttons as explicit non-submit buttons.
+- Added responsive hero-art layout rules and visible keyboard focus treatment for the skip link.
+- These changes are committed to the development branch only; browser screenshot review is still outstanding.
