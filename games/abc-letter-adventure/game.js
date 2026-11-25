@@ -89,15 +89,20 @@ async function init() {
 function start() {
   if (!bank.length) return;
 
-  const ageFilter = $('age-filter')?.value || 'all';
+  const ageFilter = $('age')?.value || 'all';
 
   let availableQuestions = bank;
 
   if (ageFilter !== 'all') {
-    availableQuestions = bank.filter(question =>
-      question.age_band &&
-      question.age_band.includes(ageFilter)
-    );
+    const [selectedMin, selectedMax] = ageFilter.split('-').map(Number);
+    availableQuestions = bank.filter(question => {
+      if (!question.age_band) return false;
+      const band = question.age_band.match(/\\d+/g);
+      if (!band || !band.length) return false;
+      const questionMin = Number(band[0]);
+      const questionMax = Number(band[1] || band[0]);
+      return questionMin <= selectedMax && questionMax >= selectedMin;
+    });
   }
 
   if (!availableQuestions.length) {
@@ -142,7 +147,7 @@ function displayQuestionVisual(question) {
     const image = document.createElement('img');
 
     image.src = question.image;
-    image.alt = 'Question picture';
+    image.alt = question.imageAlt || 'Picture clue';
     image.style.width = '100%';
     image.style.maxWidth = '320px';
     image.style.height = '240px';
@@ -203,7 +208,7 @@ function displayAnswers(question) {
       const image = document.createElement('img');
 
       image.src = option.image;
-      image.alt = label;
+      image.alt = label ? `Picture answer: ${label}` : 'Picture answer';
       image.loading = 'eager';
       image.style.width = '100%';
       image.style.height = '150px';
