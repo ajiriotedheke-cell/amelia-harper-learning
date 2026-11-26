@@ -2,6 +2,22 @@
   "version": 1,
   "games": [
     {
+      "id": "adventure-universe",
+      "title": "Adventure Universe",
+      "description": "Explore a colourful fantasy galaxy, collect stardust and travel between magical learning worlds.",
+      "ageBands": [
+        "2-4",
+        "5-7",
+        "8-10",
+        "11-12"
+      ],
+      "path": "/games/adventure-universe/",
+      "category": "Adventure Universe",
+      "status": "published",
+      "featured": true,
+      "icon": "🌌"
+    },
+    {
       "id": "abc-letter-adventure",
       "title": "ABC Letter Adventure",
       "description": "A 500-question alphabet challenge covering letter recognition, sounds, sequencing and early word puzzles.",
