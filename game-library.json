@@ -80,17 +80,17 @@
       "icon": "🧩"
     },
     {
-      "id": "my-happy-pet",
-      "title": "My Happy Pet",
-      "description": "A gentle creative game about caring for a virtual animal friend.",
+      "id": "pet-planet",
+      "title": "Pet Planet",
+      "description": "Adopt a magical little friend. Feed, give fresh water, brush and play while learning kindness and responsibility.",
       "ageBands": [
         "5-7",
         "8-10"
       ],
-      "path": "#",
+      "path": "/games/pet-planet/",
       "category": "Pet Adventures",
-      "status": "coming-soon",
-      "featured": false,
+      "status": "published",
+      "featured": true,
       "icon": "🐾"
     }
   ]
