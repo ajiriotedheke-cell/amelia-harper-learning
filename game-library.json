@@ -107,6 +107,21 @@
       "status": "published",
       "featured": true,
       "icon": "🐠"
+    },
+    {
+      "id": "dinosaur-discovery",
+      "title": "Dinosaur Discovery",
+      "description": "Become a young palaeontologist, excavate eight hidden fossil pieces, rebuild a dinosaur and answer prehistoric science questions.",
+      "ageBands": [
+        "5-7",
+        "8-10",
+        "11-12"
+      ],
+      "path": "/games/dinosaur-discovery/",
+      "category": "Adventure Universe",
+      "status": "published",
+      "featured": true,
+      "icon": "🦕"
     }
   ]
 }
