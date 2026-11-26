@@ -1,6 +1,80 @@
-const form=document.getElementById('settings-form'),statusEl=document.getElementById('status');
-async function load(){try{const r=await fetch('../api/config');if(!r.ok)return;const d=await r.json();for(const [k,v] of Object.entries(d)){const el=form.elements[k];if(!el)continue;if(el.type==='checkbox')el.checked=!!v;else el.value=v??''}}catch(e){statusEl.textContent='Could not load saved settings.'}}
-form.addEventListener('submit',async e=>{e.preventDefault();statusEl.textContent='Saving…';const data={};for(const el of form.elements){if(!el.name)continue;data[el.name]=el.type==='checkbox'?el.checked:el.value.trim()}try{const r=await fetch('../api/admin/config',{method:'PUT',headers:{'content-type':'application/json'},body:JSON.stringify(data)});if(!r.ok){const d=await r.json().catch(()=>({}));throw new Error(d.error||`Save failed (${r.status})`)}statusEl.textContent='Saved successfully. Public website updated.'}catch(err){statusEl.textContent=err.message}});load();
+const form = document.getElementById('settings-form');
+const statusEl = document.getElementById('status');
+const submitButton = form?.querySelector('button[type="submit"]');
 
-const analyticsBox=document.getElementById('analytics');
-document.getElementById('refresh-analytics').addEventListener('click',async()=>{analyticsBox.textContent='Loading…';try{const r=await fetch('../api/admin/analytics');const d=await r.json();if(!r.ok)throw new Error(d.error||'Unable to load analytics');const t=d.totals||{};analyticsBox.innerHTML=`<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:8px"><div class="panel"><b>${t.events||0}</b><br><small>Total events</small></div><div class="panel"><b>${t.starts||0}</b><br><small>Game starts</small></div><div class="panel"><b>${t.completions||0}</b><br><small>Completions</small></div><div class="panel"><b>${t.errors||0}</b><br><small>Errors</small></div></div><h3>By game</h3><table style="width:100%;font-size:12px;text-align:left"><tr><th>Game</th><th>Starts</th><th>Completions</th><th>Errors</th></tr>${(d.games||[]).map(g=>`<tr><td>${g.game_slug}</td><td>${g.starts||0}</td><td>${g.completions||0}</td><td>${g.errors||0}</td></tr>`).join('')}</table><h3>Countries (coarse)</h3><p>${(d.countries||[]).map(c=>`${c.country_code}: ${c.events}`).join(' · ')||'No country data yet'}</p>`}catch(e){analyticsBox.textContent=e.message}});
+function showStatus(message, kind = 'info') {
+  statusEl.textContent = message;
+  statusEl.dataset.state = kind;
+  statusEl.style.color = kind === 'error' ? '#b42318' : kind === 'success' ? '#18794e' : '#6b559c';
+}
+
+async function readResponse(response) {
+  const data = await response.json().catch(() => ({}));
+  if (!response.ok) {
+    if (response.status === 403) {
+      throw new Error('Cloudflare Access is not authorising this administrator. Check the Access application and ADMIN_EMAIL setting.');
+    }
+    if (response.status === 503) {
+      throw new Error('The website database is not connected yet. Configure the D1 database binding named DB in Cloudflare Pages.');
+    }
+    throw new Error(data.error || `Request failed (${response.status}).`);
+  }
+  return data;
+}
+
+async function loadSettings() {
+  showStatus('Checking saved settings…');
+  try {
+    const response = await fetch('../api/config', { cache: 'no-store' });
+    const data = await readResponse(response);
+    for (const [key, value] of Object.entries(data)) {
+      const field = form.elements.namedItem(key);
+      if (!field) continue;
+      if (field.type === 'checkbox') field.checked = Boolean(value);
+      else field.value = value ?? '';
+    }
+    showStatus('Saved settings loaded. You can edit and save your links.', 'success');
+  } catch (error) {
+    showStatus(error.message, 'error');
+  }
+}
+
+form?.addEventListener('submit', async event => {
+  event.preventDefault();
+  const data = {};
+  for (const field of form.elements) {
+    if (!field.name) continue;
+    data[field.name] = field.type === 'checkbox' ? field.checked : field.value.trim();
+  }
+
+  showStatus('Saving your settings…');
+  if (submitButton) submitButton.disabled = true;
+  try {
+    const response = await fetch('../api/admin/config', {
+      method: 'PUT',
+      headers: { 'content-type': 'application/json' },
+      body: JSON.stringify(data)
+    });
+    const result = await readResponse(response);
+    showStatus(`Saved successfully (${result.saved} settings). Your public website will reflect the changes shortly.`, 'success');
+  } catch (error) {
+    showStatus(error.message, 'error');
+  } finally {
+    if (submitButton) submitButton.disabled = false;
+  }
+});
+
+loadSettings();
+
+const analyticsBox = document.getElementById('analytics');
+document.getElementById('refresh-analytics')?.addEventListener('click', async () => {
+  analyticsBox.textContent = 'Loading analytics…';
+  try {
+    const response = await fetch('../api/admin/analytics', { cache: 'no-store' });
+    const data = await readResponse(response);
+    const totals = data.totals || {};
+    analyticsBox.textContent = `Events: ${totals.events || 0} · Starts: ${totals.starts || 0} · Completions: ${totals.completions || 0} · Errors: ${totals.errors || 0}`;
+  } catch (error) {
+    analyticsBox.textContent = error.message;
+  }
+});
