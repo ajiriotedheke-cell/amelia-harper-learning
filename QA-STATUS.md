@@ -75,3 +75,23 @@
 - Confirm sitemap and 404 behaviour on the live Cloudflare Pages deployment.
 - Continue with the admin content-management upgrade, story/song library management, media optimisation and privacy/accessibility review.
 - No production deployment has been confirmed in this phase.
+
+
+## YouTube video library — implementation notes
+
+- Added an administrator textarea that accepts one `Video title | YouTube URL` entry per line.
+- Client-side validation accepts standard YouTube watch, short-link, Shorts, embed and live-video URL formats and extracts the 11-character video ID.
+- The admin API validates titles, IDs and a maximum of 30 videos before storing the list in the existing D1 `site_settings` table.
+- Added `/videos.html`, which reads the public settings endpoint and renders a responsive video collection.
+- The video page uses standard YouTube embeds (`youtube.com/embed`) rather than privacy-enhanced `youtube-nocookie.com` embeds, and does not configure autoplay. The iframe is only inserted after the visitor selects the load-player control; the visitor then presses Play inside YouTube.
+- Added a parent-facing note that playback is served by YouTube.
+- Added the video page to homepage navigation and the XML sitemap.
+- Confirmed the video page, homepage, sitemap and robots file use the custom domain `amelia-harperkids.com`.
+
+### Outstanding YouTube setup and verification
+
+- The video library will remain empty until the administrator adds actual video titles and links after Cloudflare Access and D1 are working.
+- The website owner must designate the site as child-directed through Google's applicable site tools. Each relevant YouTube upload/channel must also be accurately designated Made for Kids in YouTube Studio.
+- Actual view counts are controlled by YouTube's validation systems. No autoplay is configured because YouTube says autoplayed embedded videos do not increment views.
+- Test a real video on the deployed website, then verify playback and traffic in YouTube Studio Analytics. This repository change does not prove a view has been counted.
+- Review the privacy notice for third-party YouTube player data collection and applicable child privacy requirements.
