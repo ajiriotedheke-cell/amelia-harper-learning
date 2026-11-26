@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Play Magical Memory Match, a friendly picture-pair game with adjustable difficulty for children ages 2–12.">
+  <meta name="theme-color" content="#4f39a8">
+  <title>Magical Memory Match | Amelia Harper Kids</title>
+  <link rel="canonical" href="https://ameliaharperkids.com/games/magical-memory-match/">
+  <meta property="og:site_name" content="Amelia Harper Kids">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Magical Memory Match | Amelia Harper Kids">
+  <meta property="og:description" content="Turn over the cards, find matching picture pairs and practise memory skills.">
+  <meta property="og:url" content="https://ameliaharperkids.com/games/magical-memory-match/">
+  <link rel="icon" href="../../assets/images/amelia-harper-logo.png">
+  <link rel="stylesheet" href="../../styles.css">
+  <style>
+    .memory-page{max-width:920px;margin:auto;padding:42px 22px 80px}
+    .memory-hero{padding:28px 30px;border-radius:25px;background:linear-gradient(120deg,#f1ebff,#fff1e8);margin:20px 0}
+    .memory-hero h1{font:600 clamp(34px,6vw,48px)/1.05 Fredoka;margin:8px 0}
+    .memory-hero p{color:#706c83;line-height:1.7;max-width:660px}
+    .memory-panel{background:#fff;border:1px solid #e8e1f3;border-radius:25px;padding:24px;box-shadow:var(--shadow-card)}
+    .memory-controls{display:flex;gap:12px;align-items:end;flex-wrap:wrap;margin-bottom:18px}
+    .memory-controls label{display:grid;gap:7px;font-size:12px;font-weight:800}
+    .memory-controls select{min-height:46px;padding:0 13px;border:1px solid #e6e0f0;border-radius:12px;background:#fff;font:600 13px 'DM Sans';color:#292344}
+    .memory-stats{display:flex;gap:12px;flex-wrap:wrap;margin:15px 0}
+    .memory-stat{background:#f7f4ff;border-radius:13px;padding:10px 14px;font-size:12px;color:#62558a}
+    .memory-stat strong{display:block;font:600 21px Fredoka;color:#43318f}
+    .memory-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:18px 0}
+    .memory-card{min-height:105px;border:2px solid #e9e2f7;border-radius:18px;background:linear-gradient(145deg,#f8f5ff,#fff);cursor:pointer;display:grid;place-items:center;font-size:clamp(30px,5vw,48px);transition:transform .15s,border-color .15s,background .15s;touch-action:manipulation}
+    .memory-card:hover:not(:disabled){transform:translateY(-2px);border-color:#a995df}
+    .memory-card:focus-visible{outline:3px solid #f2b93b;outline-offset:3px}
+    .memory-card[aria-pressed="true"]{background:#fff8e6;border-color:#e7c66c}
+    .memory-card.matched{background:#e9f8ef;border-color:#6bb98a;cursor:default}
+    .memory-card:disabled{opacity:1}
+    .memory-card .back{font-size:28px;color:#8b70c7}
+    .memory-message{min-height:28px;color:#5c4a91;font-weight:800;font-size:14px;line-height:1.5}
+    .memory-actions{display:flex;gap:10px;flex-wrap:wrap}
+    .memory-help{font-size:11px;color:#827b91;line-height:1.6;margin-top:15px}
+    @media(max-width:600px){.memory-page{padding:28px 16px 60px}.memory-hero{padding:23px}.memory-panel{padding:16px}.memory-grid{gap:8px}.memory-card{min-height:76px;border-radius:13px}}
+    @media(prefers-reduced-motion:reduce){.memory-card{transition:none}}
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to game</a>
+  <div class="announcement">AMELIA HARPER · PLAY, NOTICE & REMEMBER</div>
+  <header class="site-header">
+    <a class="brand" href="../../"><img src="../../assets/images/amelia-harper-logo.png" alt=""><span>Amelia Harper<small>Learn. Play. Sing. Dance. Grow.</small></span></a>
+    <a class="nav-cta" href="../../games/">Game library</a>
+  </header>
+  <main id="main-content" class="memory-page">
+    <a class="text-link" href="../../games/">← Back to game library</a>
+    <section class="memory-hero">
+      <span class="eyebrow">A LITTLE BRAIN-BOOSTING ADVENTURE</span>
+      <h1>Magical Memory Match</h1>
+      <p>Turn over two cards at a time and find the matching pictures. Take your time, look closely and celebrate every pair you discover.</p>
+    </section>
+    <section class="memory-panel" aria-label="Memory matching game">
+      <div class="memory-controls">
+        <label for="difficulty">Choose your challenge
+          <select id="difficulty">
+            <option value="2-4">Little Explorers · 3 pairs</option>
+            <option value="5-7" selected>Curious Creators · 6 pairs</option>
+            <option value="8-10">Bright Adventurers · 8 pairs</option>
+            <option value="11-12">Super Thinkers · 10 pairs</option>
+          </select>
+        </label>
+        <button id="new-game" class="btn primary" type="button">Start new game ↻</button>
+      </div>
+      <div class="memory-stats" aria-live="polite">
+        <div class="memory-stat">Moves<strong id="moves">0</strong></div>
+        <div class="memory-stat">Pairs found<strong id="pairs">0 / 6</strong></div>
+      </div>
+      <div id="memory-grid" class="memory-grid" aria-label="Picture cards"></div>
+      <p id="memory-message" class="memory-message" role="status" aria-live="polite">Choose a challenge and find your first matching pair!</p>
+      <div class="memory-actions"><button id="restart" class="btn light" type="button">Shuffle and play again</button></div>
+      <p class="memory-help">A grown-up can help younger players name the pictures. No names, scores tied to identities, or personal details are collected.</p>
+    </section>
+  </main>
+  <script>
+  (() => {
+    const pictures = [
+      ['🐶','puppy'],['🐱','kitten'],['🦋','butterfly'],['🌈','rainbow'],['🍎','apple'],
+      ['🚀','rocket'],['⭐','star'],['🐢','turtle'],['🌻','sunflower'],['🎈','balloon']
+    ];
+    const pairCounts = {'2-4':3,'5-7':6,'8-10':8,'11-12':10};
+    const grid = document.getElementById('memory-grid');
+    const difficulty = document.getElementById('difficulty');
+    const movesEl = document.getElementById('moves');
+    const pairsEl = document.getElementById('pairs');
+    const message = document.getElementById('memory-message');
+    let first = null, lock = false, moves = 0, found = 0, total = 6, deck = [], mismatchTimer = null;
+
+    function shuffle(items){
+      const a=[...items];
+      for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}
+      return a;
+    }
+    function track(eventName){
+      const deviceType=/iPad|Tablet/i.test(navigator.userAgent)?'tablet':/Mobi|Android/i.test(navigator.userAgent)?'mobile':'desktop';
+      fetch('/api/events',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({eventName,gameSlug:'magical-memory-match',ageBand:difficulty.value,deviceType}),keepalive:true}).catch(()=>{});
+    }
+    function updateStats(){movesEl.textContent=String(moves);pairsEl.textContent=found+' / '+total;}
+    function flipDown(card){card.classList.remove('revealed');card.setAttribute('aria-pressed','false');card.textContent='';const back=document.createElement('span');back.className='back';back.setAttribute('aria-hidden','true');back.textContent='✦';card.append(back);card.dataset.open='false';}
+    function reveal(card){
+      card.classList.add('revealed');card.setAttribute('aria-pressed','true');card.dataset.open='true';card.textContent=card.dataset.emoji;
+    }
+    function finish(){
+      message.textContent='Wonderful work! You found every pair in '+moves+' moves. Ready for another adventure?';
+      track('game_complete');
+    }
+    function choose(card){
+      if(lock||card.disabled||card.dataset.open==='true')return;
+      reveal(card);
+      if(!first){first=card;return;}
+      moves++;updateStats();
+      if(first.dataset.pair===card.dataset.pair){
+        [first,card].forEach(c=>{c.disabled=true;c.classList.add('matched');c.setAttribute('aria-label',c.dataset.name+', matched');});
+        found++;first=null;updateStats();
+        message.textContent='You found a pair! Great looking.';
+        if(found===total)finish();
+        return;
+      }
+      lock=true;message.textContent='Not a match yet. Try to remember where each picture is.';
+      const previous=first;first=null;
+      mismatchTimer=window.setTimeout(()=>{flipDown(previous);flipDown(card);lock=false;message.textContent='Keep going — you can find the pairs!';},850);
+    }
+    function start(){
+      if(mismatchTimer)window.clearTimeout(mismatchTimer);
+      first=null;lock=false;moves=0;found=0;total=pairCounts[difficulty.value];updateStats();
+      const chosen=shuffle(pictures).slice(0,total);
+      deck=shuffle(chosen.flatMap((item,index)=>[{emoji:item[0],name:item[1],pair:index},{emoji:item[0],name:item[1],pair:index}]));
+      grid.replaceChildren();
+      grid.style.gridTemplateColumns='repeat(4,minmax(0,1fr))';
+      if(total===10)grid.style.gridTemplateColumns='repeat(5,minmax(0,1fr))';
+      deck.forEach((item,index)=>{
+        const card=document.createElement('button');card.type='button';card.className='memory-card';card.dataset.emoji=item.emoji;card.dataset.name=item.name;card.dataset.pair=String(item.pair);card.dataset.open='false';card.setAttribute('aria-label','Hidden picture card '+(index+1));card.setAttribute('aria-pressed','false');
+        const back=document.createElement('span');back.className='back';back.setAttribute('aria-hidden','true');back.textContent='✦';card.append(back);
+        card.addEventListener('click',()=>choose(card));grid.append(card);
+      });
+      message.textContent='Find '+total+' matching pairs. You can take your time!';
+      track('game_start');
+    }
+    document.getElementById('new-game').addEventListener('click',start);
+    document.getElementById('restart').addEventListener('click',start);
+    difficulty.addEventListener('change',start);
+    start();
+  })();
+  </script>
+</body>
+</html>
