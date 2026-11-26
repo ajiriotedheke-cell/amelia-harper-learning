@@ -31,6 +31,7 @@ async function loadSettings() {
       const field = form.elements.namedItem(key);
       if (!field) continue;
       if (field.type === 'checkbox') field.checked = Boolean(value);
+      else if (key === 'youtubeVideos' && Array.isArray(value)) field.value = value.map(video => `${video.title} | https://www.youtube.com/watch?v=${video.videoId}`).join('\n');
       else field.value = value ?? '';
     }
     showStatus('Saved settings loaded. You can edit and save your links.', 'success');
@@ -44,7 +45,14 @@ form?.addEventListener('submit', async event => {
   const data = {};
   for (const field of form.elements) {
     if (!field.name) continue;
-    data[field.name] = field.type === 'checkbox' ? field.checked : field.value.trim();
+    if (field.type === 'checkbox') data[field.name] = field.checked;
+    else if (field.name === 'youtubeVideos') {
+      data.youtubeVideos = field.value.split(/\\r?\\n/).map(line => line.trim()).filter(Boolean).map((line, index) => {
+        const separator = line.indexOf('|');
+        if (separator < 1) throw new Error(`Line ${index + 1}: use Video title | YouTube URL.`);
+        return { title: line.slice(0, separator).trim(), url: line.slice(separator + 1).trim() };
+      });
+    } else data[field.name] = field.value.trim();
   }
 
   showStatus('Saving your settings…');
