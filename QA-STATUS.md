@@ -95,3 +95,13 @@
 - Actual view counts are controlled by YouTube's validation systems. No autoplay is configured because YouTube says autoplayed embedded videos do not increment views.
 - Test a real video on the deployed website, then verify playback and traffic in YouTube Studio Analytics. This repository change does not prove a view has been counted.
 - Review the privacy notice for third-party YouTube player data collection and applicable child privacy requirements.
+
+
+## Adventure Universe and 3D visual direction
+
+- Added the Adventure Universe hub with a layered fantasy-galaxy scene, floating planets, animated star effects and six themed destination worlds.
+- Added a simple five-star collection interaction with accessible buttons and live status feedback; no personal data or child-level profile is collected.
+- Added Adventure Universe to the published game catalogue and homepage, with links to the existing ABC and memory games.
+- Upgraded the ABC quiz and Magical Memory Match presentation with richer layered gradients, depth, raised controls, shadows and motion-aware styling.
+- Updated the game catalogue with a direct Adventure Universe entry point and more dimensional card treatments.
+- These are CSS-based 3D-inspired visual treatments rather than a full WebGL 3D engine. Real device/browser visual testing, performance checks and supervised child playtesting are still required.
