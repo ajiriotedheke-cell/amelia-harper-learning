@@ -105,3 +105,13 @@
 - Upgraded the ABC quiz and Magical Memory Match presentation with richer layered gradients, depth, raised controls, shadows and motion-aware styling.
 - Updated the game catalogue with a direct Adventure Universe entry point and more dimensional card treatments.
 - These are CSS-based 3D-inspired visual treatments rather than a full WebGL 3D engine. Real device/browser visual testing, performance checks and supervised child playtesting are still required.
+
+
+## Rainbow Runway — first playable Adventure Universe world
+
+- Built `/games/rainbow-runway/` as a self-contained canvas runner with a perspective rainbow runway, layered sky, floating islands, clouds, stars, animated player character and particle effects.
+- Added lane movement, jumping, star collection, cloud-bump collisions, hearts/lives, distance, score, best-run storage, pause, restart and end-of-run summary.
+- Added keyboard and touch controls, responsive canvas sizing, reduced-motion handling, visibility-change pause, age-level settings for ages 2–4, 5–7, 8–10 and 11–12, and a short on-screen control guide.
+- Game analytics sends only aggregate start/completion events with the existing event API fields; no child identity or per-action answer data is sent.
+- Added Rainbow Runway to the published catalogue and XML sitemap.
+- Static code review and route/catalogue checks are required before release. Real browser/device testing, playtesting with parents/educators, performance/accessibility review and tuning of difficulty/collision behaviour remain outstanding.
