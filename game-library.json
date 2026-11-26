@@ -18,6 +18,22 @@
       "icon": "🌌"
     },
     {
+      "id": "rainbow-runway",
+      "title": "Rainbow Runway",
+      "description": "Dash across floating rainbow bridges, collect stardust, jump over friendly cloud bumps and explore a magical sky world.",
+      "ageBands": [
+        "2-4",
+        "5-7",
+        "8-10",
+        "11-12"
+      ],
+      "path": "/games/rainbow-runway/",
+      "category": "Adventure Universe",
+      "status": "published",
+      "featured": true,
+      "icon": "🌈"
+    },
+    {
       "id": "abc-letter-adventure",
       "title": "ABC Letter Adventure",
       "description": "A 500-question alphabet challenge covering letter recognition, sounds, sequencing and early word puzzles.",
