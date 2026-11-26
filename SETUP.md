@@ -31,7 +31,7 @@ The event endpoint stores only game slug, event type, coarse age band, device ca
 7. Add environment variable `ADMIN_EMAIL` with the administrator email address.
 8. Configure Cloudflare Access to protect `https://YOUR-DOMAIN/admin/*` and `https://YOUR-DOMAIN/api/admin/*`, allowing only your administrator email. The Pages Function also checks the Access-injected `Cf-Access-Authenticated-User-Email` header against `ADMIN_EMAIL`.
 9. Test `/api/config`, `/admin/`, saving a temporary social URL, and confirming the public site reflects it. Remove the test URL afterwards.
-10. Connect the custom domain `ameliaharperkids.com` after the Pages project is deployed.
+10. Connect the custom domain `amelia-harperkids.com` after the Pages project is deployed.
 
 ## Add new games
 
@@ -70,3 +70,12 @@ The current development branch adds the searchable game library, dedicated story
 - Public pages are listed in `sitemap.xml`; crawler instructions are in `robots.txt`. Administrator routes are disallowed from indexing, but must still be protected by Cloudflare Access.
 - A branded `404.html` page provides navigation back to the homepage and game library.
 - Public pages include canonical and social-sharing metadata.
+
+
+## YouTube video library
+
+- Add videos in `/admin/` under **YouTube video library**, one per line as `Video title | YouTube URL`. Supported links include standard watch, `youtu.be`, Shorts, embeds and live video URLs.
+- The administrator validates and stores video IDs in the existing D1 `site_settings` table. The public `/videos.html` page reads the published list from `/api/config`.
+- The website uses a standard YouTube embed that is loaded only after a visitor chooses **Load video player**. The player does not autoplay. A visitor must then press Play in YouTube's player. YouTube does not count autoplayed embedded playback as a view; legitimate user-initiated embedded views may count, subject to YouTube's validation and view-counting systems.
+- Because Amelia Harper Kids is child-directed, self-designate the website in Google's child-directed treatment tools and correctly set each relevant YouTube upload/channel audience to **Made for Kids** in YouTube Studio. Review YouTube's restrictions on child-directed content and privacy obligations before launch.
+- Embedding does not guarantee a view, monetized play, or watch-hour eligibility. Confirm results in YouTube Studio Analytics after real viewing.
