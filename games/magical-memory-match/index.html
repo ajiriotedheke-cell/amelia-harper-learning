@@ -101,9 +101,9 @@
       fetch('/api/events',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({eventName,gameSlug:'magical-memory-match',ageBand:difficulty.value,deviceType}),keepalive:true}).catch(()=>{});
     }
     function updateStats(){movesEl.textContent=String(moves);pairsEl.textContent=found+' / '+total;}
-    function flipDown(card){card.classList.remove('revealed');card.setAttribute('aria-pressed','false');card.textContent='';const back=document.createElement('span');back.className='back';back.setAttribute('aria-hidden','true');back.textContent='✦';card.append(back);card.dataset.open='false';}
+    function flipDown(card){card.classList.remove('revealed');card.setAttribute('aria-pressed','false');card.setAttribute('aria-label','Hidden picture card');card.textContent='';const back=document.createElement('span');back.className='back';back.setAttribute('aria-hidden','true');back.textContent='✦';card.append(back);card.dataset.open='false';}
     function reveal(card){
-      card.classList.add('revealed');card.setAttribute('aria-pressed','true');card.dataset.open='true';card.textContent=card.dataset.emoji;
+      card.classList.add('revealed');card.setAttribute('aria-pressed','true');card.setAttribute('aria-label',card.dataset.name);card.dataset.open='true';card.textContent=card.dataset.emoji;
     }
     function finish(){
       message.textContent='Wonderful work! You found every pair in '+moves+' moves. Ready for another adventure?';
