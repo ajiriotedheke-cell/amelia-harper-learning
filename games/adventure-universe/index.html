@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Enter the Amelia Harper Adventure Universe: explore magical worlds, collect stardust and discover playful learning games.">
+<meta name="theme-color" content="#17134a">
+<title>Adventure Universe | Amelia Harper Kids</title>
+<link rel="canonical" href="https://amelia-harperkids.com/games/adventure-universe/">
+<meta property="og:site_name" content="Amelia Harper Kids"><meta property="og:type" content="website"><meta property="og:title" content="Adventure Universe | Amelia Harper Kids"><meta property="og:description" content="Explore magical worlds and discover playful learning adventures."><meta property="og:url" content="https://amelia-harperkids.com/games/adventure-universe/">
+<link rel="icon" href="../../assets/images/amelia-harper-logo.png"><link rel="stylesheet" href="../../styles.css">
+<style>
+:root{--space:#100d36;--space2:#24206a;--gold:#ffe08a;--glow:#a9e8ff}
+body{background:#100d36;color:#fff}
+.universe{min-height:100vh;overflow:hidden;background:radial-gradient(ellipse at 50% 5%,#5145a4 0,#24205f 36%,#100d36 76%);position:relative}
+.universe:before,.universe:after{content:"";position:absolute;inset:0;pointer-events:none;background-image:radial-gradient(2px 2px at 10% 18%,#fff 60%,transparent),radial-gradient(1px 1px at 25% 40%,#fff 60%,transparent),radial-gradient(2px 2px at 75% 20%,#fff 60%,transparent),radial-gradient(1px 1px at 88% 58%,#fff 60%,transparent),radial-gradient(2px 2px at 52% 75%,#fff 60%,transparent),radial-gradient(1px 1px at 42% 12%,#fff 60%,transparent);background-size:390px 290px;opacity:.8}
+.universe:after{background:radial-gradient(ellipse at 50% 100%,#5747b3 0,transparent 55%);opacity:.55}
+.universe-header{position:relative;z-index:2;display:flex;align-items:center;justify-content:space-between;padding:18px clamp(18px,5vw,70px);background:#100d3670;border-bottom:1px solid #ffffff20;backdrop-filter:blur(12px)}
+.universe-header .brand{color:white}.universe-header .brand small{color:#d5d0ff}.universe-header .nav-cta{background:#ffe08a;color:#34275c}
+.space-main{position:relative;z-index:1;max-width:1200px;margin:auto;padding:35px 24px 90px}
+.space-intro{text-align:center;max-width:760px;margin:10px auto 28px}
+.space-kicker{font-size:11px;letter-spacing:.22em;color:#b9afff;font-weight:900}
+.space-intro h1{font:700 clamp(42px,7vw,76px)/.98 Fredoka;margin:14px 0;color:#fff;text-shadow:0 5px 0 #33257c,0 12px 30px #07051c}
+.space-intro h1 span{color:#ffe08a}.space-intro p{color:#e0dcff;line-height:1.7;font-size:15px}
+.mission-bar{display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;margin:24px auto 18px}
+.mission-pill{border:1px solid #ffffff30;background:#ffffff12;border-radius:30px;padding:10px 16px;color:#fff;font-weight:800;font-size:12px;box-shadow:inset 0 1px #ffffff20}
+.mission-pill strong{color:#ffe08a}
+.galaxy-stage{height:340px;position:relative;perspective:900px;display:grid;place-items:center;margin:0 auto 28px;max-width:1000px}
+.galaxy-floor{position:absolute;left:7%;right:7%;bottom:4px;height:130px;border-radius:50%;background:radial-gradient(ellipse,#7567e7a8 0,#332a8d66 35%,transparent 70%);transform:rotateX(66deg);filter:blur(2px)}
+.portal-sun{position:absolute;width:210px;height:210px;border-radius:50%;top:18px;background:radial-gradient(circle at 32% 25%,#fff8d8 0 3%,#ffe88d 8%,#f39b78 34%,#9d60d7 63%,#3b2a91 75%);box-shadow:0 0 30px #ffc86e,0 0 90px #a66aff90, inset -18px -20px 35px #23175f;animation:float 5s ease-in-out infinite}
+.portal-sun:before{content:"";position:absolute;inset:-18px;border:2px solid #ffe08a99;border-radius:50%;transform:rotateX(70deg) rotateZ(-22deg);box-shadow:0 0 20px #f6baff}
+.portal-sun:after{content:"✦";position:absolute;top:40%;left:43%;font-size:44px;color:#fff9d7;text-shadow:0 0 20px white}
+.planet{position:absolute;border-radius:50%;box-shadow:inset -15px -14px 25px #09082c90, inset 6px 6px 13px #ffffff70,0 18px 24px #09072780;animation:float 4.5s ease-in-out infinite}
+.planet.one{width:94px;height:94px;left:15%;top:110px;background:radial-gradient(circle at 30% 25%,#e6ffcf,#6dd5a4 34%,#287b9c 70%);animation-delay:-1.3s}
+.planet.two{width:65px;height:65px;right:18%;top:65px;background:radial-gradient(circle at 30% 25%,#fff0bb,#ff9c9c 40%,#9952c6 75%);animation-delay:-2.1s}
+.planet.three{width:45px;height:45px;right:29%;bottom:48px;background:radial-gradient(circle at 30% 25%,#fff,#9fdcff 45%,#4665d4 80%);animation-delay:-.6s}
+.comet{position:absolute;font-size:35px;filter:drop-shadow(0 0 12px #ffe08a);animation:drift 8s ease-in-out infinite}
+.comet.a{left:29%;top:25px}.comet.b{right:12%;bottom:38px;animation-delay:-4s}
+@keyframes float{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-13px) rotate(5deg)}}
+@keyframes drift{0%,100%{transform:translate(0,0) rotate(-12deg)}50%{transform:translate(25px,-18px) rotate(12deg)}}
+.world-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:20px}
+.world-card{position:relative;isolation:isolate;min-height:220px;border:1px solid #ffffff30;border-radius:24px;padding:20px;overflow:hidden;background:linear-gradient(145deg,#ffffff20,#ffffff08);box-shadow:0 20px 45px #07051e55,inset 0 1px #ffffff30;transition:transform .25s,border-color .25s}
+.world-card:hover{transform:translateY(-7px) scale(1.015);border-color:#ffe08a}
+.world-card:before{content:"";position:absolute;z-index:-1;width:170px;height:170px;border-radius:50%;right:-25px;top:-45px;background:var(--orb);box-shadow:inset -18px -15px 25px #09072b66,0 0 45px var(--orb);opacity:.9}
+.world-card:after{content:"";position:absolute;z-index:-1;inset:auto -10% -75px;height:120px;background:linear-gradient(transparent,#09072788);transform:skewY(-7deg)}
+.world-card .world-icon{font-size:46px;display:block;filter:drop-shadow(0 8px 6px #09072780);margin-bottom:10px}
+.world-card h2{font:600 23px Fredoka;margin:5px 0 7px;color:white}.world-card p{font-size:12px;line-height:1.6;color:#e0dcff;max-width:280px;margin:0 0 16px}
+.world-card a,.world-card button{display:inline-flex;border:0;border-radius:30px;padding:10px 15px;background:#ffe08a;color:#33245e;font:800 11px 'DM Sans';cursor:pointer}
+.world-card .coming{display:inline-block;padding:9px 12px;border-radius:30px;background:#ffffff18;color:#fff3c2;font-size:10px;font-weight:800}
+.world-card.rainbow{--orb:#fa9ab9}.world-card.memory{--orb:#a88aff}.world-card.abc{--orb:#8ed6fa}.world-card.pet{--orb:#a8e6a4}.world-card.ocean{--orb:#66cbe5}.world-card.dino{--orb:#ffbd73}
+.world-footer{text-align:center;color:#c8c1f5;font-size:11px;line-height:1.7;margin:30px auto 0;max-width:700px}
+.star-button{position:absolute;border:0;background:transparent;font-size:28px;cursor:pointer;filter:drop-shadow(0 0 10px #ffe08a);animation:twinkle 1.6s ease-in-out infinite alternate;z-index:3}
+.star-button:focus-visible{outline:3px solid white;border-radius:50%}
+@keyframes twinkle{from{transform:scale(.8);opacity:.65}to{transform:scale(1.2);opacity:1}}
+.star-button.collected{opacity:.2;pointer-events:none;transform:scale(.5)}
+#star1{left:37%;top:35%}#star2{right:31%;top:16%}#star3{left:21%;bottom:18%}#star4{right:21%;bottom:26%}#star5{left:50%;top:4%}
+@media(max-width:760px){.world-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.galaxy-stage{height:280px}.portal-sun{width:165px;height:165px}.planet.one{left:8%;width:70px;height:70px}.planet.two{right:7%}}
+@media(max-width:520px){.space-main{padding:26px 16px 60px}.world-grid{grid-template-columns:1fr}.world-card{min-height:185px}.galaxy-stage{height:230px}.planet.three{right:18%}.universe-header{padding:14px}.space-intro h1{font-size:46px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="universe">
+<header class="universe-header"><a class="brand" href="../../"><img src="../../assets/images/amelia-harper-logo.png" alt=""><span>Amelia Harper<small>Learn. Play. Sing. Dance. Grow.</small></span></a><a class="nav-cta" href="../">Game library</a></header>
+<main class="space-main">
+<section class="space-intro"><span class="space-kicker">✦ YOUR IMAGINATION HAS NO LIMITS ✦</span><h1>Welcome to the <span>Adventure Universe</span></h1><p>Fly between magical worlds, discover curious creatures and unlock little learning victories. Every world has something wonderful waiting for you.</p>
+<div class="mission-bar"><span class="mission-pill">✨ Stardust collected: <strong id="star-count">0 / 5</strong></span><span class="mission-pill" id="mission-message" role="status" aria-live="polite">Tap the five twinkling stars!</span></div></section>
+<section class="galaxy-stage" aria-label="A colourful fantasy galaxy with floating planets"><div class="galaxy-floor"></div><div class="portal-sun"></div><div class="planet one"></div><div class="planet two"></div><div class="planet three"></div><span class="comet a" aria-hidden="true">☄️</span><span class="comet b" aria-hidden="true">🪐</span>
+<button class="star-button" id="star1" aria-label="Collect a stardust star">⭐</button><button class="star-button" id="star2" aria-label="Collect a stardust star">⭐</button><button class="star-button" id="star3" aria-label="Collect a stardust star">⭐</button><button class="star-button" id="star4" aria-label="Collect a stardust star">⭐</button><button class="star-button" id="star5" aria-label="Collect a stardust star">⭐</button></section>
+<section class="world-grid" aria-label="Explore learning worlds">
+<article class="world-card rainbow"><span class="world-icon">🌈</span><h2>Rainbow Runway</h2><p>Race through a bright sky, follow colour trails and discover the joy of patterns.</p><span class="coming">New adventure in development</span></article>
+<article class="world-card memory"><span class="world-icon">🧩</span><h2>Memory Moon</h2><p>Visit a glowing moon garden and match magical picture pairs.</p><a href="../magical-memory-match/">Enter this world →</a></article>
+<article class="world-card abc"><span class="world-icon">🔤</span><h2>Alphabet Galaxy</h2><p>Travel through letter constellations, sounds and early word discoveries.</p><a href="../abc-letter-adventure/">Enter this world →</a></article>
+<article class="world-card pet"><span class="world-icon">🐾</span><h2>Pet Planet</h2><p>Meet a friendly creature, care for it and learn about kindness and responsibility.</p><span class="coming">New adventure in development</span></article>
+<article class="world-card ocean"><span class="world-icon">🐠</span><h2>Ocean of Wonders</h2><p>Dive into an underwater world of shapes, numbers and fascinating sea life.</p><span class="coming">New adventure in development</span></article>
+<article class="world-card dino"><span class="world-icon">🦕</span><h2>Dinosaur Discovery</h2><p>Explore a prehistoric valley full of puzzles, fossils and curious discoveries.</p><span class="coming">New adventure in development</span></article>
+</section>
+<p class="world-footer">Made for curious minds. A grown-up can help younger explorers choose a world. The universe is designed for short, playful learning moments — take a break whenever you need one.</p>
+</main></div>
+<script>
+(()=>{let collected=0;const count=document.getElementById('star-count'),message=document.getElementById('mission-message');document.querySelectorAll('.star-button').forEach((star,i)=>star.addEventListener('click',()=>{if(star.classList.contains('collected'))return;star.classList.add('collected');star.setAttribute('aria-label','Stardust collected');collected++;count.textContent=collected+' / 5';message.textContent=collected===5?'Galaxy explorer! You found all five stars!':'Lovely discovery! '+(5-collected)+' more to find.';}));})();
+</script>
+</body></html>
