@@ -9,13 +9,14 @@ A responsive Cloudflare Pages website starter with the approved brand sections, 
 - Dedicated games, stories, songs and resources browsing pages. The game library supports search, age-band and category filters.
 - Social destinations are editable in `/admin/` (Facebook, YouTube, TikTok, Gumroad).
 - Sweet Bedtime Moments Gumroad URL, description, button label and publish toggle are editable.
-- ABC Letter Adventure is backed by 500 question records. The bank is structurally checked, but still requires human educational review and supervised playtesting before commercial release.\n- Magical Memory Match is a second playable game with 3, 6, 8 or 10 pairs across the four age bands.
+- ABC Letter Adventure is backed by 500 question records. The bank is structurally checked, but still requires human educational review and supervised playtesting before commercial release.
+- Magical Memory Match is a second playable game with 3, 6, 8 or 10 pairs across the four age bands.
 - Existing Tumi and the Little Star audio file included locally.
 - Cloudflare Pages Functions for public settings and admin settings, plus a simple aggregate game event endpoint.
 
 ## Important implementation boundaries
 
-This is a Phase 1 starter, not a live deployed website. Admin settings require Cloudflare D1 and Cloudflare Access setup before they can be saved securely. Membership checkout, newsletter provider, upload manager, full analytics reporting dashboard, additional games and YouTube Playables packaging are not yet implemented. The public settings page has safe defaults until D1 is connected.
+This is a gradually expanding Phase 1 website. Public deployment and administrative features depend on the current Cloudflare Pages, Access and D1 configuration. Admin settings require Cloudflare D1 and Cloudflare Access setup before they can be saved securely. Membership checkout, newsletter provider, upload manager, full analytics reporting dashboard, additional games and YouTube Playables packaging are not yet implemented. The public settings page has safe defaults until D1 is connected.
 
 The event endpoint stores only game slug, event type, coarse age band, device category, country code and timestamp. It does not collect player names, email addresses, precise location or persistent player IDs. Before release, add rate limiting, retention/deletion rules, parental notices/consent as legally required, and verify that analytics practices comply with the laws in each target market. Do not use this external event endpoint in a YouTube Playables build; use YouTube's permitted SDK/reporting path for that separate build.
 
@@ -62,4 +63,10 @@ The current development branch adds the searchable game library, dedicated story
 - The picture-answer renderer supports image-based options, but dedicated 3D picture assets (including goat, hat, kite and sun) have not yet been added. Do not publish question records that reference missing image paths.
 - Current PNG images are approximately 2.2–2.4 MB each and the audio story is approximately 11.2 MB. Optimise these assets and verify quality before broad international release.
 - Parent membership, payment checkout, newsletter sign-up and content uploads are not implemented. They require selected providers, secure server-side integration and appropriate parental consent workflows.
-\n\n## Search and navigation additions\n\n- Public pages are listed in `sitemap.xml`; crawler instructions are in `robots.txt`. Administrator routes are disallowed from indexing, but must still be protected by Cloudflare Access.\n- A branded `404.html` page provides navigation back to the homepage and game library.\n- Public pages include canonical and social-sharing metadata.\n
+
+
+## Search and navigation additions
+
+- Public pages are listed in `sitemap.xml`; crawler instructions are in `robots.txt`. Administrator routes are disallowed from indexing, but must still be protected by Cloudflare Access.
+- A branded `404.html` page provides navigation back to the homepage and game library.
+- Public pages include canonical and social-sharing metadata.
