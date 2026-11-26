@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,follow">
+  <meta name="theme-color" content="#4f39a8">
+  <title>Page not found | Amelia Harper Kids</title>
+  <link rel="icon" href="/assets/images/amelia-harper-logo.png">
+  <link rel="stylesheet" href="/styles.css">
+  <style>
+    .not-found{min-height:70vh;max-width:760px;margin:auto;padding:70px 24px;display:grid;place-content:center;text-align:center}
+    .not-found-art{font-size:clamp(76px,14vw,130px);line-height:1;margin-bottom:22px}
+    .not-found h1{font:600 clamp(38px,7vw,58px)/1.05 Fredoka;margin:0 0 14px}
+    .not-found p{max-width:520px;margin:0 auto 25px;color:var(--muted);line-height:1.75}
+    .not-found-actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+  </style>
+</head>
+<body>
+  <div class="announcement">A LITTLE DETOUR ON OUR BIG ADVENTURE</div>
+  <header class="site-header">
+    <a class="brand" href="/"><img src="/assets/images/amelia-harper-logo.png" alt=""><span>Amelia Harper<small>Learn. Play. Sing. Dance. Grow.</small></span></a>
+    <a class="nav-cta" href="/">Back home</a>
+  </header>
+  <main class="not-found">
+    <div class="not-found-art" aria-hidden="true">🧭✨</div>
+    <span class="eyebrow">404 · PAGE NOT FOUND</span>
+    <h1>Oops! This adventure took a wrong turn.</h1>
+    <p>We can't find the page you're looking for. Let's head back to the Amelia Harper world and choose another adventure.</p>
+    <div class="not-found-actions">
+      <a class="btn primary" href="/">Visit homepage →</a>
+      <a class="btn light" href="/games/">Explore games</a>
+    </div>
+  </main>
+  <footer><div class="footer-brand"><img src="/assets/images/amelia-harper-logo.png" alt=""><b>Amelia Harper</b><p>Learn. Play. Sing. Dance. Grow.</p></div><div><b>Explore</b><a href="/games/">Games</a><a href="/stories.html">Audio stories</a><a href="/songs.html">Songs</a><a href="/resources.html">Learning resources</a></div><div><b>For parents</b><a href="/privacy.html">Privacy & safety</a></div><small>© <span id="year"></span> Amelia Harper.</small></footer>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
