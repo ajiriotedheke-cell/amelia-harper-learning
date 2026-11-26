@@ -55,3 +55,23 @@
 - Standardised mobile menu buttons as explicit non-submit buttons.
 - Added responsive hero-art layout rules and visible keyboard focus treatment for the skip link.
 - These changes are committed to the development branch only; browser screenshot review is still outstanding.
+
+
+## Website upgrades — phase 1
+
+- Added a branded, responsive 404 page with clear routes back to the homepage and game library.
+- Added `robots.txt` to keep administrator and administrator API paths out of crawler discovery while allowing public pages.
+- Added an XML sitemap for public pages and both playable games.
+- Added canonical URLs, Open Graph metadata and social sharing metadata to the homepage and public library, privacy and game pages.
+- Added skip-to-content links to the privacy page and ABC game page.
+- Added Magical Memory Match as a second playable game. It scales from 3 pairs for ages 2–4 to 10 pairs for ages 11–12, includes keyboard-operable buttons and live status messages, and sends only the existing aggregate game event types.
+- Featured Magical Memory Match on the homepage and published it in the game catalogue for all four age bands.
+- Static checks confirmed the new game is present in the catalogue, its published route is configured, the homepage links to it, and the sitemap and crawler rules include the intended routes.
+
+### Still required
+
+- Run browser tests for the new game and all navigation at desktop, tablet and mobile sizes.
+- Review memory-game difficulty with educators/parents and supervise child usability testing.
+- Confirm sitemap and 404 behaviour on the live Cloudflare Pages deployment.
+- Continue with the admin content-management upgrade, story/song library management, media optimisation and privacy/accessibility review.
+- No production deployment has been confirmed in this phase.
