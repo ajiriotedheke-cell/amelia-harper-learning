@@ -31,7 +31,7 @@ The event endpoint stores only game slug, event type, coarse age band, device ca
 7. Add environment variable `ADMIN_EMAIL` with the administrator email address.
 8. Configure Cloudflare Access to protect `https://YOUR-DOMAIN/admin/*` and `https://YOUR-DOMAIN/api/admin/*`, allowing only your administrator email. The Pages Function also checks the Access-injected `Cf-Access-Authenticated-User-Email` header against `ADMIN_EMAIL`.
 9. Test `/api/config`, `/admin/`, saving a temporary social URL, and confirming the public site reflects it. Remove the test URL afterwards.
-10. Connect the custom domain `amelia-harperkids.com` after the Pages project is deployed.
+10. Connect the custom domain `ameliaharperkids.com` after the Pages project is deployed.
 
 ## Add new games
 
