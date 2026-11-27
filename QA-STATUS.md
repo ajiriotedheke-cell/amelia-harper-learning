@@ -86,7 +86,7 @@
 - The video page uses standard YouTube embeds (`youtube.com/embed`) rather than privacy-enhanced `youtube-nocookie.com` embeds, and does not configure autoplay. The iframe is only inserted after the visitor selects the load-player control; the visitor then presses Play inside YouTube.
 - Added a parent-facing note that playback is served by YouTube.
 - Added the video page to homepage navigation and the XML sitemap.
-- Confirmed the video page, homepage, sitemap and robots file use the custom domain `amelia-harperkids.com`.
+- Confirmed the video page, homepage, sitemap and robots file use the custom domain `ameliaharperkids.com`.
 
 ### Outstanding YouTube setup and verification
 
