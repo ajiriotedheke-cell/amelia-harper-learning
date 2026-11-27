@@ -3,4 +3,4 @@ Allow: /
 Disallow: /admin/
 Disallow: /api/admin/
 
-Sitemap: https://amelia-harperkids.com/sitemap.xml
+Sitemap: https://ameliaharperkids.com/sitemap.xml
