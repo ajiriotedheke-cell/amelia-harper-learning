@@ -4,7 +4,7 @@
     {
       "id": "adventure-universe",
       "title": "Adventure Universe",
-      "description": "Explore a colourful fantasy galaxy, collect stardust and travel between magical learning worlds.",
+      "description": "Explore a real-time 3D galaxy, leap between floating planets and collect glowing stardust.",
       "ageBands": [
         "2-4",
         "5-7",
@@ -96,7 +96,7 @@
     {
       "id": "ocean-of-wonders",
       "title": "Ocean of Wonders",
-      "description": "Swim through a glowing underwater reef, collect shining pearls and dodge playful jellyfish on a magical sea adventure.",
+      "description": "Swim freely through a real-time 3D underwater reef, steer with your mouse and collect golden coins.",
       "ageBands": [
         "5-7",
         "8-10",
