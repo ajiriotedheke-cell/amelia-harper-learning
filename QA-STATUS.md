@@ -55,3 +55,63 @@
 - Standardised mobile menu buttons as explicit non-submit buttons.
 - Added responsive hero-art layout rules and visible keyboard focus treatment for the skip link.
 - These changes are committed to the development branch only; browser screenshot review is still outstanding.
+
+
+## Website upgrades — phase 1
+
+- Added a branded, responsive 404 page with clear routes back to the homepage and game library.
+- Added `robots.txt` to keep administrator and administrator API paths out of crawler discovery while allowing public pages.
+- Added an XML sitemap for public pages and both playable games.
+- Added canonical URLs, Open Graph metadata and social sharing metadata to the homepage and public library, privacy and game pages.
+- Added skip-to-content links to the privacy page and ABC game page.
+- Added Magical Memory Match as a second playable game. It scales from 3 pairs for ages 2–4 to 10 pairs for ages 11–12, includes keyboard-operable buttons and live status messages, and sends only the existing aggregate game event types.
+- Featured Magical Memory Match on the homepage and published it in the game catalogue for all four age bands.
+- Static checks confirmed the new game is present in the catalogue, its published route is configured, the homepage links to it, and the sitemap and crawler rules include the intended routes.
+
+### Still required
+
+- Run browser tests for the new game and all navigation at desktop, tablet and mobile sizes.
+- Review memory-game difficulty with educators/parents and supervise child usability testing.
+- Confirm sitemap and 404 behaviour on the live Cloudflare Pages deployment.
+- Continue with the admin content-management upgrade, story/song library management, media optimisation and privacy/accessibility review.
+- No production deployment has been confirmed in this phase.
+
+
+## YouTube video library — implementation notes
+
+- Added an administrator textarea that accepts one `Video title | YouTube URL` entry per line.
+- Client-side validation accepts standard YouTube watch, short-link, Shorts, embed and live-video URL formats and extracts the 11-character video ID.
+- The admin API validates titles, IDs and a maximum of 30 videos before storing the list in the existing D1 `site_settings` table.
+- Added `/videos.html`, which reads the public settings endpoint and renders a responsive video collection.
+- The video page uses standard YouTube embeds (`youtube.com/embed`) rather than privacy-enhanced `youtube-nocookie.com` embeds, and does not configure autoplay. The iframe is only inserted after the visitor selects the load-player control; the visitor then presses Play inside YouTube.
+- Added a parent-facing note that playback is served by YouTube.
+- Added the video page to homepage navigation and the XML sitemap.
+- Confirmed the video page, homepage, sitemap and robots file use the custom domain `amelia-harperkids.com`.
+
+### Outstanding YouTube setup and verification
+
+- The video library will remain empty until the administrator adds actual video titles and links after Cloudflare Access and D1 are working.
+- The website owner must designate the site as child-directed through Google's applicable site tools. Each relevant YouTube upload/channel must also be accurately designated Made for Kids in YouTube Studio.
+- Actual view counts are controlled by YouTube's validation systems. No autoplay is configured because YouTube says autoplayed embedded videos do not increment views.
+- Test a real video on the deployed website, then verify playback and traffic in YouTube Studio Analytics. This repository change does not prove a view has been counted.
+- Review the privacy notice for third-party YouTube player data collection and applicable child privacy requirements.
+
+
+## Adventure Universe and 3D visual direction
+
+- Added the Adventure Universe hub with a layered fantasy-galaxy scene, floating planets, animated star effects and six themed destination worlds.
+- Added a simple five-star collection interaction with accessible buttons and live status feedback; no personal data or child-level profile is collected.
+- Added Adventure Universe to the published game catalogue and homepage, with links to the existing ABC and memory games.
+- Upgraded the ABC quiz and Magical Memory Match presentation with richer layered gradients, depth, raised controls, shadows and motion-aware styling.
+- Updated the game catalogue with a direct Adventure Universe entry point and more dimensional card treatments.
+- These are CSS-based 3D-inspired visual treatments rather than a full WebGL 3D engine. Real device/browser visual testing, performance checks and supervised child playtesting are still required.
+
+
+## Rainbow Runway — first playable Adventure Universe world
+
+- Built `/games/rainbow-runway/` as a self-contained canvas runner with a perspective rainbow runway, layered sky, floating islands, clouds, stars, animated player character and particle effects.
+- Added lane movement, jumping, star collection, cloud-bump collisions, hearts/lives, distance, score, best-run storage, pause, restart and end-of-run summary.
+- Added keyboard and touch controls, responsive canvas sizing, reduced-motion handling, visibility-change pause, age-level settings for ages 2–4, 5–7, 8–10 and 11–12, and a short on-screen control guide.
+- Game analytics sends only aggregate start/completion events with the existing event API fields; no child identity or per-action answer data is sent.
+- Added Rainbow Runway to the published catalogue and XML sitemap.
+- Static code review and route/catalogue checks are required before release. Real browser/device testing, playtesting with parents/educators, performance/accessibility review and tuning of difficulty/collision behaviour remain outstanding.

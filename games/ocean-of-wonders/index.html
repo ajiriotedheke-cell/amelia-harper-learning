@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Dive into Ocean of Wonders, an underwater adventure. Collect pearls, explore coral reefs and discover amazing sea life.">
+<meta name="theme-color" content="#063b68"><title>Ocean of Wonders | Amelia Harper Kids</title>
+<link rel="canonical" href="https://amelia-harperkids.com/games/ocean-of-wonders/">
+<meta property="og:site_name" content="Amelia Harper Kids"><meta property="og:type" content="website"><meta property="og:title" content="Ocean of Wonders | Amelia Harper Kids"><meta property="og:description" content="Swim through a magical ocean, collect pearls and discover underwater treasures."><meta property="og:url" content="https://amelia-harperkids.com/games/ocean-of-wonders/">
+<link rel="icon" href="../../assets/images/amelia-harper-logo.png"><link rel="stylesheet" href="../../styles.css">
+<style>
+:root{--ocean:#063b68;--aqua:#76e6dc;--sun:#ffe59b}
+body{background:#052d55;color:#fff}.ocean-shell{min-height:100vh;background:radial-gradient(ellipse at 50% 0,#147fa1,#07527e 42%,#052d55 100%);overflow:hidden}
+.ocean-header{position:relative;z-index:3;display:flex;justify-content:space-between;align-items:center;padding:14px clamp(15px,4vw,55px);background:#042d52aa;border-bottom:1px solid #ffffff22;backdrop-filter:blur(12px)}.ocean-header .brand{color:#fff}.ocean-header .brand small{color:#c4f4ee}.ocean-header .nav-cta{background:var(--sun);color:#164363}
+.ocean-main{max-width:1100px;margin:auto;padding:20px 18px 55px}.ocean-heading{text-align:center;margin:8px auto 16px}.ocean-heading .eyebrow{color:#a9fff0}.ocean-heading h1{font:700 clamp(38px,6vw,62px)/1 Fredoka;margin:8px 0;text-shadow:0 4px 0 #06436b,0 10px 25px #022341}.ocean-heading p{color:#d0f5f2;line-height:1.6;margin:8px auto;max-width:680px;font-size:14px}
+.ocean-frame{position:relative;max-width:1000px;margin:18px auto 0;border:1px solid #ffffff45;border-radius:28px;padding:12px;background:linear-gradient(145deg,#ffffff24,#ffffff08);box-shadow:0 26px 70px #021b3680,inset 0 1px #ffffff55}
+.ocean-hud{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap;padding:4px 5px 12px}.hud-pill{border:1px solid #ffffff35;background:#032f55a8;border-radius:15px;padding:8px 13px;min-width:88px;font-size:10px;color:#c7f4f0;font-weight:800;letter-spacing:.06em}.hud-pill strong{display:block;color:#fff;font:600 21px Fredoka;letter-spacing:0}
+#ocean-canvas{width:100%;height:auto;aspect-ratio:16/9;display:block;border-radius:18px;background:#087ba0;touch-action:none}
+.ocean-overlay{position:absolute;inset:65px 12px 12px;display:grid;place-items:center;border-radius:18px;background:#032d5277;backdrop-filter:blur(5px);padding:18px;z-index:2}.overlay-card{max-width:440px;text-align:center;padding:24px;border:1px solid #ffffff55;border-radius:24px;background:linear-gradient(145deg,#116b87f5,#07345ff7);box-shadow:0 20px 50px #021b3680}.overlay-card .big-icon{font-size:52px;filter:drop-shadow(0 8px 10px #021b3670)}.overlay-card h2{font:600 29px Fredoka;margin:8px 0}.overlay-card p{font-size:13px;color:#d3f4f1;line-height:1.65}.btn-aqua{border:0;border-radius:30px;padding:14px 24px;background:linear-gradient(180deg,#d5fff4,#75e4d3);color:#064363;font:800 13px 'DM Sans';box-shadow:0 5px 0 #329d9b,0 10px 20px #021b3655;cursor:pointer}.btn-aqua:active{transform:translateY(3px);box-shadow:0 2px 0 #329d9b}
+.ocean-toolbar{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;padding:12px 4px 2px}.toolbar-left,.toolbar-right{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.small-control{border:1px solid #ffffff45;background:#ffffff16;color:#fff;border-radius:13px;padding:10px 13px;font:700 11px 'DM Sans';cursor:pointer}.small-control:focus-visible,.btn-aqua:focus-visible,.dive-control:focus-visible{outline:3px solid #fff;outline-offset:3px}#ocean-age{background:#075078;color:#fff;border:1px solid #ffffff55;border-radius:12px;padding:10px;font:700 11px 'DM Sans'}
+.dive-controls{display:flex;justify-content:center;gap:16px;margin:12px 0 2px}.dive-control{width:68px;height:54px;border:1px solid #ffffff65;border-radius:18px;background:linear-gradient(145deg,#2aa5b4,#11618c);color:white;font-size:23px;box-shadow:inset 0 2px #ffffff60,0 5px 0 #06436b;touch-action:manipulation}.dive-control:active{transform:translateY(3px);box-shadow:inset 0 2px #ffffff60,0 2px 0 #06436b}
+.ocean-help{text-align:center;color:#c3ece9;font-size:11px;line-height:1.65;margin:13px 5px 5px}.ocean-note{text-align:center;color:#b3e3e1;font-size:11px;line-height:1.6;max-width:720px;margin:18px auto}
+@media(max-width:700px){.ocean-main{padding:14px 9px 35px}.ocean-frame{padding:8px;border-radius:20px}.ocean-overlay{inset:55px 8px 8px}.overlay-card{padding:16px;max-width:340px}.overlay-card h2{font-size:24px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}}
+</style></head>
+<body><a class="skip-link" href="#main-content">Skip to content</a><div class="ocean-shell">
+<header class="ocean-header"><a class="brand" href="../../"><img src="../../assets/images/amelia-harper-logo.png" alt=""><span>Amelia Harper<small>Learn. Play. Sing. Dance. Grow.</small></span></a><a class="nav-cta" href="../adventure-universe/">Adventure Universe ↗</a></header>
+<main id="main-content" class="ocean-main">
+<div class="ocean-heading"><span class="eyebrow">✦ DIVE DEEP · DISCOVER MORE ✦</span><h1>Ocean of Wonders 🐠</h1><p>Join Bubbles the little sea explorer! Swim through a glowing reef, collect precious pearls and dodge playful jellyfish on your way to underwater treasure.</p></div>
+<section class="ocean-frame" aria-label="Ocean adventure game">
+<div class="ocean-hud"><div class="hud-pill">PEARLS<strong id="pearls">0 / 12</strong></div><div class="hud-pill">DISTANCE<strong id="distance">0 m</strong></div><div class="hud-pill">SEA HEARTS<strong id="hearts">💙 💙 💙</strong></div><div class="hud-pill">BEST DIVE<strong id="best">0</strong></div></div>
+<canvas id="ocean-canvas" width="960" height="540" aria-label="Underwater scene. Move the diver up and down to collect pearls and avoid jellyfish."></canvas>
+<div class="ocean-overlay" id="start-overlay"><div class="overlay-card"><div class="big-icon">🤿🐬</div><h2>Ready to explore?</h2><p>Guide Bubbles up and down through the ocean. Collect 12 shining pearls and avoid the friendly jellyfish. You have three sea hearts!</p><button class="btn-aqua" id="start-button">Start my dive ✨</button></div></div>
+<div class="ocean-overlay" id="end-overlay" hidden><div class="overlay-card"><div class="big-icon" id="end-icon">🏆</div><h2 id="end-title">Ocean explorer!</h2><p id="end-copy">What a wonderful dive!</p><button class="btn-aqua" id="again-button">Dive again ↻</button></div></div>
+<div class="ocean-toolbar"><div class="toolbar-left"><button class="small-control" id="pause-button" disabled>Ⅱ Pause</button><button class="small-control" id="restart-button">↻ Restart</button></div><div class="toolbar-right"><label for="ocean-age" class="ocean-help">Challenge</label><select id="ocean-age"><option value="5-7">Ages 5–7 · Gentle</option><option value="8-10">Ages 8–10 · Explorer</option><option value="11-12">Ages 11–12 · Deep dive</option></select></div></div>
+<div class="dive-controls" aria-label="Touch controls"><button class="dive-control" id="up-button" aria-label="Swim up">↑</button><button class="dive-control" id="down-button" aria-label="Swim down">↓</button></div>
+<p class="ocean-help">Use ↑ and ↓ or W and S to swim. On a touchscreen, tap the arrows or drag on the water. Press P to pause.</p></section>
+<p class="ocean-note">A colourful underwater adventure for curious minds. Sea creatures and ocean details are inspired by real marine life. Take a little break between dives!</p>
+</main></div>
+<script>
+(()=>{'use strict';
+const $=id=>document.getElementById(id),canvas=$('ocean-canvas'),ctx=canvas.getContext('2d'),W=960,H=540,age=$('ocean-age');
+const configs={'5-7':{speed:175,gap:1.45,hearts:4,jelly:0.65,target:12},'8-10':{speed:215,gap:1.15,hearts:3,jelly:0.9,target:12},'11-12':{speed:255,gap:.92,hearts:3,jelly:1.2,target:12}};
+let state='ready',y=270,score=0,distance=0,hearts=3,best=0,speed=180,elapsed=0,spawn=.8,last=0,invulnerable=0,items=[],bubbles=[],particles=[],keys={};
+const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
+try{best=Number(localStorage.getItem('ahOceanBest'))||0}catch(e){}$('best').textContent=best;
+function rounded(x,y,w,h,r,fill){ctx.fillStyle=fill;ctx.beginPath();ctx.roundRect(x,y,w,h,r);ctx.fill();}
+function ellipse(x,y,rx,ry,color){ctx.fillStyle=color;ctx.beginPath();ctx.ellipse(x,y,rx,ry,0,0,Math.PI*2);ctx.fill();}
+function background(t){
+ const g=ctx.createLinearGradient(0,0,0,H);g.addColorStop(0,'#39b9c4');g.addColorStop(.48,'#087ba0');g.addColorStop(1,'#06345f');ctx.fillStyle=g;ctx.fillRect(0,0,W,H);
+ const glow=ctx.createRadialGradient(180,0,10,180,0,520);glow.addColorStop(0,'#d4fff766');glow.addColorStop(1,'#d4fff700');ctx.fillStyle=glow;ctx.fillRect(0,0,W,H);
+ for(let i=0;i<8;i++){const x=(i*151-t*13%(W+100)+W+100)%(W+100),yy=80+(i*73)%360;ctx.strokeStyle='#c4fff522';ctx.lineWidth=2;ctx.beginPath();ctx.moveTo(x,0);ctx.lineTo(x+80,yy);ctx.stroke();}
+ for(let i=0;i<22;i++){const x=(i*59-t*(12+i%4*4)%(W+30)+W+30)%(W+30),yy=(i*83+Math.sin(t+i)*12)%H;ellipse(x,yy,2+i%3,2+i%3,'#d8fff766');}
+ // distant reef silhouettes
+ ctx.fillStyle='#075a72';ctx.beginPath();ctx.moveTo(0,H);for(let x=0;x<=W;x+=30)ctx.lineTo(x,470+Math.sin(x*.012+t*.25)*22);ctx.lineTo(W,H);ctx.fill();
+ for(let i=0;i<9;i++){const x=(i*127-t*speed*.12%(W+180)+W+180)%(W+180);const base=500+(i%3)*10;ctx.strokeStyle=['#ff9c91','#ffd66e','#7ee3b3','#b8a5ff'][i%4];ctx.lineWidth=10;ctx.lineCap='round';ctx.beginPath();ctx.moveTo(x,base);ctx.quadraticCurveTo(x-20,base-45,x+Math.sin(t+i)*12,base-85-i%3*13);ctx.stroke();for(let j=0;j<3;j++)ellipse(x-12+j*13,base-35-j*15,8,8,['#ffb7a7','#ffe58a','#a5f1cf'][j]);}
+}
+function fish(x,y,s,color,t){ctx.save();ctx.translate(x,y);ctx.scale(s,s);ctx.fillStyle=color;ctx.beginPath();ctx.ellipse(0,0,25,14,0,0,Math.PI*2);ctx.fill();ctx.beginPath();ctx.moveTo(-20,0);ctx.lineTo(-39,-13+Math.sin(t*5)*4);ctx.lineTo(-39,13+Math.sin(t*5)*4);ctx.fill();ellipse(12,-4,2.5,3,'#073653');ctx.restore();}
+function diver(){
+ ctx.save();ctx.translate(190,y);if(invulnerable>0&&Math.floor(elapsed*12)%2===0)ctx.globalAlpha=.35;
+ // flipper / bubbles
+ ctx.strokeStyle='#ffcb78';ctx.lineWidth=9;ctx.lineCap='round';ctx.beginPath();ctx.moveTo(-32,7);ctx.lineTo(-48,19+Math.sin(elapsed*10)*5);ctx.stroke();
+ ellipse(-8,0,36,23,'#ffb66e');ellipse(-3,-3,27,17,'#ffd49c');ellipse(21,-4,16,16,'#ffbd84');ellipse(25,-8,9,8,'#8de9ec');ellipse(27,-10,5,4,'#d9ffff');
+ rounded(-18,-8,19,13,6,'#236b89');ellipse(-13,-1,4,4,'#183a59');
+ ctx.strokeStyle='#b5fff3';ctx.lineWidth=4;ctx.beginPath();ctx.arc(-10,-23,13,Math.PI,Math.PI*2);ctx.stroke();
+ ctx.restore();if(Math.random()<.05&&!reduced)bubbles.push({x:150,y:y+10,v:30+Math.random()*25,r:2+Math.random()*4});
+}
+function drawItem(o){
+ const p=1-o.z,x=W-o.z*1050;
+ if(o.type==='pearl'){ctx.save();ctx.translate(x,o.y);ellipse(0,0,15,15,'#c3fff4');ellipse(-4,-5,6,5,'#fff');ellipse(0,0,10,10,'#eaffff');ctx.restore();}
+ else {ctx.save();ctx.translate(x,o.y);const pulse=1+Math.sin(elapsed*5+o.phase)*.08;ctx.scale(pulse,pulse);ctx.strokeStyle='#ffb6e5';ctx.lineWidth=5;ctx.beginPath();ctx.moveTo(-12,-2);ctx.quadraticCurveTo(-28,18,-17,31);ctx.moveTo(0,0);ctx.quadraticCurveTo(-5,22,6,34);ctx.moveTo(12,-2);ctx.quadraticCurveTo(28,18,18,31);ctx.stroke();ellipse(0,-5,22,20,'#d99ce9');ellipse(-7,-10,7,6,'#fff4ff');ellipse(-7,-3,2,3,'#52376f');ellipse(7,-3,2,3,'#52376f');ctx.restore();}
+}
+function draw(){
+ background(elapsed);for(let i=0;i<5;i++)fish(440+i*130,110+(i%3)*75+Math.sin(elapsed*2+i)*12,.45+i%2*.18,['#ffcf75','#8de8d3','#ff9dbb'][i%3],elapsed);
+ items.forEach(drawItem);bubbles.forEach(b=>ellipse(b.x,b.y,b.r,b.r,'#c9fff888'));particles.forEach(p=>ellipse(p.x,p.y,p.r,p.r,p.color));diver();
+ if(state==='paused'){ctx.fillStyle='#032d5277';ctx.fillRect(0,0,W,H);ctx.fillStyle='white';ctx.font='700 40px Fredoka';ctx.textAlign='center';ctx.fillText('DIVE PAUSED',W/2,H/2);}
+}
+function spawnItem(){const cfg=configs[age.value];const pearl=Math.random()>.34;items.push({type:pearl?'pearl':'jelly',y:75+Math.random()*380,z:0,phase:Math.random()*7});if(Math.random()<.2)items.push({type:'pearl',y:90+Math.random()*350,z:-.18,phase:0});}
+function burst(x,yy,color){for(let i=0;i<14;i++)particles.push({x,y:yy,vx:(Math.random()-.5)*160,vy:(Math.random()-.5)*160,life:.65,r:2+Math.random()*4,color});}
+function update(dt){
+ const cfg=configs[age.value];elapsed+=dt;distance+=speed*dt/65;speed=cfg.speed+Math.min(distance*.45,100);spawn-=dt;invulnerable=Math.max(0,invulnerable-dt);
+ if(spawn<=0){spawn=cfg.gap*(.8+Math.random()*.5);spawnItem();}
+ if(keys.up)y-=260*dt;if(keys.down)y+=260*dt;y=Math.max(65,Math.min(470,y));
+ for(const o of items){o.z+=speed*dt/650;const x=W-o.z*1050;if(!o.hit&&x<225&&x>155&&Math.abs(y-o.y)<(o.type==='pearl'?31:38)){o.hit=true;if(o.type==='pearl'){score++;burst(x,o.y,'#e4fff9');}else if(invulnerable<=0){hearts--;invulnerable=1.35;burst(190,y,'#ffb6df');}}}
+ items=items.filter(o=>o.z<1.08);bubbles.forEach(b=>{b.x-=b.v*dt;b.y-=30*dt});bubbles=bubbles.filter(b=>b.x>0&&b.y>0);particles.forEach(p=>{p.x+=p.vx*dt;p.y+=p.vy*dt;p.life-=dt});particles=particles.filter(p=>p.life>0);
+ $('pearls').textContent=score+' / '+cfg.target;$('distance').textContent=Math.floor(distance)+' m';$('hearts').textContent='💙 '.repeat(Math.max(0,hearts))||'—';
+ if(score>=cfg.target)finish(true);else if(hearts<=0)finish(false);
+}
+function loop(now){if(!last)last=now;const dt=Math.min((now-last)/1000,.035);last=now;if(state==='running')update(dt);draw();if(state!=='stopped')requestAnimationFrame(loop);}
+function start(){const cfg=configs[age.value];state='running';y=270;score=0;distance=0;hearts=cfg.hearts;speed=cfg.speed;elapsed=0;spawn=.7;invulnerable=0;items=[];bubbles=[];particles=[];keys={};$('start-overlay').hidden=true;$('end-overlay').hidden=true;$('pause-button').disabled=false;$('pause-button').textContent='Ⅱ Pause';last=0;track('game_start');}
+function finish(won){state='over';$('pause-button').disabled=true;$('end-overlay').hidden=false;$('end-icon').textContent=won?'🏆':'🐬';$('end-title').textContent=won?'Ocean treasure found!':'A lovely underwater adventure!';$('end-copy').textContent=won?'You collected '+score+' pearls and explored '+Math.floor(distance)+' metres of ocean. Amazing discovery!':'You collected '+score+' pearls and travelled '+Math.floor(distance)+' metres. Every dive helps you learn!';if(score>best){best=score;$('best').textContent=best;try{localStorage.setItem('ahOceanBest',String(best));}catch(e){}}track('game_complete');}
+function track(eventName){const deviceType=/iPad|Tablet/i.test(navigator.userAgent)?'tablet':/Mobi|Android/i.test(navigator.userAgent)?'mobile':'desktop';fetch('/api/events',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({eventName,gameSlug:'ocean-of-wonders',ageBand:age.value,deviceType}),keepalive:true}).catch(()=>{});}
+function pause(){if(state==='running'){state='paused';$('pause-button').textContent='▶ Resume';keys={};}else if(state==='paused'){state='running';$('pause-button').textContent='Ⅱ Pause';last=0;}}
+window.addEventListener('keydown',e=>{if(['ArrowUp','ArrowDown','w','W','s','S',' '].includes(e.key))e.preventDefault();if(e.key==='ArrowUp'||e.key.toLowerCase()==='w')keys.up=true;if(e.key==='ArrowDown'||e.key.toLowerCase()==='s')keys.down=true;if(e.key.toLowerCase()==='p'&&['running','paused'].includes(state))pause();if(e.key==='Enter'&&(state==='ready'||state==='over'))start();});
+window.addEventListener('keyup',e=>{if(e.key==='ArrowUp'||e.key.toLowerCase()==='w')keys.up=false;if(e.key==='ArrowDown'||e.key.toLowerCase()==='s')keys.down=false;});
+function hold(button,key){const b=$(button);b.addEventListener('pointerdown',e=>{e.preventDefault();keys[key]=true;b.setPointerCapture(e.pointerId);});['pointerup','pointercancel','lostpointercapture'].forEach(ev=>b.addEventListener(ev,()=>keys[key]=false));}
+hold('up-button','up');hold('down-button','down');
+let drag=false;canvas.addEventListener('pointerdown',e=>{drag=true;canvas.setPointerCapture(e.pointerId);});canvas.addEventListener('pointermove',e=>{if(!drag||state!=='running')return;const r=canvas.getBoundingClientRect();y=Math.max(65,Math.min(470,(e.clientY-r.top)/r.height*H));});['pointerup','pointercancel','lostpointercapture'].forEach(ev=>canvas.addEventListener(ev,()=>drag=false));
+$('start-button').addEventListener('click',start);$('again-button').addEventListener('click',start);$('restart-button').addEventListener('click',start);$('pause-button').addEventListener('click',pause);age.addEventListener('change',()=>{if(state==='running'||state==='paused')start();});
+document.addEventListener('visibilitychange',()=>{if(document.hidden&&state==='running')pause();});requestAnimationFrame(loop);
+})();
+</script></body></html>

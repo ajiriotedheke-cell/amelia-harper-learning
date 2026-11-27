@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Play Rainbow Runway, a magical floating-island adventure. Collect stars, dodge obstacles and explore colour patterns.">
+<meta name="theme-color" content="#20165d">
+<title>Rainbow Runway | Amelia Harper Kids</title>
+<link rel="canonical" href="https://amelia-harperkids.com/games/rainbow-runway/">
+<meta property="og:site_name" content="Amelia Harper Kids"><meta property="og:type" content="website"><meta property="og:title" content="Rainbow Runway | Amelia Harper Kids"><meta property="og:description" content="Run along a magical rainbow, collect stars and explore floating islands."><meta property="og:url" content="https://amelia-harperkids.com/games/rainbow-runway/">
+<link rel="icon" href="../../assets/images/amelia-harper-logo.png"><link rel="stylesheet" href="../../styles.css">
+<style>
+:root{--night:#17134b;--gold:#ffe18b;--pink:#ff91c1}
+body{background:#17134b;color:#fff}
+.runway-shell{min-height:100vh;background:radial-gradient(ellipse at 50% 0,#6753bd 0,#30216f 40%,#17134b 80%);overflow:hidden}
+.runway-header{position:relative;z-index:4;display:flex;justify-content:space-between;align-items:center;padding:14px clamp(15px,4vw,55px);background:#17134b88;border-bottom:1px solid #ffffff22;backdrop-filter:blur(12px)}
+.runway-header .brand{color:#fff}.runway-header .brand small{color:#ddd5ff}.runway-header .nav-cta{background:var(--gold);color:#30245f}
+.runway-main{max-width:1100px;margin:auto;padding:22px 18px 60px}
+.runway-heading{text-align:center;margin:10px auto 16px}.runway-heading .eyebrow{color:#ffe7a1}.runway-heading h1{font:700 clamp(38px,6vw,62px)/1 Fredoka;margin:8px 0;text-shadow:0 4px 0 #3b287d,0 10px 25px #110b38}.runway-heading p{color:#e5ddff;line-height:1.6;margin:8px auto;max-width:650px;font-size:14px}
+.game-frame{position:relative;max-width:1000px;margin:18px auto 0;border:1px solid #ffffff45;border-radius:28px;padding:12px;background:linear-gradient(145deg,#ffffff25,#ffffff08);box-shadow:0 26px 70px #09072d80,inset 0 1px #ffffff55}
+.game-hud{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap;padding:4px 5px 12px}
+.hud-pill{border:1px solid #ffffff35;background:#17134b88;border-radius:15px;padding:8px 13px;min-width:86px;font-size:10px;color:#e4dcff;font-weight:800;letter-spacing:.06em}
+.hud-pill strong{display:block;color:#fff;font:600 21px Fredoka;letter-spacing:0}
+#runway-canvas{width:100%;height:auto;aspect-ratio:16/9;display:block;border-radius:18px;background:#8bc8ff;touch-action:pan-y}
+.canvas-overlay{position:absolute;inset:65px 12px 12px;display:grid;place-items:center;border-radius:18px;background:#17134b50;backdrop-filter:blur(4px);padding:18px;z-index:2}
+.overlay-card{max-width:420px;text-align:center;padding:25px 24px;border:1px solid #ffffff55;border-radius:24px;background:linear-gradient(145deg,#43318cF2,#211854F5);box-shadow:0 20px 50px #09072d80}
+.overlay-card .big-icon{font-size:52px;filter:drop-shadow(0 8px 10px #08062770)}.overlay-card h2{font:600 30px Fredoka;margin:8px 0}.overlay-card p{font-size:13px;color:#e4dcff;line-height:1.65}
+.btn-gold{border:0;border-radius:30px;padding:14px 24px;background:linear-gradient(180deg,#fff0a9,#ffcb62);color:#3c2869;font:800 13px 'DM Sans';box-shadow:0 5px 0 #bd8540,0 10px 20px #09072d55;cursor:pointer}.btn-gold:active{transform:translateY(3px);box-shadow:0 2px 0 #bd8540}
+.game-toolbar{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;padding:12px 4px 2px}
+.toolbar-left,.toolbar-right{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.small-control{border:1px solid #ffffff45;background:#ffffff16;color:#fff;border-radius:13px;padding:10px 13px;font:700 11px 'DM Sans';cursor:pointer}
+.small-control:hover{background:#ffffff28}.small-control:focus-visible,.btn-gold:focus-visible,.touch-control:focus-visible{outline:3px solid #fff;outline-offset:3px}
+#age-level{background:#30236e;color:#fff;border:1px solid #ffffff55;border-radius:12px;padding:10px;font:700 11px 'DM Sans'}
+.game-help{font-size:11px;color:#d5cdf8;line-height:1.65;margin:14px 5px 5px;text-align:center}
+.touch-controls{display:none;justify-content:center;gap:18px;margin:12px 0 2px}
+.touch-control{width:66px;height:54px;border:1px solid #ffffff65;border-radius:18px;background:linear-gradient(145deg,#8b70d9,#49348e);color:white;font-size:24px;box-shadow:inset 0 2px #ffffff60,0 5px 0 #30216b;touch-action:manipulation}
+.touch-control:active{transform:translateY(3px);box-shadow:inset 0 2px #ffffff60,0 2px 0 #30216b}
+.runway-note{text-align:center;color:#c9c0f1;font-size:11px;line-height:1.6;max-width:700px;margin:20px auto}
+@media(max-width:700px){.runway-main{padding:16px 10px 40px}.game-frame{padding:8px;border-radius:20px}.canvas-overlay{inset:55px 8px 8px}.overlay-card{padding:16px;max-width:330px}.overlay-card h2{font-size:24px}.overlay-card p{font-size:11px}.hud-pill{min-width:65px;padding:7px 9px}.hud-pill strong{font-size:18px}.touch-controls{display:flex}.game-help{font-size:10px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body><div class="runway-shell">
+<header class="runway-header"><a class="brand" href="../../"><img src="../../assets/images/amelia-harper-logo.png" alt=""><span>Amelia Harper<small>Learn. Play. Sing. Dance. Grow.</small></span></a><a class="nav-cta" href="../adventure-universe/">Adventure Universe</a></header>
+<main class="runway-main">
+<section class="runway-heading"><span class="eyebrow">🌈 ADVENTURE UNIVERSE · WORLD 01</span><h1>Rainbow Runway</h1><p>Ready, explorer? Dash across the sky bridges, gather glowing stars and dodge the playful cloud bumps. Every star brings you closer to a rainbow reward!</p></section>
+<section class="game-frame" aria-label="Rainbow Runway game">
+<div class="game-hud">
+<div class="hud-pill">STARDUST<strong id="score">0</strong></div><div class="hud-pill">BEST RUN<strong id="best">0</strong></div><div class="hud-pill">DISTANCE<strong id="distance">0 m</strong></div><div class="hud-pill">RAINBOW HEARTS<strong id="hearts">💖💖💖</strong></div>
+</div>
+<canvas id="runway-canvas" width="960" height="540" role="img" aria-label="A colourful 3D-style rainbow path floating through a fantasy sky. Use left and right arrows to change lanes and space or up arrow to jump."></canvas>
+<div class="canvas-overlay" id="start-overlay"><div class="overlay-card"><div class="big-icon">🦄</div><h2>Your rainbow adventure awaits!</h2><p>Collect golden stars, leap over cloud bumps and follow the colour trail. Use the arrow keys or the buttons below.</p><button class="btn-gold" id="start-button">Let's fly! ✨</button></div></div>
+<div class="canvas-overlay" id="end-overlay" hidden><div class="overlay-card"><div class="big-icon" id="end-icon">🌟</div><h2 id="end-title">Amazing adventure!</h2><p id="end-copy">You collected some wonderful stardust.</p><button class="btn-gold" id="again-button">Fly again ↻</button></div></div>
+<div class="game-toolbar"><div class="toolbar-left"><label for="age-level" class="sr-only">Choose challenge level</label><select id="age-level"><option value="2-4">Little Explorers · Ages 2–4</option><option value="5-7" selected>Curious Creators · Ages 5–7</option><option value="8-10">Bright Adventurers · Ages 8–10</option><option value="11-12">Super Thinkers · Ages 11–12</option></select><button class="small-control" id="pause-button" type="button" disabled>Ⅱ Pause</button><button class="small-control" id="restart-button" type="button">↻ Restart</button></div><div class="toolbar-right"><span class="small-control" id="pattern-label">Colour trail: 🔴 🟡 🔵</span></div></div>
+<div class="touch-controls" aria-label="Touch game controls"><button class="touch-control" id="left-button" type="button" aria-label="Move left">◀</button><button class="touch-control" id="jump-button" type="button" aria-label="Jump">⬆</button><button class="touch-control" id="right-button" type="button" aria-label="Move right">▶</button></div>
+<p class="game-help">Computer: ← → to change lanes · Space or ↑ to jump · P to pause. Touchscreen: use the arrow buttons. Collect stars and avoid cloud bumps!</p>
+</section>
+<p class="runway-note">A grown-up can help younger explorers with the controls. Play at your own pace and take a break whenever you like. This game does not ask for names or personal details.</p>
+</main></div>
+<script>
+(()=>{
+'use strict';
+const canvas=document.getElementById('runway-canvas'),ctx=canvas.getContext('2d');
+const $=id=>document.getElementById(id);
+const W=960,H=540,age=$('age-level');
+const configs={'2-4':{speed:230,gap:1.8,obstacle:.25,hearts:5,jump:1.05},'5-7':{speed:270,gap:1.55,obstacle:.34,hearts:3,jump:.95},'8-10':{speed:315,gap:1.35,obstacle:.42,hearts:3,jump:.88},'11-12':{speed:360,gap:1.18,obstacle:.5,hearts:2,jump:.82}};
+const lanes=[-1,0,1],rainbow=['#ff6d9e','#ffb45e','#ffe36e','#79dfa7','#71c8ff','#ad91ff'];
+let state='ready',score=0,best=0,distance=0,hearts=3,lane=0,playerY=0,vy=0,items=[],spawn=0,speed=270,last=0,elapsed=0,patternIndex=0,particles=[],skyTime=0,invulnerable=0;
+const reduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+try{best=Number(localStorage.getItem('ahRainbowBest')||0)}catch(e){}
+$('best').textContent=best;
+function resize(){const dpr=Math.min(window.devicePixelRatio||1,2);const rect=canvas.getBoundingClientRect();if(rect.width){canvas.width=Math.round(rect.width*dpr);canvas.height=Math.round(rect.width*9/16*dpr);ctx.setTransform(canvas.width/W,0,0,canvas.height/H,0,0);}}
+window.addEventListener('resize',resize);resize();
+function roundRect(x,y,w,h,r,fill,stroke){ctx.beginPath();ctx.roundRect(x,y,w,h,r);if(fill){ctx.fillStyle=fill;ctx.fill()}if(stroke){ctx.strokeStyle=stroke;ctx.stroke()}}
+function poly(points,fill,stroke){ctx.beginPath();ctx.moveTo(points[0][0],points[0][1]);for(let i=1;i<points.length;i++)ctx.lineTo(points[i][0],points[i][1]);ctx.closePath();ctx.fillStyle=fill;ctx.fill();if(stroke){ctx.strokeStyle=stroke;ctx.stroke()}}
+function ellipse(x,y,rx,ry,fill){ctx.beginPath();ctx.ellipse(x,y,rx,ry,0,0,Math.PI*2);ctx.fillStyle=fill;ctx.fill()}
+function drawCloud(x,y,s=1,alpha=1){ctx.save();ctx.globalAlpha=alpha;ctx.fillStyle='#fff';ctx.shadowColor='#6d8dd8';ctx.shadowBlur=18*s;ellipse(x,y,45*s,19*s,'#fff');ellipse(x-23*s,y-8*s,24*s,20*s,'#fff');ellipse(x+8*s,y-17*s,27*s,25*s,'#fff');ellipse(x+31*s,y-5*s,23*s,17*s,'#fff');ctx.restore()}
+function drawBackground(t){
+ const sky=ctx.createLinearGradient(0,0,0,H);sky.addColorStop(0,'#5e63c6');sky.addColorStop(.48,'#91c9f5');sky.addColorStop(1,'#f9c9e5');ctx.fillStyle=sky;ctx.fillRect(0,0,W,H);
+ const sun=ctx.createRadialGradient(750,90,8,750,90,130);sun.addColorStop(0,'#fff7cf');sun.addColorStop(.4,'#ffe9b0aa');sun.addColorStop(1,'#ffe9b000');ctx.fillStyle=sun;ctx.fillRect(600,0,300,230);ellipse(750,90,43,43,'#fff1b6');
+ // Distant floating islands and mountains
+ poly([[0,305],[110,205],[205,290],[320,190],[440,290],[570,205],[690,290],[810,190],[960,290],[960,540],[0,540]],'#8b83d2');
+ poly([[0,355],[120,270],[235,340],[380,245],[515,345],[665,250],[790,340],[900,255],[960,300],[960,540],[0,540]],'#6f78c5');
+ for(let i=0;i<7;i++){const x=((i*173-t*13)%1200+1200)%1200-100;drawCloud(x,160+(i%3)*70,.65+(i%2)*.2,.72)}
+ for(let i=0;i<18;i++){const x=(i*59+Math.sin(t*.6+i)*15)%W,y=40+(i*83)%260;ctx.globalAlpha=.3+.4*(.5+.5*Math.sin(t*2+i));ctx.fillStyle='#fff';ctx.fillRect(x,y,3,3)}ctx.globalAlpha=1;
+ // Floating island silhouettes
+ for(let i=0;i<5;i++){const x=((i*260-t*30)%1200+1200)%1200-120;const y=365+(i%2)*28;ellipse(x,y,65,13,'#5b6db2');poly([[x-48,y],[x+48,y],[x+17,y+48],[x-20,y+39]],'#5260a5');drawCloud(x,y-13,.6,.9)}
+}
+function pathPoint(l,z){const p=Math.max(0,Math.min(1,z));const y=135+p*390;const half=45+p*355;const center=W/2+Math.sin(elapsed*.35)*9*(1-p);return{x:center+l*half*.62,y,half,center}}
+function drawRunway(t){
+ const top=pathPoint(0,0),bottom=pathPoint(0,1);
+ // rainbow ribbons with bevelled edges
+ for(let i=0;i<rainbow.length;i++){const a=pathPoint(-1.55+i*.52,0),b=pathPoint(-1.55+i*.52,1),c=pathPoint(-1.55+(i+1)*.52,1),d=pathPoint(-1.55+(i+1)*.52,0);poly([[a.x,a.y],[b.x,b.y],[c.x,c.y],[d.x,d.y]],rainbow[i]);}
+ poly([[top.center-45,top.y],[bottom.center-355,bottom.y],[bottom.center+355,bottom.y],[top.center+45,top.y]],'#fff9e9');
+ // central lane highlights and dashed guides
+ for(let l=-1;l<=1;l++){const a=pathPoint(l,0),b=pathPoint(l,1);ctx.strokeStyle='#ffffff88';ctx.lineWidth=3;ctx.setLineDash([14,18]);ctx.beginPath();ctx.moveTo(a.x,a.y);ctx.lineTo(b.x,b.y);ctx.stroke();ctx.setLineDash([])}
+ // road glossy sheen
+ const shine=ctx.createLinearGradient(0,130,0,530);shine.addColorStop(0,'#ffffff66');shine.addColorStop(.5,'#ffffff12');shine.addColorStop(1,'#ffffff33');poly([[top.center-38,top.y],[bottom.center-300,bottom.y],[bottom.center+300,bottom.y],[top.center+38,top.y]],shine);
+ // side puffs
+ for(let i=0;i<8;i++){const z=((i/8+t*.15)%1),p=pathPoint(i%2?1.7:-1.7,z);drawCloud(p.x,p.y-10,Math.max(.25,z*.55),.9)}
+}
+function drawStar(x,y,r,rot=0){ctx.save();ctx.translate(x,y);ctx.rotate(rot);ctx.shadowColor='#fff2a1';ctx.shadowBlur=18;ctx.beginPath();for(let i=0;i<10;i++){const a=-Math.PI/2+i*Math.PI/5,rr=i%2?r*.43:r;ctx.lineTo(Math.cos(a)*rr,Math.sin(a)*rr)}ctx.closePath();ctx.fillStyle='#ffe36e';ctx.fill();ctx.lineWidth=2;ctx.strokeStyle='#fff8d4';ctx.stroke();ctx.restore()}
+function project(item){const z=Math.max(0,Math.min(1,item.z));const p=pathPoint(item.lane,z);return{x:p.x,y:p.y-25-z*18,size:10+z*29,depth:z}}
+function drawItem(item){
+ const p=project(item);ctx.save();
+ if(item.type==='star'){drawStar(p.x,p.y,p.size*.7,elapsed*2);ellipse(p.x,p.y+p.size*.8,p.size*.8,p.size*.2,'#594f9a55')}
+ else{const r=p.size;ellipse(p.x,p.y+r*.65,r*1.2,r*.35,'#55488d55');ctx.shadowColor='#8e75dc';ctx.shadowBlur=10;ellipse(p.x,p.y,r*1.2,r*.78,'#fff');ellipse(p.x-r*.55,p.y-r*.12,r*.65,r*.55,'#fff');ellipse(p.x+r*.52,p.y-r*.13,r*.62,r*.5,'#fff');ctx.shadowBlur=0;ellipse(p.x-r*.28,p.y+r*.05,r*.09,r*.12,'#55428d');ellipse(p.x+r*.28,p.y+r*.05,r*.09,r*.12,'#55428d');}
+ ctx.restore();
+}
+function drawPlayer(){
+ const p=pathPoint(lane,1);const x=p.x,y=420-playerY;const bob=state==='running'&&!reduced?Math.sin(elapsed*13)*3:0;
+ ctx.save();ctx.translate(x,y+bob);
+ ellipse(0,43,38,10,'#3c378555');
+ // cape
+ poly([[-12,-5],[-31,24],[-5,17],[12,27],[17,-7]],'#ff7ba8');
+ // body
+ const body=ctx.createLinearGradient(-22,-30,22,20);body.addColorStop(0,'#fff1a8');body.addColorStop(.5,'#ffbd68');body.addColorStop(1,'#f17e9f');roundRect(-20,-27,40,48,17,body,'#fff4dc');
+ // head
+ const head=ctx.createRadialGradient(-8,-51,2,0,-43,28);head.addColorStop(0,'#fff4db');head.addColorStop(1,'#f4b9a8');ellipse(0,-48,24,24,head);
+ // hair / unicorn horn
+ ctx.fillStyle='#9d6dd1';ctx.beginPath();ctx.arc(0,-53,24,Math.PI,Math.PI*2);ctx.fill();poly([[-7,-70],[0,-91],[7,-69]],'#ffe27e');
+ // ears
+ poly([[-21,-53],[-33,-70],[-13,-64]],'#f4b9a8');poly([[21,-53],[33,-70],[13,-64]],'#f4b9a8');
+ ellipse(-8,-48,2.8,4,'#38245d');ellipse(8,-48,2.8,4,'#38245d');ctx.strokeStyle='#a34e71';ctx.lineWidth=2;ctx.beginPath();ctx.arc(0,-41,7,.15,Math.PI-.15);ctx.stroke();
+ // boots
+ roundRect(-20,14,15,14,6,'#6c4fbd');roundRect(5,14,15,14,6,'#6c4fbd');
+ ctx.restore();
+}
+function draw(){
+ drawBackground(elapsed);drawRunway(elapsed);
+ const sorted=[...items].sort((a,b)=>a.z-b.z);sorted.forEach(drawItem);
+ particles.forEach(p=>{ctx.globalAlpha=Math.max(0,p.life);ellipse(p.x,p.y,p.size,p.size,p.color)});ctx.globalAlpha=1;
+ drawPlayer();
+ if(state==='paused'){ctx.fillStyle='#17134b77';ctx.fillRect(0,0,W,H);ctx.fillStyle='white';ctx.font='700 38px Fredoka';ctx.textAlign='center';ctx.fillText('PAUSED',W/2,H/2)}
+}
+function spawnItem(){
+ const cfg=configs[age.value],isStar=Math.random()>.42;
+ const lanePick=lanes[Math.floor(Math.random()*3)];
+ items.push({type:isStar?'star':'cloud',lane:lanePick,z:0});
+ if(Math.random()<.18){items.push({type:'star',lane:lanes[(lanes.indexOf(lanePick)+1)%3],z:-.22})}
+}
+function burst(x,y,color){for(let i=0;i<12;i++)particles.push({x,y,vx:(Math.random()-.5)*180,vy:(Math.random()-.8)*180,life:.7,size:2+Math.random()*4,color})}
+function update(dt){
+ const cfg=configs[age.value];elapsed+=dt;distance+=speed*dt/45;speed=cfg.speed+Math.min(distance*.5,110);spawn-=dt;invulnerable=Math.max(0,invulnerable-dt);
+ if(spawn<=0){spawn=cfg.gap*(.8+Math.random()*.55);spawnItem()}
+ for(const item of items){item.z+=speed*dt/540;if(item.z>.82&&!item.hit&&item.lane===lane){item.hit=true;if(item.type==='star'){score+=10;const p=project(item);burst(p.x,p.y,'#ffe36e')}else if(playerY<30&&invulnerable<=0){hearts--;invulnerable=1.3;burst(W/2+lane*150,410,'#ff9ab8')}}}
+ items=items.filter(i=>i.z<1.12);
+ if(hearts<=0){finish(false)}
+ if(playerY>0||vy>0){playerY+=vy*dt;vy-=900*dt;if(playerY<0){playerY=0;vy=0}}
+ particles.forEach(p=>{p.x+=p.vx*dt;p.y+=p.vy*dt;p.life-=dt});particles=particles.filter(p=>p.life>0);
+ $('score').textContent=score;$('distance').textContent=Math.floor(distance)+' m';$('hearts').textContent='💖'.repeat(Math.max(0,hearts))||'—';
+}
+function loop(now){if(!last)last=now;const dt=Math.min((now-last)/1000,.035);last=now;if(state==='running')update(dt);draw();if(state!=='stopped')requestAnimationFrame(loop)}
+function start(){score=0;distance=0;hearts=configs[age.value].hearts;lane=0;playerY=0;vy=0;items=[];particles=[];spawn=.6;speed=configs[age.value].speed;elapsed=0;invulnerable=0;state='running';$('start-overlay').hidden=true;$('end-overlay').hidden=true;$('pause-button').disabled=false;$('pause-button').textContent='Ⅱ Pause';last=0;track('game_start')}
+function finish(won){state='over';$('pause-button').disabled=true;$('end-overlay').hidden=false;$('end-icon').textContent=won?'🏆':'🌈';$('end-title').textContent=won?'Rainbow champion!':'What a lovely adventure!';$('end-copy').textContent='You collected '+score+' stardust points and travelled '+Math.floor(distance)+' metres. Every try helps you grow!';if(score>best){best=score;$('best').textContent=best;try{localStorage.setItem('ahRainbowBest',String(best))}catch(e){}}track('game_complete')}
+function track(eventName){const deviceType=/iPad|Tablet/i.test(navigator.userAgent)?'tablet':/Mobi|Android/i.test(navigator.userAgent)?'mobile':'desktop';fetch('/api/events',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({eventName,gameSlug:'rainbow-runway',ageBand:age.value,deviceType}),keepalive:true}).catch(()=>{})}
+function move(dir){if(state!=='running')return;lane=Math.max(-1,Math.min(1,lane+dir))}
+function jump(){if(state!=='running'||playerY>0)return;vy=560*configs[age.value].jump}
+function pause(){if(state==='running'){state='paused';$('pause-button').textContent='▶ Resume'}else if(state==='paused'){state='running';$('pause-button').textContent='Ⅱ Pause';last=0}}
+window.addEventListener('keydown',e=>{if(['ArrowLeft','ArrowRight','ArrowUp',' '].includes(e.key))e.preventDefault();if(e.key==='ArrowLeft'||e.key.toLowerCase()==='a')move(-1);if(e.key==='ArrowRight'||e.key.toLowerCase()==='d')move(1);if(e.key==='ArrowUp'||e.key===' ')jump();if(e.key.toLowerCase()==='p'&&['running','paused'].includes(state))pause();if(e.key==='Enter'&&(state==='ready'||state==='over'))start()});
+$('left-button').addEventListener('pointerdown',()=>move(-1));$('right-button').addEventListener('pointerdown',()=>move(1));$('jump-button').addEventListener('pointerdown',jump);
+$('start-button').addEventListener('click',start);$('again-button').addEventListener('click',start);$('restart-button').addEventListener('click',start);$('pause-button').addEventListener('click',pause);
+age.addEventListener('change',()=>{const p={'2-4':'🔴 🟡 🔵','5-7':'🔴 🟡 🔵','8-10':'🔴 🟡 🔵 🟢','11-12':'🔴 🟡 🔵 🟢 🟣'};$('pattern-label').textContent='Colour trail: '+p[age.value];if(state==='running'||state==='paused')start();else hearts=configs[age.value].hearts});
+document.addEventListener('visibilitychange',()=>{if(document.hidden&&state==='running')pause()});
+requestAnimationFrame(loop);
+})();
+</script>
+</body></html>

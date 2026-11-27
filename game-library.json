@@ -1,9 +1,127 @@
 {
   "version": 1,
   "games": [
-    {"id":"abc-letter-adventure","title":"ABC Letter Adventure","description":"A 500-question alphabet challenge covering letter recognition, sounds, sequencing and early word puzzles.","ageBands":["2-4","5-7","8-10"],"coverageNote":"The question bank is strongest for early learners. A smaller set of questions overlaps with age 8; broader 8–10 content and an 11–12 collection are still being developed.","path":"/games/abc-letter-adventure/","category":"Learning Adventures","status":"published","featured":true,"icon":"🔤"},
-    {"id":"tobis-rainbow-run","title":"Tobi's Rainbow Run","description":"A colourful collect-the-stars adventure with gentle obstacles.","ageBands":["5-7","8-10"],"path":"#","category":"Adventure Island","status":"coming-soon","featured":false,"icon":"🌈"},
-    {"id":"magical-memory-match","title":"Magical Memory Match","description":"A friendly memory game for matching pictures and patterns.","ageBands":["2-4","5-7","8-10"],"path":"#","category":"Puzzle Kingdom","status":"coming-soon","featured":false,"icon":"🧩"},
-    {"id":"my-happy-pet","title":"My Happy Pet","description":"A gentle creative game about caring for a virtual animal friend.","ageBands":["5-7","8-10"],"path":"#","category":"Pet Adventures","status":"coming-soon","featured":false,"icon":"🐾"}
+    {
+      "id": "adventure-universe",
+      "title": "Adventure Universe",
+      "description": "Explore a colourful fantasy galaxy, collect stardust and travel between magical learning worlds.",
+      "ageBands": [
+        "2-4",
+        "5-7",
+        "8-10",
+        "11-12"
+      ],
+      "path": "/games/adventure-universe/",
+      "category": "Adventure Universe",
+      "status": "published",
+      "featured": true,
+      "icon": "🌌"
+    },
+    {
+      "id": "rainbow-runway",
+      "title": "Rainbow Runway",
+      "description": "Dash across floating rainbow bridges, collect stardust, jump over friendly cloud bumps and explore a magical sky world.",
+      "ageBands": [
+        "2-4",
+        "5-7",
+        "8-10",
+        "11-12"
+      ],
+      "path": "/games/rainbow-runway/",
+      "category": "Adventure Universe",
+      "status": "published",
+      "featured": true,
+      "icon": "🌈"
+    },
+    {
+      "id": "abc-letter-adventure",
+      "title": "ABC Letter Adventure",
+      "description": "A 500-question alphabet challenge covering letter recognition, sounds, sequencing and early word puzzles.",
+      "ageBands": [
+        "2-4",
+        "5-7",
+        "8-10"
+      ],
+      "coverageNote": "The question bank is strongest for early learners. A smaller set of questions overlaps with age 8; broader 8–10 content and an 11–12 collection are still being developed.",
+      "path": "/games/abc-letter-adventure/",
+      "category": "Learning Adventures",
+      "status": "published",
+      "featured": true,
+      "icon": "🔤"
+    },
+    {
+      "id": "tobis-rainbow-run",
+      "title": "Tobi's Rainbow Run",
+      "description": "A colourful collect-the-stars adventure with gentle obstacles.",
+      "ageBands": [
+        "5-7",
+        "8-10"
+      ],
+      "path": "#",
+      "category": "Adventure Island",
+      "status": "coming-soon",
+      "featured": false,
+      "icon": "🌈"
+    },
+    {
+      "id": "magical-memory-match",
+      "title": "Magical Memory Match",
+      "description": "Turn over picture cards, find matching pairs and build memory skills with a challenge that grows from 3 to 10 pairs.",
+      "ageBands": [
+        "2-4",
+        "5-7",
+        "8-10",
+        "11-12"
+      ],
+      "path": "/games/magical-memory-match/",
+      "category": "Puzzle Kingdom",
+      "status": "published",
+      "featured": true,
+      "icon": "🧩"
+    },
+    {
+      "id": "pet-planet",
+      "title": "Pet Planet",
+      "description": "Adopt a magical little friend. Feed, give fresh water, brush and play while learning kindness and responsibility.",
+      "ageBands": [
+        "5-7",
+        "8-10"
+      ],
+      "path": "/games/pet-planet/",
+      "category": "Pet Adventures",
+      "status": "published",
+      "featured": true,
+      "icon": "🐾"
+    },
+    {
+      "id": "ocean-of-wonders",
+      "title": "Ocean of Wonders",
+      "description": "Swim through a glowing underwater reef, collect shining pearls and dodge playful jellyfish on a magical sea adventure.",
+      "ageBands": [
+        "5-7",
+        "8-10",
+        "11-12"
+      ],
+      "path": "/games/ocean-of-wonders/",
+      "category": "Adventure Universe",
+      "status": "published",
+      "featured": true,
+      "icon": "🐠"
+    },
+    {
+      "id": "dinosaur-discovery",
+      "title": "Dinosaur Discovery",
+      "description": "Become a young palaeontologist, excavate eight hidden fossil pieces, rebuild a dinosaur and answer prehistoric science questions.",
+      "ageBands": [
+        "5-7",
+        "8-10",
+        "11-12"
+      ],
+      "path": "/games/dinosaur-discovery/",
+      "category": "Adventure Universe",
+      "status": "published",
+      "featured": true,
+      "icon": "🦕"
+    }
   ]
 }

@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Watch Amelia Harper Kids songs, learning adventures and animated stories directly on our website.">
+<meta name="theme-color" content="#4f39a8">
+<title>Watch Kids Videos | Amelia Harper Kids</title>
+<link rel="canonical" href="https://amelia-harperkids.com/videos.html">
+<meta property="og:site_name" content="Amelia Harper Kids"><meta property="og:type" content="website"><meta property="og:title" content="Watch Kids Videos | Amelia Harper Kids"><meta property="og:description" content="Enjoy Amelia Harper Kids songs, learning adventures and animated stories."><meta property="og:url" content="https://amelia-harperkids.com/videos.html"><meta property="og:image" content="https://amelia-harperkids.com/assets/images/amelia-harper-banner.png">
+<link rel="icon" href="assets/images/amelia-harper-logo.png"><link rel="stylesheet" href="styles.css">
+<style>
+.video-page{max-width:1160px;margin:auto;padding:48px 24px 85px}
+.video-hero{padding:34px;border-radius:28px;background:linear-gradient(120deg,#f1ebff,#fff1e8);margin:22px 0 30px;box-shadow:var(--shadow-card)}
+.video-hero h1{font:600 clamp(38px,6vw,56px)/1.05 Fredoka;margin:9px 0}
+.video-hero p{max-width:700px;color:#706c83;line-height:1.7}
+.video-note{background:#fff8e6;border:1px solid #f0e4c7;border-radius:14px;padding:14px 16px;color:#705d34;font-size:12px;line-height:1.7;margin:18px 0 25px}
+.video-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.video-card{background:#fff;border:1px solid var(--line-strong);border-radius:24px;padding:16px;box-shadow:var(--shadow-card);min-width:0}
+.video-frame{aspect-ratio:16/9;background:linear-gradient(135deg,#eee8ff,#fff1e8);border-radius:16px;overflow:hidden;display:grid;place-items:center}
+.video-frame iframe{width:100%;height:100%;border:0}
+.video-load{width:100%;height:100%;border:0;background:transparent;cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;color:#4b3b88;font:700 15px 'DM Sans'}
+.video-load .play{width:64px;height:64px;border-radius:50%;background:#fff;box-shadow:0 8px 24px #34235c22;display:grid;place-items:center;font-size:26px;color:#e45b75}
+.video-load:focus-visible{outline:3px solid #e5b83f;outline-offset:-5px}
+.video-card h2{font:600 22px Fredoka;margin:14px 2px 5px}
+.video-card p{font-size:12px;color:#80798e;margin:0 2px 8px}
+.video-card .youtube-link{font-size:12px;font-weight:800;color:#5b45b5;margin:0 2px}
+.video-empty{text-align:center;padding:38px;background:#faf8ff;border-radius:20px;color:#777187;grid-column:1/-1}
+@media(max-width:700px){.video-page{padding:30px 17px 60px}.video-hero{padding:24px}.video-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to videos</a>
+<div class="announcement">WATCH · SING · LEARN · GROW</div>
+<header class="site-header">
+<a class="brand" href="index.html"><img src="assets/images/amelia-harper-logo.png" alt=""><span>Amelia Harper<small>Learn. Play. Sing. Dance. Grow.</small></span></a>
+<button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
+<nav id="nav"><a href="index.html">Home</a><a href="games/">Games</a><a href="stories.html">Bedtime stories</a><a href="songs.html">Songs</a><a href="resources.html">Resources</a><a class="nav-cta" href="#video-library">Watch videos</a></nav>
+</header>
+<main id="main-content" class="video-page">
+<a class="text-link" href="index.html">← Back home</a>
+<section class="video-hero"><span class="eyebrow">THE AMELIA HARPER VIDEO CLUB</span><h1>Little videos. Big smiles.</h1><p>Watch our songs, animated stories and playful learning adventures right here. Choose a video and press play when you're ready.</p></section>
+<div class="video-note"><b>For parents and caregivers:</b> Videos are streamed from YouTube. When a video is played, YouTube may collect information under its own policies. Please supervise children's viewing. We do not autoplay videos.</div>
+<section id="video-library" class="video-grid" aria-label="YouTube video library"><p class="video-empty">Loading our video collection…</p></section>
+</main>
+<footer><div class="footer-brand"><img src="assets/images/amelia-harper-logo.png" alt=""><b>Amelia Harper</b><p>Learn. Play. Sing. Dance. Grow.</p></div><div><b>Explore</b><a href="games/">Games</a><a href="stories.html">Audio stories</a><a href="songs.html">Songs</a><a href="videos.html">Watch videos</a></div><div><b>For parents</b><a href="index.html#parents">Community</a><a href="privacy.html">Privacy & safety</a></div><small>© <span id="year"></span> Amelia Harper.</small></footer>
+<script>
+(async()=>{
+ const grid=document.getElementById('video-library');
+ const esc=value=>String(value).replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+ try{
+  const response=await fetch('/api/config',{cache:'no-store'});
+  if(!response.ok)throw new Error('The video collection is not available right now.');
+  const config=await response.json();
+  const videos=Array.isArray(config.youtubeVideos)?config.youtubeVideos:[];
+  grid.replaceChildren();
+  if(!videos.length){const empty=document.createElement('p');empty.className='video-empty';empty.textContent='Our video collection is being prepared. Please come back soon!';grid.append(empty);}
+  videos.forEach(video=>{
+   if(!video||typeof video.title!=='string'||!/^[A-Za-z0-9_-]{11}$/.test(video.videoId||''))return;
+   const card=document.createElement('article');card.className='video-card';
+   const frame=document.createElement('div');frame.className='video-frame';
+   const load=document.createElement('button');load.type='button';load.className='video-load';load.setAttribute('aria-label','Load YouTube player for '+video.title);
+   const play=document.createElement('span');play.className='play';play.setAttribute('aria-hidden','true');play.textContent='▶';
+   const prompt=document.createElement('span');prompt.textContent='Load video player';
+   load.append(play,prompt);frame.append(load);
+   load.addEventListener('click',()=>{
+    const iframe=document.createElement('iframe');
+    iframe.src='https://www.youtube.com/embed/'+encodeURIComponent(video.videoId)+'?playsinline=1&rel=0';
+    iframe.title=video.title;iframe.loading='lazy';iframe.referrerPolicy='strict-origin-when-cross-origin';
+    iframe.allow='encrypted-media; picture-in-picture; fullscreen';iframe.allowFullscreen=true;
+    frame.replaceChildren(iframe);
+   },{once:true});
+   const title=document.createElement('h2');title.textContent=video.title;
+   const note=document.createElement('p');note.textContent='YouTube video · Press play to watch';
+   const link=document.createElement('a');link.className='youtube-link';link.href='https://www.youtube.com/watch?v='+encodeURIComponent(video.videoId);link.target='_blank';link.rel='noopener noreferrer';link.textContent='Watch on YouTube ↗';
+   card.append(frame,title,note,link);grid.append(card);
+  });
+  if(!grid.children.length){const empty=document.createElement('p');empty.className='video-empty';empty.textContent='No videos have been published yet.';grid.append(empty);}
+ }catch(error){grid.textContent=error.message;}
+ document.getElementById('year').textContent=new Date().getFullYear();
+ const menu=document.querySelector('.menu-toggle'),nav=document.getElementById('nav');
+ menu.addEventListener('click',()=>{const open=nav.classList.toggle('open');menu.setAttribute('aria-expanded',String(open));menu.setAttribute('aria-label',open?'Close menu':'Open menu')});
+ nav.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{nav.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.setAttribute('aria-label','Open menu')}));
+ document.addEventListener('keydown',e=>{if(e.key==='Escape'){nav.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.setAttribute('aria-label','Open menu')}});
+})();
+</script>
+</body></html>
